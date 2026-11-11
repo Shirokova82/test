@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Коммерческое предложение для клиник — БАСАЛДУК</title>
+<meta name="description" content="Коммерческое предложение БАСАЛДУК: совместные бесплатные выездные приёмы ортезиста и врача травматолога-ортопеда, либо собственное направление с 3D-сканером и производством.">
+<style>
+:root{--blue:#52608b;--deep:#354262;--lime:#c1dc43;--bg:#f3f5fa;--line:#dce2eb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:white;font-family:Arial,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--deep);line-height:1.5}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;background:#fffffffa;border-bottom:1px solid #eaedf1;z-index:5;backdrop-filter:blur(8px)}
+.head{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-size:22px;font-weight:800;color:var(--blue);letter-spacing:.025em;white-space:nowrap}
+.brand::before{content:"✳";display:inline-flex;align-items:center;justify-content:center;background:#dfeaef;border-radius:11px;color:#39ac40;width:32px;height:32px;margin-right:11px}
+.head a.call{font-weight:700;color:var(--blue);white-space:nowrap;font-size:14px}
+.tag{font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:750;color:#7481a5}
+.hero{padding:60px 0 62px}
+.hero-grid{display:grid;grid-template-columns:1fr .94fr;gap:42px;align-items:center}
+h1,h2,h3,p{margin-top:0}
+h1{font-size:clamp(40px,4.6vw,64px);line-height:1.12;letter-spacing:-.045em;color:var(--blue);margin:18px 0 22px}
+.lead{font-size:18px;line-height:1.7;color:#52617e;max-width:560px}
+.hero-photo{height:440px;border-radius:28px;overflow:hidden;background:#edf1f6;position:relative}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo figcaption{position:absolute;bottom:14px;left:14px;right:14px;background:#ffffffed;padding:13px 16px;border-radius:13px;font-size:13px;font-weight:700;color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:12px 24px;border-radius:999px;background:var(--lime);font-weight:750;color:var(--deep);text-align:center}
+.btn.sub{background:white;border:1px solid #cad1e0;color:var(--blue)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:36px}
+.strip span{font-size:13px;font-weight:700;color:#627094;border-top:1px solid #dfe3eb;padding-top:13px}
+section{padding:68px 0}
+.soft{background:var(--bg)}
+h2{font-size:clamp(30px,3vw,44px);line-height:1.17;letter-spacing:-.035em;color:var(--blue);margin:14px 0 28px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:white;border:1px solid #e5e9f0;border-radius:24px;padding:33px}
+.number{font-size:12px;font-weight:800;letter-spacing:.12em;color:#6c7aa4}
+.card h3{color:var(--blue);font-size:28px;line-height:1.18;margin:12px 0 18px}
+.card ul{padding-left:18px;line-height:1.75;color:#52607b;margin:18px 0}
+.card p{color:#566480}
+.highlight{display:inline-block;background:#e8efc4;color:#4a5d7d;border-radius:99px;font-size:13px;padding:7px 12px;font-weight:800;margin:0 0 12px}
+.line{border-top:1px solid #dbe1ec;padding-top:16px;margin-top:20px}
+.line strong{color:var(--blue)}
+.section-intro{font-size:17px;line-height:1.7;max-width:860px;color:#596784}
+.photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:30px 0}
+.photo-grid img{width:100%;height:270px;object-fit:cover;display:block;border-radius:18px;background:#edf0f4}
+.production-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px}
+.production-grid img{width:100%;height:430px;object-fit:cover;border-radius:26px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin-top:20px}
+.feature{border-top:1px solid #dde3ed;padding-top:12px;font-size:14px;color:#64718a}
+.feature strong{color:var(--blue);display:block;font-size:16px}
+.meeting{padding:47px 0;background:#eaf0de}
+.meeting-grid{display:flex;gap:22px;align-items:center;justify-content:space-between}
+.meeting h2{margin:11px 0;font-size:31px}
+.meeting p{margin-bottom:0;color:#596780;max-width:710px}
+.final{background:#52608b;color:white;padding:60px 0}
+.final h2{color:white}
+.final p{color:#eef1f8;max-width:780px}
+.final-links{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:22px}
+.final-links a:not(.btn){color:#fff;text-decoration:underline;text-underline-offset:4px}
+footer{padding:23px 0;background:#edf1f7;color:#687694;font-size:12px}
+@media(max-width:780px){
+.wrap{width:calc(100% - 32px)}
+.head{min-height:64px}
+.brand{font-size:17px}.brand::before{width:27px;height:27px;margin-right:7px}
+.head a.call{font-size:12px}
+.hero{padding:30px 0 42px}
+.hero-grid,.cards,.production-grid{grid-template-columns:1fr}
+.hero-grid{gap:25px}
+h1{font-size:38px}
+.lead{font-size:16px;line-height:1.6}
+.hero-photo{height:335px;margin:0}
+.strip{grid-template-columns:1fr 1fr;gap:12px}
+.strip span{font-size:12px}
+section{padding:47px 0}
+h2{font-size:30px}
+.card{padding:25px}
+.card h3{font-size:24px}
+.photo-grid{grid-template-columns:1fr 1fr;gap:9px}
+.photo-grid img{height:195px;border-radius:14px}
+.production-grid img{height:300px}
+.meeting-grid{align-items:stretch;flex-direction:column}
+.meeting h2{font-size:29px}
+.final{padding:45px 0}
+.final-links{align-items:stretch;flex-direction:column}
+.actions .btn{flex:1}
+}
+</style></head><body>
+<header><div class="wrap head"><a href="#top" class="brand">БАСАЛДУК</a><a class="call" href="tel:+79773525759">+7 977 352-57-59</a></div></header>
+<main id="top">
+<div class="hero"><div class="wrap hero-grid">
+<div><div class="tag">Коммерческое предложение медицинским и реабилитационным центрам</div>
+<h1>Индивидуальное ортезирование для пациентов вашей клиники</h1>
+<p class="lead">Предлагаем два формата сотрудничества: <strong>совместные бесплатные приёмы наших специалистов</strong> либо самостоятельную работу вашей клиники с 3D-сканером и производственной поддержкой БАСАЛДУК.</p>
+<div class="actions"><a class="btn" href="#models">Варианты сотрудничества ↓</a><a class="btn sub" href="tel:+79773525759">Обсудить сотрудничество</a></div>
+<div class="strip"><span>Собственная мастерская</span><span>3D-сканирование</span><span>Индивидуальные изделия</span></div>
+</div>
+<figure class="hero-photo"><img src="https://i.wfolio.ru/x/KfN2JhbB89-m6UeUSQ-43b-4LTDPyZVn/q6sVLUvjujnOk6mXbO2srbIKpPlcOqy0/t7rVx8PT5NFW95R5iPfYgEbcz9T9DM03/mjHu5nb3MiY0pLaVSfnIEvvsgGTLYWd3/DB3ADSLxnrANMZCME7ysO6lbLXOuKmsS/4avHE6QvdBNSnvUrs3A5CiNNO3rLS7jl/323Ydwoq9ZO0AI9J-XIWZml1omVwS3ux/M3ynyjTmLON0zxzwdPcv8RfJyH5Ol9s3/oIG-vg9CLmVvHQ4fqEFLnua4uNYgJWl-/bz_RFES8_DXKlOKlFuf9fQ1OMenAcYIg/dCf_CDTqobTvdaqSxehjhTCREasDxwyr/z0BCkBSvj8XczD1SFwGj73CzWQZlpudU/oJzG_r7MBnz1GSwiWwFemouK5tkjv0-X/l8oR_OQUFCMMSpvbunJiyzbRe7wHZmS9/kZ--y0dS4sqirSpLFYkf61TQwZwvne4O/ef2yYaXNaGyint2YRoVXVM4vqRRqv_4j/56qgrrdK22iYgM8VVKbYM4ZipWCcMv8Q/MOHJGV_8ijFsqkMKDdKhhqscCksuOOBa/Vlw9MYdmxVYEDAMrRJvz3HbmYQnftUzS/53wWAkrJfLI.jpg" alt="Готовые аппараты индивидуального изготовления БАСАЛДУК" class="" loading="lazy"><figcaption>Реальные изделия производства БАСАЛДУК</figcaption></figure>
+</div></div>
+<section class="soft" id="models"><div class="wrap">
+<div class="tag">01 / Форматы сотрудничества</div><h2>Выберите подходящую модель работы</h2>
+<div class="cards">
+<article class="card"><div class="number">ФОРМАТ 01</div><h3>Наша команда приезжает в вашу клинику</h3>
+<div class="highlight">Приём для семьи бесплатный</div>
+<p><strong>Вместе приезжают два специалиста:</strong> ортезист и врач травматолог-ортопед — специалист по вопросам МСЭ.</p>
+<strong>Мы обеспечиваем:</strong>
+<ul><li>Консультацию двух специалистов и подбор конструкции</li><li>3D-сканирование и цифровые измерения</li><li>Помощь семье по МСЭ, ИПРА и электронному сертификату</li><li>Изготовление, примерку и выдачу изделия</li></ul>
+<p class="line"><strong>От клиники:</strong> помещение и запись пациентов на согласованную дату.</p>
+<p><strong>Для партнёра:</strong> вознаграждение за заказы пациентов вашей клиники.</p></article>
+<article class="card"><div class="number">ФОРМАТ 02</div><h3>Ваши специалисты. Наше производство.</h3>
+<p>Клиника самостоятельно проводит ортезные приёмы и организует работу с пациентами.</p>
+<strong>Мы предоставляем:</strong>
+<ul><li>3D-сканер для клиники</li><li>Практическое обучение сотрудников</li><li>Технологическую поддержку первых заказов</li><li>Изготовление изделий по цифровым данным и техническим заданиям</li></ul>
+<p class="line"><strong>Клиника самостоятельно:</strong> ведёт приём, выполняет сканирование, оформляет заказы и устанавливает конечные цены для пациентов.</p>
+<p><strong>Условия:</strong> производство изделий по партнёрским ценам БАСАЛДУК.</p></article>
+</div>
+<p class="section-intro" style="margin-top:26px">Можно начать с совместного выездного приёма, а затем перейти к самостоятельной работе с 3D-сканером.</p>
+</div></section>
+<section id="production"><div class="wrap">
+<div class="tag">02 / Собственное производство</div>
+<h2>От цифровой модели до готового изделия</h2>
+<p class="section-intro">Мы не размещаем заказы у сторонних производителей. Изготавливаем индивидуальные туторы и аппараты в собственной мастерской, учитываем клиническую задачу и выполняем корректировки при примерке.</p>
+<div class="photo-grid">
+<img src="https://i.wfolio.ru/x/KfN2JhbB89-m6UeUSQ-43b-4LTDPyZVn/q6sVLUvjujnOk6mXbO2srbIKpPlcOqy0/t7rVx8PT5NFW95R5iPfYgEbcz9T9DM03/mjHu5nb3MiY0pLaVSfnIEvvsgGTLYWd3/DB3ADSLxnrANMZCME7ysO6lbLXOuKmsS/4avHE6QvdBNSnvUrs3A5CiNNO3rLS7jl/323Ydwoq9ZO0AI9J-XIWZml1omVwS3ux/M3ynyjTmLON0zxzwdPcv8RfJyH5Ol9s3/oIG-vg9CLmVvHQ4fqEFLnua4uNYgJWl-/bz_RFES8_DV2CWveix05KP2KCUb4VFnt/Txuk3U92laavroblGPVLZiCJ-0qi5hFy/xDA6f5F6GNrD_bzM57zp-1rv256Jhdok/rkuIshgFGjgAdOllMugXk7LRYnHN36NC/jZuI-7EyKAWUkXlmIaFEgQ7DAn6Ahlxm/SDWPVhaJn14oP0Y5YO4t4ZWGlbnB768Q/JZibpaKBrBtFHzkN1-khIa3DleaS7yU9/1wJIumuN2Dg5AMLXa6_L5W1eXj61XzhM/cgPBY5RjYUvFxrXC-EC9UVvCRLOVTzct/358n0FBWBack1MchHiw3ixJ_cTbfFsJt/I36nGZEzsJM.jpg" alt="Готовое изделие БАСАЛДУК" class="" loading="lazy">
+<img src="https://i.wfolio.ru/x/KfN2JhbB89-m6UeUSQ-43b-4LTDPyZVn/q6sVLUvjujnOk6mXbO2srbIKpPlcOqy0/t7rVx8PT5NFW95R5iPfYgEbcz9T9DM03/mjHu5nb3MiY0pLaVSfnIEvvsgGTLYWd3/DB3ADSLxnrANMZCME7ysO6lbLXOuKmsS/4avHE6QvdBNSnvUrs3A5CiNNO3rLS7jl/323Ydwoq9ZO0AI9J-XIWZml1omVwS3ux/M3ynyjTmLON0zxzwdPcv8RfJyH5Ol9s3/oIG-vg9CLmVvHQ4fqEFLngvc7qMImCsR/VEq6OHZxrBiEeJn2KgtGBqliL5hDiDeN/HZ2G4Ki_sT50ZaAzkgVJemXx7cJ__VFd/nBLpcxavxzQroJiqqk4RAApOXNY88NUO/yri5UQGdz5QiuAyoNYpf5r5LW9BlURln/AWsHMxexo5cSJsVSSOuHlxbYdWhBBTGp/tbkVmfws-hIS80QwLwpGHRyz8U1STFQZ/PFzmdc34_dX9wMrS48pO5G-8Sv2Ypeek/4q9C_16d56gztz8FS-mzLnYW1E1A2jEX/NmC5gD24l-FQMsASMHKTbDF3ZMXe-QGo/bkBUQNZZgbGgsqx5XAp19qH6jC5DdX78/zOjkOmJh6F0.jpg" alt="Индивидуальный ортез БАСАЛДУК" class="" loading="lazy">
+<img src="https://i.wfolio.ru/x/gJXv0g-Vw7XSGix8gB_WgI4uy7c9oH_x/3_dDKLO4xNRxxxziTVg-3enKac4D4Xz6/kGMQ6ylSnMLScX3hBKC8eC4yQkxB2weW/GIrXWReUv75uJrnwJhM6ZGON_CX0pYq5/TnO_XB2AUVUA-027J7lNJFP3sS051jUz/I4g2sFDnIt3n_eNXwa1wVXnBqyL6M1CB/0NO_XuHbUItKq3jUxa72ex8rGA11YzmZ/iGAg24Az8gN30mDiOvNC3DLt4adCXRkc/BjkbxpgD-_ZC_ybRiO_Ghn6bgqS97t_9/TRq8Q_EJkC9Hi7dbwjhCcdHPatI_8j19/c-89lltFzWhjS1iKdAyG4NtgfhTgU0EN/QVFjDC2BshVWRR2jfxJqlPKUKqqLiiDU/Eb9PuQ5H9YuWn2ZNQK3c56vWg4_nE8Jw/QnEG2aI5uFxYr38-f6jXVSqnTzXfRZsU/7_fJ1ENcOOwyM8JUGuZmUmA5O3Kh7SUy/YCr_7y8DMPjAGfBN8wb3pJiHysmUdn7n/eR44ZsFvsM2OKUIQiyiDuU7OmRTUnjVH/TcJ39Dycoc_CTkro0crXhjjPhfCS4kgl/EwMA_Mv9vRVlnjG7cTHxemq1fQ0qt_05/6Zuc5nE3CD0.jpg" alt="Аппарат собственного производства БАСАЛДУК" class="" loading="lazy">
+<img src="https://i.wfolio.ru/x/KfN2JhbB89-m6UeUSQ-43b-4LTDPyZVn/q6sVLUvjujnOk6mXbO2srbIKpPlcOqy0/t7rVx8PT5NFW95R5iPfYgEbcz9T9DM03/mjHu5nb3MiY0pLaVSfnIEvvsgGTLYWd3/DB3ADSLxnrANMZCME7ysO7zbJlJOFUak/_LjjMVw2W5tHgSq-4nqWisO63LhKr8hU/UjGs7p5x5NCcxiwm-InQKV-9XAqsHRwW/ZGyFHFtpzPOONgREkR_SMABqakuvw_0k/VSKnozfufYedGTGuoSZDvxYHDmuRZcWV/s9AN7wgZGJZ3TAxVMnKPqgcj8BTllv82/cbjgfL4bY4-n36SBTREmSKR407O-xcfF/gNfr__UlwOILpARgup9fADCmDNprx4_M/NUDhE1SSPM6ebGdM9H7ddjvLM4fFuHq6/AhyZQJCSpLoQ1kXHQV4g9-AWXNVvdUx_/gR8MSZTQTmO1hNhCzKTZDd3-ydKjWkWO/FTR_Rc4Ao0lMupJ2jjgERahPd21466cF/J1iR4cpAgRucmxc1fxnPROEascSY3oz-/20fPn5RuXJY4K-VY0bz75XqPS5NAZlxT/wn2jdpn_t7xoBW3Xezt12zy2tpeJZD0c/lNsHHJ7jQwI.jpg" alt="Готовый ортез из мастерской БАСАЛДУК" class="" loading="lazy">
+</div>
+<div class="production-grid">
+<div><h2>Производственные возможности</h2>
+<div class="features">
+<div class="feature"><strong>3D-сканирование</strong>Без гипсовых слепков</div>
+<div class="feature"><strong>Индивидуальная конструкция</strong>Под клиническую задачу и анатомию</div>
+<div class="feature"><strong>Контроль качества</strong>На всех этапах изготовления</div>
+<div class="feature"><strong>Примерка и корректировка</strong>При необходимости — в мастерской</div>
+</div>
+<p class="section-intro" style="font-size:15px;margin-top:25px"><strong>Ассортимент:</strong> туторы на голеностоп и колено, аппараты для ходьбы, ортезы на верхние конечности и сложные конструкции по техническому заданию.</p>
+</div>
+<img src="https://i.wfolio.ru/x/KfN2JhbB89-m6UeUSQ-43b-4LTDPyZVn/q6sVLUvjujnOk6mXbO2srbIKpPlcOqy0/t7rVx8PT5NFW95R5iPfYgEbcz9T9DM03/mjHu5nb3MiY0pLaVSfnIEvvsgGTLYWd3/DB3ADSLxnrANMZCME7ysO7zbJlJOFUak/_LjjMVw2W5tHgSq-4nqWisO63LhKr8hU/UjGs7p5x5NCcxiwm-InQKV-9XAqsHRwW/ZGyFHFtpzPOONgREkR_SMABqakuvw_0k/VSKnozfufYedGTGuoSZDv6r9Fm7Uci8O/uLjMmAWbXeQMZE6ltV3AAz9p6RTI_r-d/UGgzl7N4LEmlWjQYDQjRfKnBzNmjNBRh/zphZLhx49M9IDzqbCHp1cvveDW8WDUZ8/y6U2THzDhHrUG4gSJPrRAqvWoSWne9bM/0pFS1ewF_d796arPstve478vKkuLLFtA/LWhm8PbwIqabajUkhVtI7NkNV6gcaZTm/rfxqFY2zlOaI1dvBl_UwsREhtimFhIjr/Cn6anjesDo8-TCut47vWB_DtEmczPc58/HiWovEONPDe5rbfpuNKW0_0_JSgKuShZ/oteBJLpqsD_-82fJRCbD4J22kLtbHlNa/0AiVqOAUtm0.jpg" alt="Готовый индивидуальный аппарат БАСАЛДУК" class="" loading="lazy">
+</div>
+</div></section>
+<section class="soft"><div class="wrap"><div class="tag">03 / Поддержка партнёров</div>
+<h2>Обучение и сопровождение</h2>
+<p class="section-intro">Для клиник с 3D-сканером обучаем цифровым измерениям, подготовке технического задания и оформлению производственного заказа. Сопровождаем первые заказы и консультируем по вопросам примерки и корректировки.</p>
+<div class="actions"><a class="btn" href="https://shirokova82.github.io/test/training/" target="_blank" rel="noopener">Программа обучения ↗</a></div>
+</div></section>
+<section class="meeting"><div class="wrap meeting-grid">
+<div><div class="tag">Профессиональная онлайн-встреча</div><h2>Познакомимся с технологиями и форматами партнёрства</h2><p>Покажем изделия и производственный процесс, обсудим практические вопросы ортезирования и варианты совместной работы.</p></div>
+<a class="btn" href="https://shirokova82.github.io/test/#meeting" target="_blank" rel="noopener">Подробнее ↗</a>
+</div></section>
+<section class="final"><div class="wrap">
+<div class="tag" style="color:#d1d9e8">БАСАЛДУК · Партнёрская программа</div>
+<h2>Обсудим сотрудничество?</h2>
+<p>Готовы представить изделия, согласовать первый бесплатный приём двух специалистов или условия работы со сканером.</p>
+<div class="final-links"><a class="btn" href="tel:+79773525759">Позвонить +7 (977) 352-57-59</a><a href="https://shirokova82.github.io/test/" target="_blank" rel="noopener">Партнёрский лендинг ↗</a><a href="https://basalduk-clinic.ru/" target="_blank" rel="noopener">Сайт клиники ↗</a></div>
+</div></section>
+</main><footer><div class="wrap">БАСАЛДУК · Москва, ул. Озёрная, 9 · Коммерческое предложение для медицинских центров</div></footer>
+</body></html>
