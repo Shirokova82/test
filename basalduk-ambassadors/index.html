@@ -1,161 +1,507 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#52608b"><title>Свои помогают своим — амбассадорская программа БАСАЛДУК</title><meta name="description" content="Свои помогают своим: партнёрская программа для тех, кто хочет работать и помогать. Начните с организации бесплатного приёма семей без ИП и стартовых затрат."><style>
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
-:root{--blue:#52608b;--ink:#303f68;--lime:#c1dc43;--cloud:#f5f6f9;--line:#dfe2eb;--soft:#727b96}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;background:#fff;color:var(--ink);line-height:1.48}
-a{color:inherit;text-decoration:none}button{font:inherit}p,h1,h2,h3{margin-top:0}h1,h2,h3{line-height:1.09;letter-spacing:-.052em}h1{font-size:clamp(50px,5.65vw,94px);font-weight:800}h2{font-size:clamp(38px,4.5vw,64px);font-weight:800}h3{font-weight:800}
-.container{width:min(1320px,calc(100% - 104px));margin:auto}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:#9ab17a}.eyebrow.dark{color:var(--blue)}.button{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:17px 26px;border-radius:60px;background:var(--lime);color:var(--ink);font-weight:800;font-size:14px;gap:18px;transition:transform .18s}.button:hover{transform:translateY(-3px)}.button.ghost{background:transparent;color:#fff;border:1px solid #ffffff80}.button.blue{background:var(--blue);color:#fff}.button.outline{border:1px solid #c3cadd;background:transparent;color:var(--blue)}
-.sitehead{height:80px;position:sticky;top:0;z-index:30;background:#fff;color:var(--blue);box-shadow:0 1px 0 #e4e8ee}.sitehead .container{height:100%;display:flex;justify-content:space-between;align-items:center;gap:26px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:24px;letter-spacing:.06em}.brand i{font-style:normal;background:var(--lime);color:var(--blue);width:45px;height:45px;border-radius:50%;display:grid;place-items:center;font-size:28px}.topnav{display:flex;gap:26px;font-size:13px;font-weight:750}.topnav a:hover{color:#8da121}.sitehead .button{min-height:44px;padding:11px 21px}
-.draft{background:#eef3d4;color:#52608b;font-size:11px;font-weight:750;text-align:center;padding:6px 12px}
-.hero{background:#303f68;color:#fff;position:relative;overflow:hidden}.hero:before{content:'';position:absolute;width:540px;height:540px;border:1px solid #ffffff15;border-radius:50%;left:-380px;top:-160px}.hero-body{display:grid;grid-template-columns:1.05fr .95fr;min-height:690px;align-items:stretch}.hero-copy{align-self:center;padding:66px 68px 85px 0;position:relative;z-index:2}.hero h1{color:#fff;margin:26px 0 26px;max-width:775px}.hero h1 em{color:var(--lime);font-style:normal}.hero p{font-size:18px;line-height:1.6;color:#e1e6f1;max-width:560px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.hero-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:33px;font-size:12px;color:#f5f5e7}.hero-chips span{border:1px solid #ffffff47;border-radius:30px;padding:9px 14px}.hero-image{position:relative;min-height:690px;overflow:hidden;margin-right:calc((1320px - 100vw)/2);background:#9db2cf}.hero-image img{height:100%;width:100%;object-fit:cover;object-position:center;position:absolute;inset:0}.hero-image:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#303f68 0%,transparent 26%),linear-gradient(0deg,#18243f91,transparent 45%);z-index:2}.image-marker{position:absolute;bottom:35px;left:38px;z-index:3;font-size:12px;font-weight:750;letter-spacing:.09em;text-transform:uppercase;color:#fff;border-left:4px solid var(--lime);padding-left:14px}
-.metricbar{background:var(--lime);color:var(--ink);padding:24px 0}.metricgrid{display:grid;grid-template-columns:1.05fr 1.05fr .9fr;gap:0}.metric{display:flex;align-items:center;gap:16px;padding:0 27px;border-right:1px solid #647b6a4b}.metric:first-child{padding-left:0}.metric:last-child{border:0}.metric strong{font-size:clamp(36px,4vw,62px);font-weight:800;line-height:1;letter-spacing:-.07em;white-space:nowrap}.metric p{font-size:12px;line-height:1.4;font-weight:750;margin:0;max-width:180px}
-.intro{padding:110px 0 120px;background:#fff}.intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:100px}.intro h2{color:var(--ink);margin:20px 0}.intro p{font-size:17px;color:#596581;line-height:1.75;max-width:520px}.intro-photo{height:470px;border-radius:25px 155px 25px 25px;position:relative;overflow:hidden;background:#d7dce7}.intro-photo img{width:100%;height:100%;object-fit:cover}.intro-photo span{position:absolute;bottom:16px;left:16px;background:var(--lime);border-radius:50px;padding:9px 15px;color:var(--ink);font-weight:800;font-size:12px}.intro-highlight{border-left:5px solid var(--lime);margin-top:28px;padding-left:24px;font-weight:800;font-size:22px;color:var(--blue);line-height:1.3}
-.responsibility{background:var(--cloud);padding:104px 0}.responsibility .upper{display:flex;justify-content:space-between;align-items:end;gap:45px}.responsibility h2{max-width:740px;margin:16px 0 0}.responsibility .upper p{max-width:320px;color:#64718b;font-size:16px;margin:0 0 5px}.responsibility-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}.responsibility-grid article{border:1px solid #dfe4ed;border-radius:20px;background:#fff;padding:32px;min-height:240px}.responsibility-grid article:nth-child(2){background:var(--lime);border-color:var(--lime)}.responsibility-grid .count{font-size:11px;font-weight:800;letter-spacing:.14em;color:#737e98}.responsibility-grid article h3{font-size:25px;margin:34px 0 12px}.responsibility-grid article p{font-size:14px;color:#68758e;line-height:1.6}.responsibility-grid article:nth-child(2) p{color:#48556e}
-.showcase{background:#303f68;color:#fff;padding:110px 0;overflow:hidden}.showcase-top{display:flex;justify-content:space-between;gap:36px;align-items:end;margin-bottom:32px}.showcase h2{color:#fff;max-width:730px;margin:14px 0 0}.showcase-top p{max-width:300px;color:#d8dfee;font-size:15px;line-height:1.6}.films{display:grid;grid-template-columns:.83fr .83fr 1.3fr;gap:19px;align-items:stretch}.film{min-width:0;position:relative}.film video{width:100%;height:100%;aspect-ratio:9/16;max-height:495px;object-fit:cover;display:block;border-radius:22px;background:#1a2942}.film-label{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:13px;color:#c5cfe4;font-size:11px;letter-spacing:.03em}.film-label a{text-decoration:underline;text-decoration-color:var(--lime);text-underline-offset:4px}.film-photobox{position:relative;min-height:495px;overflow:hidden;border-radius:22px}.film-photobox img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.film-photobox:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 45%,#12203bb7)}.film-photobox strong{position:absolute;left:28px;bottom:26px;color:#fff;z-index:2;font-size:28px;line-height:1.15;max-width:330px}.showcase-more{margin-top:24px}.showcase-more summary{cursor:pointer;color:var(--lime);font-size:14px;font-weight:800}.showcase-more .extra{display:grid;grid-template-columns:repeat(4,minmax(0,190px));gap:15px;margin-top:26px}.showcase-more .film video{height:auto;max-height:none}.showcase-more .film-label{font-size:10px}.showcase-more .film-label span{display:none}
-.workflow{padding:110px 0 120px;background:white}.workflow-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}.workflow h2{margin:16px 0 0}.workflow-head p{font-size:16px;color:#5f6c84;max-width:440px;line-height:1.7}.workflow-list{margin-top:42px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 50px}.workstep{border-top:1px solid #d5dce9;display:flex;gap:23px;padding:22px 0;align-items:flex-start}.workstep b{background:#e5efbd;border-radius:50%;width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;color:var(--blue);font-size:12px;font-weight:900}.workstep h3{font-size:19px;margin:0 0 4px}.workstep p{font-size:13px;color:#6b7590;line-height:1.5;margin:0}.workstep:last-child{background:#eff3db;padding:22px 18px;border-radius:18px;border:0}.workflow-cta{display:flex;align-items:center;justify-content:space-between;gap:32px;background:#f0f3f8;border-radius:22px;padding:29px 34px;margin-top:36px}.workflow-cta strong{font-size:20px}.workflow-cta p{margin:7px 0 0;font-size:14px;color:#626f88}
-.team{background:var(--cloud);padding:110px 0}.team .team-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center}.team-photo{height:540px;position:relative;border-radius:24px;overflow:hidden}.team-photo img{width:100%;height:100%;object-fit:cover}.team-photo span{position:absolute;bottom:18px;left:18px;background:var(--lime);padding:9px 15px;border-radius:30px;font-size:12px;font-weight:800}.team h2{margin:18px 0 20px}.team p{color:#5e6a83;font-size:16px;line-height:1.7}.supportlist{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;margin-top:30px;padding:0;list-style:none}.supportlist li{border-top:1px solid #d6dce8;padding:12px 0;font-size:13px;line-height:1.45;font-weight:700;color:#485776}.supportlist li:before{content:'✓';color:#819e15;margin-right:7px}
-.catalogue{padding:110px 0}.catalog-head{display:flex;gap:35px;justify-content:space-between;align-items:end}.catalog-head h2{margin:14px 0;max-width:750px}.catalog-head p{max-width:330px;font-size:15px;color:#657088}.productmosaic{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:37px}.productmosaic img{width:100%;height:340px;object-fit:cover;border-radius:18px;background:#f3f4f6}.productmosaic img:first-child{grid-column:span 2}.catalog-accordions{margin-top:30px;border-top:1px solid #d6dce8}.catalog-accordions details{border-bottom:1px solid #d6dce8;padding:21px 0}.catalog-accordions summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:21px;font-weight:800}.catalog-accordions summary::-webkit-details-marker{display:none}.catalog-accordions summary small{color:#77839b;font-size:12px;font-weight:750;margin-left:auto}.catalog-accordions summary:after{content:'+';font-size:29px;color:#52608b;font-weight:400}.catalog-accordions details[open] summary:after{content:'−'}.catalog-accordions ul{columns:2;column-gap:40px;list-style:none;padding:9px 0 0;margin:0}.catalog-accordions li{break-inside:avoid;padding:9px 0;font-size:14px;line-height:1.55;color:#566580}.catalog-accordions li:before{content:'↗';color:#93a919;margin-right:9px}
-.faq{padding:105px 0;background:var(--cloud)}.faq-inner{display:grid;grid-template-columns:.75fr 1.25fr;gap:85px}.faq h2{margin-top:15px}.faq-list details{border-bottom:1px solid #d4dae5;padding:20px 0}.faq-list summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:18px;font-size:17px;font-weight:800}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary:after{content:'+';font-size:22px;color:#829b27}.faq-list p{font-size:14px;color:#617087;line-height:1.7;margin:13px 0 0}
-.final{background:#52608b;color:#fff;padding:90px 0;position:relative;overflow:hidden}.final:after{content:'✳';position:absolute;right:4%;bottom:-230px;color:#ffffff12;font-size:500px;line-height:1;pointer-events:none}.final .container{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:30px}.final h2{color:#fff;max-width:820px;margin:16px 0}.final p{max-width:660px;color:#e0e6f1;font-size:16px}.foot{background:#3b486e;color:#c9d2e8;padding:23px 0;font-size:12px}.foot .container{display:flex;justify-content:space-between;gap:20px}
-@media(max-width:1100px){.container{width:min(100% - 48px,1320px)}.hero-body{grid-template-columns:1fr 1fr}.hero-image{margin-right:-24px}.hero-copy{padding-right:30px}.hero h1{font-size:60px}.films{grid-template-columns:1fr 1fr}.film-photobox{grid-column:span 2;height:320px;min-height:0}.film-photobox img{object-position:center 45%}.team .team-grid{gap:30px}.intro-grid{gap:35px}}
-@media(max-width:760px){.container{width:calc(100% - 34px)}.sitehead{height:64px}.brand{font-size:18px}.brand i{width:34px;height:34px;font-size:21px}.topnav{display:none}.sitehead .button{font-size:11px;min-height:37px;padding:10px 13px}.hero-body{grid-template-columns:1fr}.hero-copy{padding:52px 0 38px}.hero h1{font-size:clamp(47px,11.5vw,67px);line-height:1.02;letter-spacing:-.05em}.hero p{font-size:16px}.hero-actions{flex-direction:column;align-items:stretch;margin-top:26px}.hero-chips{margin-top:23px}.hero-image{height:330px;min-height:330px;margin:0 -17px}.hero-image:before{background:linear-gradient(transparent 45%,#17233b85)}.image-marker{left:21px;bottom:19px}.metricbar{padding:22px 0}.metricgrid{grid-template-columns:1fr;gap:0}.metric{border-right:0;border-bottom:1px solid #50667145;padding:12px 0}.metric:last-child{border:0}.metric strong{font-size:38px;min-width:130px}.metric p{max-width:none}.intro,.responsibility,.showcase,.workflow,.team,.catalogue,.faq{padding:65px 0}.intro-grid,.team .team-grid,.workflow-head,.faq-inner{grid-template-columns:1fr;gap:26px}h2{font-size:38px}.intro-photo{height:295px;border-radius:20px 80px 20px 20px;order:-1}.intro p{font-size:15px}.intro-highlight{font-size:19px}.responsibility .upper,.showcase-top,.catalog-head{display:block}.responsibility .upper p,.showcase-top p{margin-top:19px}.responsibility-grid{grid-template-columns:1fr;gap:12px;margin-top:27px}.responsibility-grid article{min-height:0;padding:25px}.responsibility-grid article h3{margin:14px 0 10px;font-size:23px}.showcase-top{margin-bottom:27px}.films{grid-template-columns:1fr 1fr;gap:10px}.film video{height:auto;max-height:none;aspect-ratio:9/16;border-radius:13px}.film-photobox{grid-column:span 2;height:245px}.film-photobox strong{font-size:23px}.film-label{display:block;font-size:10px}.film-label a{display:block;margin-top:5px}.showcase-more .extra{grid-template-columns:1fr 1fr;gap:10px}.workflow-list{grid-template-columns:1fr;gap:0;margin-top:26px}.workstep{padding:16px 0}.workflow-cta{display:block;padding:22px}.workflow-cta .button{margin-top:22px;width:100%}.team-photo{height:295px}.supportlist{grid-template-columns:1fr 1fr;gap:0 12px}.supportlist li{font-size:12px}.productmosaic{gap:8px}.productmosaic img{height:190px;border-radius:10px}.productmosaic img:first-child{grid-column:span 2}.catalog-accordions summary{font-size:17px}.catalog-accordions ul{columns:1}.final{padding:69px 0}.final .container{display:block}.final .button{margin-top:15px;width:100%}.foot .container{display:block}.foot .container span{display:block;margin-top:8px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#52608b"><title>Свои помогают своим — исправленная версия БАСАЛДУК</title><meta name="description" content="Свои помогают своим — движение амбассадоров БАСАЛДУК. Бесплатные консультации специалистов, старт без ИП и вложений."></head><body style="margin:0">
+<!-- БАСАЛДУК | ambassadors | Tilda T123: полный код одного блока -->
+<style>
+@import  url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+#basalduk-tilda-ambassadors{--blue:#52608b;--ink:#303f68;--lime:#c1dc43;--cloud:#f5f6f9;--line:#dfe2eb;--soft:#727b96}
+#basalduk-tilda-ambassadors *{box-sizing:border-box}
+#basalduk-tilda-ambassadors{scroll-behavior:smooth}
+#basalduk-tilda-ambassadors{margin:0;font-family:Manrope,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#fff;color:var(--ink);line-height:1.48}
+#basalduk-tilda-ambassadors a{color:inherit;text-decoration:none}
+#basalduk-tilda-ambassadors button{font:inherit}
+#basalduk-tilda-ambassadors p, #basalduk-tilda-ambassadors h1, #basalduk-tilda-ambassadors h2, #basalduk-tilda-ambassadors h3{margin-top:0}
+#basalduk-tilda-ambassadors h1, #basalduk-tilda-ambassadors h2, #basalduk-tilda-ambassadors h3{line-height:1.09;letter-spacing:-.052em}
+#basalduk-tilda-ambassadors h1{font-size:clamp(50px,5.65vw,94px);font-weight:800}
+#basalduk-tilda-ambassadors h2{font-size:clamp(38px,4.5vw,64px);font-weight:800}
+#basalduk-tilda-ambassadors h3{font-weight:800}
+#basalduk-tilda-ambassadors .container{width:min(1320px,calc(100% - 104px));margin:auto}
+#basalduk-tilda-ambassadors .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:#9ab17a}
+#basalduk-tilda-ambassadors .eyebrow.dark{color:var(--blue)}
+#basalduk-tilda-ambassadors .button{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:17px 26px;border-radius:60px;background:var(--lime);color:var(--ink);font-weight:800;font-size:14px;gap:18px;transition:transform .18s}
+#basalduk-tilda-ambassadors .button:hover{transform:translateY(-3px)}
+#basalduk-tilda-ambassadors .button.ghost{background:transparent;color:#fff;border:1px solid #ffffff80}
+#basalduk-tilda-ambassadors .button.blue{background:var(--blue);color:#fff}
+#basalduk-tilda-ambassadors .button.outline{border:1px solid #c3cadd;background:transparent;color:var(--blue)}
+#basalduk-tilda-ambassadors .sitehead{height:80px;position:sticky;top:0;z-index:30;background:#fff;color:var(--blue);box-shadow:0 1px 0 #e4e8ee}
+#basalduk-tilda-ambassadors .sitehead .container{height:100%;display:flex;justify-content:space-between;align-items:center;gap:26px}
+#basalduk-tilda-ambassadors .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:24px;letter-spacing:.06em}
+#basalduk-tilda-ambassadors .brand i{font-style:normal;background:var(--lime);color:var(--blue);width:45px;height:45px;border-radius:50%;display:grid;place-items:center;font-size:28px}
+#basalduk-tilda-ambassadors .topnav{display:flex;gap:26px;font-size:13px;font-weight:750}
+#basalduk-tilda-ambassadors .topnav a:hover{color:#8da121}
+#basalduk-tilda-ambassadors .sitehead .button{min-height:44px;padding:11px 21px}
+#basalduk-tilda-ambassadors .draft{background:#eef3d4;color:#52608b;font-size:11px;font-weight:750;text-align:center;padding:6px 12px}
+#basalduk-tilda-ambassadors .hero{background:#303f68;color:#fff;position:relative;overflow:hidden}
+#basalduk-tilda-ambassadors .hero:before{content:"";position:absolute;width:540px;height:540px;border:1px solid #ffffff15;border-radius:50%;left:-380px;top:-160px}
+#basalduk-tilda-ambassadors .hero-body{display:grid;grid-template-columns:1.05fr .95fr;min-height:690px;align-items:stretch}
+#basalduk-tilda-ambassadors .hero-copy{align-self:center;padding:66px 68px 85px 0;position:relative;z-index:2}
+#basalduk-tilda-ambassadors .hero h1{color:#fff;margin:26px 0 26px;max-width:775px}
+#basalduk-tilda-ambassadors .hero h1 em{color:var(--lime);font-style:normal}
+#basalduk-tilda-ambassadors .hero p{font-size:18px;line-height:1.6;color:#e1e6f1;max-width:560px}
+#basalduk-tilda-ambassadors .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+#basalduk-tilda-ambassadors .hero-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:33px;font-size:12px;color:#f5f5e7}
+#basalduk-tilda-ambassadors .hero-chips span{border:1px solid #ffffff47;border-radius:30px;padding:9px 14px}
+#basalduk-tilda-ambassadors .hero-image{position:relative;min-height:690px;overflow:hidden;margin-right:calc((1320px - 100vw)/2);background:#9db2cf}
+#basalduk-tilda-ambassadors .hero-image img{height:100%;width:100%;object-fit:cover;object-position:center;position:absolute;inset:0}
+#basalduk-tilda-ambassadors .hero-image:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#303f68 0%,transparent 26%),linear-gradient(0deg,#18243f91,transparent 45%);z-index:2}
+#basalduk-tilda-ambassadors .image-marker{position:absolute;bottom:35px;left:38px;z-index:3;font-size:12px;font-weight:750;letter-spacing:.09em;text-transform:uppercase;color:#fff;border-left:4px solid var(--lime);padding-left:14px}
+#basalduk-tilda-ambassadors .metricbar{background:var(--lime);color:var(--ink);padding:24px 0}
+#basalduk-tilda-ambassadors .metricgrid{display:grid;grid-template-columns:1.05fr 1.05fr .9fr;gap:0}
+#basalduk-tilda-ambassadors .metric{display:flex;align-items:center;gap:16px;padding:0 27px;border-right:1px solid #647b6a4b}
+#basalduk-tilda-ambassadors .metric:first-child{padding-left:0}
+#basalduk-tilda-ambassadors .metric:last-child{border:0}
+#basalduk-tilda-ambassadors .metric strong{font-size:clamp(36px,4vw,62px);font-weight:800;line-height:1;letter-spacing:-.07em;white-space:nowrap}
+#basalduk-tilda-ambassadors .metric p{font-size:12px;line-height:1.4;font-weight:750;margin:0;max-width:180px}
+#basalduk-tilda-ambassadors .intro{padding:110px 0 120px;background:#fff}
+#basalduk-tilda-ambassadors .intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:100px}
+#basalduk-tilda-ambassadors .intro h2{color:var(--ink);margin:20px 0}
+#basalduk-tilda-ambassadors .intro p{font-size:17px;color:#596581;line-height:1.75;max-width:520px}
+#basalduk-tilda-ambassadors .intro-photo{height:470px;border-radius:25px 155px 25px 25px;position:relative;overflow:hidden;background:#d7dce7}
+#basalduk-tilda-ambassadors .intro-photo img{width:100%;height:100%;object-fit:cover}
+#basalduk-tilda-ambassadors .intro-photo span{position:absolute;bottom:16px;left:16px;background:var(--lime);border-radius:50px;padding:9px 15px;color:var(--ink);font-weight:800;font-size:12px}
+#basalduk-tilda-ambassadors .intro-highlight{border-left:5px solid var(--lime);margin-top:28px;padding-left:24px;font-weight:800;font-size:22px;color:var(--blue);line-height:1.3}
+#basalduk-tilda-ambassadors .responsibility{background:var(--cloud);padding:104px 0}
+#basalduk-tilda-ambassadors .responsibility .upper{display:flex;justify-content:space-between;align-items:end;gap:45px}
+#basalduk-tilda-ambassadors .responsibility h2{max-width:740px;margin:16px 0 0}
+#basalduk-tilda-ambassadors .responsibility .upper p{max-width:320px;color:#64718b;font-size:16px;margin:0 0 5px}
+#basalduk-tilda-ambassadors .responsibility-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}
+#basalduk-tilda-ambassadors .responsibility-grid article{border:1px solid #dfe4ed;border-radius:20px;background:#fff;padding:32px;min-height:240px}
+#basalduk-tilda-ambassadors .responsibility-grid article:nth-child(2){background:var(--lime);border-color:var(--lime)}
+#basalduk-tilda-ambassadors .responsibility-grid .count{font-size:11px;font-weight:800;letter-spacing:.14em;color:#737e98}
+#basalduk-tilda-ambassadors .responsibility-grid article h3{font-size:25px;margin:34px 0 12px}
+#basalduk-tilda-ambassadors .responsibility-grid article p{font-size:14px;color:#68758e;line-height:1.6}
+#basalduk-tilda-ambassadors .responsibility-grid article:nth-child(2) p{color:#48556e}
+#basalduk-tilda-ambassadors .showcase{background:#303f68;color:#fff;padding:110px 0;overflow:hidden}
+#basalduk-tilda-ambassadors .showcase-top{display:flex;justify-content:space-between;gap:36px;align-items:end;margin-bottom:32px}
+#basalduk-tilda-ambassadors .showcase h2{color:#fff;max-width:730px;margin:14px 0 0}
+#basalduk-tilda-ambassadors .showcase-top p{max-width:300px;color:#d8dfee;font-size:15px;line-height:1.6}
+#basalduk-tilda-ambassadors .films{display:grid;grid-template-columns:.83fr .83fr 1.3fr;gap:19px;align-items:stretch}
+#basalduk-tilda-ambassadors .film{min-width:0;position:relative}
+#basalduk-tilda-ambassadors .film video{width:100%;height:100%;aspect-ratio:9/16;max-height:495px;object-fit:cover;display:block;border-radius:22px;background:#1a2942}
+#basalduk-tilda-ambassadors .film-label{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:13px;color:#c5cfe4;font-size:11px;letter-spacing:.03em}
+#basalduk-tilda-ambassadors .film-label a{text-decoration:underline;text-decoration-color:var(--lime);text-underline-offset:4px}
+#basalduk-tilda-ambassadors .film-photobox{position:relative;min-height:495px;overflow:hidden;border-radius:22px}
+#basalduk-tilda-ambassadors .film-photobox img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#basalduk-tilda-ambassadors .film-photobox:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,#12203bb7)}
+#basalduk-tilda-ambassadors .film-photobox strong{position:absolute;left:28px;bottom:26px;color:#fff;z-index:2;font-size:28px;line-height:1.15;max-width:330px}
+#basalduk-tilda-ambassadors .showcase-more{margin-top:24px}
+#basalduk-tilda-ambassadors .showcase-more summary{cursor:pointer;color:var(--lime);font-size:14px;font-weight:800}
+#basalduk-tilda-ambassadors .showcase-more .extra{display:grid;grid-template-columns:repeat(4,minmax(0,190px));gap:15px;margin-top:26px}
+#basalduk-tilda-ambassadors .showcase-more .film video{height:auto;max-height:none}
+#basalduk-tilda-ambassadors .showcase-more .film-label{font-size:10px}
+#basalduk-tilda-ambassadors .showcase-more .film-label span{display:none}
+#basalduk-tilda-ambassadors .workflow{padding:110px 0 120px;background:white}
+#basalduk-tilda-ambassadors .workflow-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+#basalduk-tilda-ambassadors .workflow h2{margin:16px 0 0}
+#basalduk-tilda-ambassadors .workflow-head p{font-size:16px;color:#5f6c84;max-width:440px;line-height:1.7}
+#basalduk-tilda-ambassadors .workflow-list{margin-top:42px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 50px}
+#basalduk-tilda-ambassadors .workstep{border-top:1px solid #d5dce9;display:flex;gap:23px;padding:22px 0;align-items:flex-start}
+#basalduk-tilda-ambassadors .workstep b{background:#e5efbd;border-radius:50%;width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;color:var(--blue);font-size:12px;font-weight:900}
+#basalduk-tilda-ambassadors .workstep h3{font-size:19px;margin:0 0 4px}
+#basalduk-tilda-ambassadors .workstep p{font-size:13px;color:#6b7590;line-height:1.5;margin:0}
+#basalduk-tilda-ambassadors .workstep:last-child{background:#eff3db;padding:22px 18px;border-radius:18px;border:0}
+#basalduk-tilda-ambassadors .workflow-cta{display:flex;align-items:center;justify-content:space-between;gap:32px;background:#f0f3f8;border-radius:22px;padding:29px 34px;margin-top:36px}
+#basalduk-tilda-ambassadors .workflow-cta strong{font-size:20px}
+#basalduk-tilda-ambassadors .workflow-cta p{margin:7px 0 0;font-size:14px;color:#626f88}
+#basalduk-tilda-ambassadors .team{background:var(--cloud);padding:110px 0}
+#basalduk-tilda-ambassadors .team .team-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center}
+#basalduk-tilda-ambassadors .team-photo{height:540px;position:relative;border-radius:24px;overflow:hidden}
+#basalduk-tilda-ambassadors .team-photo img{width:100%;height:100%;object-fit:cover}
+#basalduk-tilda-ambassadors .team-photo span{position:absolute;bottom:18px;left:18px;background:var(--lime);padding:9px 15px;border-radius:30px;font-size:12px;font-weight:800}
+#basalduk-tilda-ambassadors .team h2{margin:18px 0 20px}
+#basalduk-tilda-ambassadors .team p{color:#5e6a83;font-size:16px;line-height:1.7}
+#basalduk-tilda-ambassadors .supportlist{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;margin-top:30px;padding:0;list-style:none}
+#basalduk-tilda-ambassadors .supportlist li{border-top:1px solid #d6dce8;padding:12px 0;font-size:13px;line-height:1.45;font-weight:700;color:#485776}
+#basalduk-tilda-ambassadors .supportlist li:before{content:"✓";color:#819e15;margin-right:7px}
+#basalduk-tilda-ambassadors .catalogue{padding:110px 0}
+#basalduk-tilda-ambassadors .catalog-head{display:flex;gap:35px;justify-content:space-between;align-items:end}
+#basalduk-tilda-ambassadors .catalog-head h2{margin:14px 0;max-width:750px}
+#basalduk-tilda-ambassadors .catalog-head p{max-width:330px;font-size:15px;color:#657088}
+#basalduk-tilda-ambassadors .productmosaic{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:37px}
+#basalduk-tilda-ambassadors .productmosaic img{width:100%;height:340px;object-fit:cover;border-radius:18px;background:#f3f4f6}
+#basalduk-tilda-ambassadors .productmosaic img:first-child{grid-column:span 2}
+#basalduk-tilda-ambassadors .catalog-accordions{margin-top:30px;border-top:1px solid #d6dce8}
+#basalduk-tilda-ambassadors .catalog-accordions details{border-bottom:1px solid #d6dce8;padding:21px 0}
+#basalduk-tilda-ambassadors .catalog-accordions summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:21px;font-weight:800}
+#basalduk-tilda-ambassadors .catalog-accordions summary::-webkit-details-marker{display:none}
+#basalduk-tilda-ambassadors .catalog-accordions summary small{color:#77839b;font-size:12px;font-weight:750;margin-left:auto}
+#basalduk-tilda-ambassadors .catalog-accordions summary:after{content:"+";font-size:29px;color:#52608b;font-weight:400}
+#basalduk-tilda-ambassadors .catalog-accordions details[open] summary:after{content:"−"}
+#basalduk-tilda-ambassadors .catalog-accordions ul{columns:2;column-gap:40px;list-style:none;padding:9px 0 0;margin:0}
+#basalduk-tilda-ambassadors .catalog-accordions li{break-inside:avoid;padding:9px 0;font-size:14px;line-height:1.55;color:#566580}
+#basalduk-tilda-ambassadors .catalog-accordions li:before{content:"↗";color:#93a919;margin-right:9px}
+#basalduk-tilda-ambassadors .faq{padding:105px 0;background:var(--cloud)}
+#basalduk-tilda-ambassadors .faq-inner{display:grid;grid-template-columns:.75fr 1.25fr;gap:85px}
+#basalduk-tilda-ambassadors .faq h2{margin-top:15px}
+#basalduk-tilda-ambassadors .faq-list details{border-bottom:1px solid #d4dae5;padding:20px 0}
+#basalduk-tilda-ambassadors .faq-list summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:18px;font-size:17px;font-weight:800}
+#basalduk-tilda-ambassadors .faq-list summary::-webkit-details-marker{display:none}
+#basalduk-tilda-ambassadors .faq-list summary:after{content:"+";font-size:22px;color:#829b27}
+#basalduk-tilda-ambassadors .faq-list p{font-size:14px;color:#617087;line-height:1.7;margin:13px 0 0}
+#basalduk-tilda-ambassadors .final{background:#52608b;color:#fff;padding:90px 0;position:relative;overflow:hidden}
+#basalduk-tilda-ambassadors .final:after{content:"✳";position:absolute;right:4%;bottom:-230px;color:#ffffff12;font-size:500px;line-height:1;pointer-events:none}
+#basalduk-tilda-ambassadors .final .container{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:30px}
+#basalduk-tilda-ambassadors .final h2{color:#fff;max-width:820px;margin:16px 0}
+#basalduk-tilda-ambassadors .final p{max-width:660px;color:#e0e6f1;font-size:16px}
+#basalduk-tilda-ambassadors .foot{background:#3b486e;color:#c9d2e8;padding:23px 0;font-size:12px}
+#basalduk-tilda-ambassadors .foot .container{display:flex;justify-content:space-between;gap:20px}
+@media (max-width:1100px){#basalduk-tilda-ambassadors .container{width:min(100% - 48px,1320px)}
+#basalduk-tilda-ambassadors .hero-body{grid-template-columns:1fr 1fr}
+#basalduk-tilda-ambassadors .hero-image{margin-right:-24px}
+#basalduk-tilda-ambassadors .hero-copy{padding-right:30px}
+#basalduk-tilda-ambassadors .hero h1{font-size:60px}
+#basalduk-tilda-ambassadors .films{grid-template-columns:1fr 1fr}
+#basalduk-tilda-ambassadors .film-photobox{grid-column:span 2;height:320px;min-height:0}
+#basalduk-tilda-ambassadors .film-photobox img{object-position:center 45%}
+#basalduk-tilda-ambassadors .team .team-grid{gap:30px}
+#basalduk-tilda-ambassadors .intro-grid{gap:35px}}
+@media (max-width:760px){#basalduk-tilda-ambassadors .container{width:calc(100% - 34px)}
+#basalduk-tilda-ambassadors .sitehead{height:64px}
+#basalduk-tilda-ambassadors .brand{font-size:18px}
+#basalduk-tilda-ambassadors .brand i{width:34px;height:34px;font-size:21px}
+#basalduk-tilda-ambassadors .topnav{display:none}
+#basalduk-tilda-ambassadors .sitehead .button{font-size:11px;min-height:37px;padding:10px 13px}
+#basalduk-tilda-ambassadors .hero-body{grid-template-columns:1fr}
+#basalduk-tilda-ambassadors .hero-copy{padding:52px 0 38px}
+#basalduk-tilda-ambassadors .hero h1{font-size:clamp(47px,11.5vw,67px);line-height:1.02;letter-spacing:-.05em}
+#basalduk-tilda-ambassadors .hero p{font-size:16px}
+#basalduk-tilda-ambassadors .hero-actions{flex-direction:column;align-items:stretch;margin-top:26px}
+#basalduk-tilda-ambassadors .hero-chips{margin-top:23px}
+#basalduk-tilda-ambassadors .hero-image{height:330px;min-height:330px;margin:0 -17px}
+#basalduk-tilda-ambassadors .hero-image:before{background:linear-gradient(transparent 45%,#17233b85)}
+#basalduk-tilda-ambassadors .image-marker{left:21px;bottom:19px}
+#basalduk-tilda-ambassadors .metricbar{padding:22px 0}
+#basalduk-tilda-ambassadors .metricgrid{grid-template-columns:1fr;gap:0}
+#basalduk-tilda-ambassadors .metric{border-right:0;border-bottom:1px solid #50667145;padding:12px 0}
+#basalduk-tilda-ambassadors .metric:last-child{border:0}
+#basalduk-tilda-ambassadors .metric strong{font-size:38px;min-width:130px}
+#basalduk-tilda-ambassadors .metric p{max-width:none}
+#basalduk-tilda-ambassadors .intro, #basalduk-tilda-ambassadors .responsibility, #basalduk-tilda-ambassadors .showcase, #basalduk-tilda-ambassadors .workflow, #basalduk-tilda-ambassadors .team, #basalduk-tilda-ambassadors .catalogue, #basalduk-tilda-ambassadors .faq{padding:65px 0}
+#basalduk-tilda-ambassadors .intro-grid, #basalduk-tilda-ambassadors .team .team-grid, #basalduk-tilda-ambassadors .workflow-head, #basalduk-tilda-ambassadors .faq-inner{grid-template-columns:1fr;gap:26px}
+#basalduk-tilda-ambassadors h2{font-size:38px}
+#basalduk-tilda-ambassadors .intro-photo{height:295px;border-radius:20px 80px 20px 20px;order:-1}
+#basalduk-tilda-ambassadors .intro p{font-size:15px}
+#basalduk-tilda-ambassadors .intro-highlight{font-size:19px}
+#basalduk-tilda-ambassadors .responsibility .upper, #basalduk-tilda-ambassadors .showcase-top, #basalduk-tilda-ambassadors .catalog-head{display:block}
+#basalduk-tilda-ambassadors .responsibility .upper p, #basalduk-tilda-ambassadors .showcase-top p{margin-top:19px}
+#basalduk-tilda-ambassadors .responsibility-grid{grid-template-columns:1fr;gap:12px;margin-top:27px}
+#basalduk-tilda-ambassadors .responsibility-grid article{min-height:0;padding:25px}
+#basalduk-tilda-ambassadors .responsibility-grid article h3{margin:14px 0 10px;font-size:23px}
+#basalduk-tilda-ambassadors .showcase-top{margin-bottom:27px}
+#basalduk-tilda-ambassadors .films{grid-template-columns:1fr 1fr;gap:10px}
+#basalduk-tilda-ambassadors .film video{height:auto;max-height:none;aspect-ratio:9/16;border-radius:13px}
+#basalduk-tilda-ambassadors .film-photobox{grid-column:span 2;height:245px}
+#basalduk-tilda-ambassadors .film-photobox strong{font-size:23px}
+#basalduk-tilda-ambassadors .film-label{display:block;font-size:10px}
+#basalduk-tilda-ambassadors .film-label a{display:block;margin-top:5px}
+#basalduk-tilda-ambassadors .showcase-more .extra{grid-template-columns:1fr 1fr;gap:10px}
+#basalduk-tilda-ambassadors .workflow-list{grid-template-columns:1fr;gap:0;margin-top:26px}
+#basalduk-tilda-ambassadors .workstep{padding:16px 0}
+#basalduk-tilda-ambassadors .workflow-cta{display:block;padding:22px}
+#basalduk-tilda-ambassadors .workflow-cta .button{margin-top:22px;width:100%}
+#basalduk-tilda-ambassadors .team-photo{height:295px}
+#basalduk-tilda-ambassadors .supportlist{grid-template-columns:1fr 1fr;gap:0 12px}
+#basalduk-tilda-ambassadors .supportlist li{font-size:12px}
+#basalduk-tilda-ambassadors .productmosaic{gap:8px}
+#basalduk-tilda-ambassadors .productmosaic img{height:190px;border-radius:10px}
+#basalduk-tilda-ambassadors .productmosaic img:first-child{grid-column:span 2}
+#basalduk-tilda-ambassadors .catalog-accordions summary{font-size:17px}
+#basalduk-tilda-ambassadors .catalog-accordions ul{columns:1}
+#basalduk-tilda-ambassadors .final{padding:69px 0}
+#basalduk-tilda-ambassadors .final .container{display:block}
+#basalduk-tilda-ambassadors .final .button{margin-top:15px;width:100%}
+#basalduk-tilda-ambassadors .foot .container{display:block}
+#basalduk-tilda-ambassadors .foot .container span{display:block;margin-top:8px}}
+@media (prefers-reduced-motion:reduce){#basalduk-tilda-ambassadors{scroll-behavior:auto}
+#basalduk-tilda-ambassadors .button{transition:none}}
+#basalduk-tilda-ambassadors .hero h1{font-size:clamp(56px,6.65vw,102px);line-height:1.04;letter-spacing:-.055em}
+#basalduk-tilda-ambassadors .hero .hero-message{font-size:clamp(18px,2vw,24px);font-weight:750;line-height:1.48;max-width:570px;color:#fff;margin-bottom:14px}
+#basalduk-tilda-ambassadors .hero .hero-explain{font-size:15px;line-height:1.65;color:#d8dfed;max-width:540px}
+#basalduk-tilda-ambassadors .hero h1 em{color:#c1dc43}
+#basalduk-tilda-ambassadors .metricbar{background:#f5f6f9;color:#303f68;padding:76px 0;border-top:1px solid #e4e8ef;border-bottom:1px solid #e4e8ef}
+#basalduk-tilda-ambassadors .metric-intro{max-width:900px;margin-bottom:30px}
+#basalduk-tilda-ambassadors .metric-intro h2{font-size:clamp(29px,3.1vw,44px);line-height:1.23;letter-spacing:-.035em;margin:11px 0 15px}
+#basalduk-tilda-ambassadors .metric-intro p{max-width:720px;color:#617089;font-size:15px;line-height:1.65;margin:0}
+#basalduk-tilda-ambassadors .metricgrid{background:#fff;border:1px solid #e0e5ed;border-radius:20px;padding:24px 21px}
+#basalduk-tilda-ambassadors .metric{border-color:#dbe1ea;padding:5px 28px}
+#basalduk-tilda-ambassadors .metric strong{font-size:clamp(28px,3vw,40px);letter-spacing:-.045em;color:#52608b}
+#basalduk-tilda-ambassadors .metric p{color:#65718a;line-height:1.5}
+#basalduk-tilda-ambassadors .intro-highlight{font-weight:750;font-size:20px}
+@media (max-width:760px){#basalduk-tilda-ambassadors .hero h1{font-size:clamp(53px,12.2vw,76px);line-height:1.02;margin:20px 0 24px}
+#basalduk-tilda-ambassadors .hero .hero-message{font-size:19px;margin-bottom:15px}
+#basalduk-tilda-ambassadors .hero .hero-explain{font-size:15px}
+#basalduk-tilda-ambassadors .metricbar{padding:54px 0}
+#basalduk-tilda-ambassadors .metricgrid{padding:4px 19px}
+#basalduk-tilda-ambassadors .metric{padding:15px 0;gap:11px}
+#basalduk-tilda-ambassadors .metric strong{font-size:30px;min-width:120px}
+#basalduk-tilda-ambassadors .metric p{font-size:12px}
+#basalduk-tilda-ambassadors .metric-intro h2{font-size:29px}}
+#basalduk-tilda-ambassadors .hero .hero-message{font-size:clamp(20px,2vw,25px);line-height:1.45}
+#basalduk-tilda-ambassadors .hero .hero-explain{font-size:16px;line-height:1.74;max-width:610px}
+#basalduk-tilda-ambassadors .hero-image img{object-position:center center}
+#basalduk-tilda-ambassadors .original-quote{font-size:clamp(20px,2vw,27px);line-height:1.53;font-weight:800;color:#52608b;border-left:5px solid #c1dc43;padding:4px 0 4px 22px;margin-top:30px}
+#basalduk-tilda-ambassadors .original-quote span{color:#667da2}
+#basalduk-tilda-ambassadors .intro-photo{border-radius:25px 125px 25px 25px;min-height:430px}
+#basalduk-tilda-ambassadors .intro-photo img{object-position:center}
+#basalduk-tilda-ambassadors .easy-banner{margin:32px 0 22px;padding:32px 40px;background:#e7efbf;border-radius:24px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+#basalduk-tilda-ambassadors .easy-banner>div{max-width:730px}
+#basalduk-tilda-ambassadors .easy-banner .easy-zero{font-size:44px;font-weight:800;line-height:1;display:inline-block;vertical-align:middle;color:#52608b;margin-right:18px}
+#basalduk-tilda-ambassadors .easy-banner strong{font-size:20px;color:#303f68;display:inline-block}
+#basalduk-tilda-ambassadors .easy-banner p{font-size:15px;line-height:1.65;color:#4c5d78;margin:12px 0 0}
+#basalduk-tilda-ambassadors .easy-banner .button{flex-shrink:0}
+#basalduk-tilda-ambassadors .responsibility-grid article:nth-child(2){background:#fff;border-color:#dfe4ed}
+#basalduk-tilda-ambassadors .responsibility-grid article:nth-child(2) p{color:#68758e}
+#basalduk-tilda-ambassadors .easy-footnote{font-size:14px;line-height:1.7;color:#5e6a83;margin:23px 0 0;max-width:1050px}
+#basalduk-tilda-ambassadors .metricbar{background:#fff}
+#basalduk-tilda-ambassadors .next-stage{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin:36px 0 24px}
+#basalduk-tilda-ambassadors .next-stage>div{padding:29px;background:#f5f6f9;border-radius:22px}
+#basalduk-tilda-ambassadors .next-stage>div:first-child{background:#e8f0c8}
+#basalduk-tilda-ambassadors .next-stage b{display:block;color:#52608b;font-size:20px;margin-bottom:12px}
+#basalduk-tilda-ambassadors .next-stage p{font-size:15px;color:#58657f;line-height:1.7;margin:0}
+#basalduk-tilda-ambassadors .business-details{border-top:1px solid #d8deea;border-bottom:1px solid #d8deea;margin:32px 0}
+#basalduk-tilda-ambassadors .business-details summary{padding:22px 0;cursor:pointer;font-size:17px;font-weight:800;color:#52608b}
+#basalduk-tilda-ambassadors .business-details summary span{font-size:21px;margin-left:12px}
+#basalduk-tilda-ambassadors .business-details .workflow-list{margin-top:12px;padding-bottom:18px}
+@media (max-width:760px){#basalduk-tilda-ambassadors .hero h1{font-size:clamp(53px,12vw,74px)}
+#basalduk-tilda-ambassadors .hero .hero-message{font-size:19px}
+#basalduk-tilda-ambassadors .hero .hero-explain{font-size:15px}
+#basalduk-tilda-ambassadors .intro-photo{min-height:300px;height:330px}
+#basalduk-tilda-ambassadors .original-quote{font-size:20px}
+#basalduk-tilda-ambassadors .easy-banner{display:block;padding:25px}
+#basalduk-tilda-ambassadors .easy-banner strong{font-size:19px;vertical-align:middle}
+#basalduk-tilda-ambassadors .easy-banner .easy-zero{font-size:38px;margin-right:12px}
+#basalduk-tilda-ambassadors .easy-banner .button{margin-top:18px;width:100%}
+#basalduk-tilda-ambassadors .next-stage{grid-template-columns:1fr;gap:12px}
+#basalduk-tilda-ambassadors .next-stage>div{padding:24px}
+#basalduk-tilda-ambassadors .business-details summary{font-size:15px}}
+#basalduk-tilda-ambassadors .bas-video-extras{padding:65px 16px;background:#f5f6f9;color:#303f68}
+#basalduk-tilda-ambassadors .bas-video-inner{max-width:1180px;margin:0 auto}
+#basalduk-tilda-ambassadors .bas-video-extras h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin:0 0 12px}
+#basalduk-tilda-ambassadors .bas-video-extras p{font-size:15px;color:#59657c;line-height:1.6;margin:0 0 25px}
+#basalduk-tilda-ambassadors .bas-video-extra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+#basalduk-tilda-ambassadors .bas-video-item{min-width:0}
+#basalduk-tilda-ambassadors .bas-video-frame{overflow:hidden;border-radius:18px;background:#dfe4ed;aspect-ratio:16/9}
+#basalduk-tilda-ambassadors .bas-video-frame iframe{width:100%;height:100%;border:0;display:block}
+#basalduk-tilda-ambassadors .bas-video-item h3{font-size:17px;margin:12px 0 5px}
+#basalduk-tilda-ambassadors .bas-video-item>a{font-size:12px;color:#52608b;text-decoration:underline}
+@media (max-width:700px){#basalduk-tilda-ambassadors .bas-video-extras{padding:42px 12px}
+#basalduk-tilda-ambassadors .bas-video-extra-grid{grid-template-columns:1fr;gap:25px}}
+#basalduk-tilda-ambassadors .basalduk-form-section{background:#f4f6f9;padding:70px 20px;color:#344160}
+#basalduk-tilda-ambassadors .basalduk-form-inner{max-width:900px;margin:0 auto}
+#basalduk-tilda-ambassadors .basalduk-form-section h2{font-size:clamp(29px,4vw,45px);line-height:1.17;margin:0 0 15px;color:#52608b}
+#basalduk-tilda-ambassadors .basalduk-form-section p{font-size:15px;color:#617089;line-height:1.65;margin-bottom:20px}
+#basalduk-tilda-ambassadors .basalduk-b24-placeholder{border:2px dashed #aeb9cf;border-radius:16px;padding:26px;color:#617089;background:#fff}
+#basalduk-tilda-ambassadors .basalduk-b24-placeholder strong{display:block;font-size:16px;color:#52608b}
 
-/* Смещение акцента: движение и помощь семьям — первый экран, доход — после объяснения пользы */
-.hero h1{font-size:clamp(56px,6.65vw,102px);line-height:1.04;letter-spacing:-.055em}
-.hero .hero-message{font-size:clamp(18px,2vw,24px);font-weight:750;line-height:1.48;max-width:570px;color:#fff;margin-bottom:14px}
-.hero .hero-explain{font-size:15px;line-height:1.65;color:#d8dfed;max-width:540px}
-.hero h1 em{color:#c1dc43}
-.metricbar{background:#f5f6f9;color:#303f68;padding:76px 0;border-top:1px solid #e4e8ef;border-bottom:1px solid #e4e8ef}
-.metric-intro{max-width:900px;margin-bottom:30px}
-.metric-intro h2{font-size:clamp(29px,3.1vw,44px);line-height:1.23;letter-spacing:-.035em;margin:11px 0 15px}
-.metric-intro p{max-width:720px;color:#617089;font-size:15px;line-height:1.65;margin:0}
-.metricgrid{background:#fff;border:1px solid #e0e5ed;border-radius:20px;padding:24px 21px}
-.metric{border-color:#dbe1ea;padding:5px 28px}
-.metric strong{font-size:clamp(28px,3vw,40px);letter-spacing:-.045em;color:#52608b}
-.metric p{color:#65718a;line-height:1.5}
-.intro-highlight{font-weight:750;font-size:20px}
-@media(max-width:760px){.hero h1{font-size:clamp(53px,12.2vw,76px);line-height:1.02;margin:20px 0 24px}.hero .hero-message{font-size:19px;margin-bottom:15px}.hero .hero-explain{font-size:15px}.metricbar{padding:54px 0}.metricgrid{padding:4px 19px}.metric{padding:15px 0;gap:11px}.metric strong{font-size:30px;min-width:120px}.metric p{font-size:12px}.metric-intro h2{font-size:29px}}
+/* --- ВЕРСИЯ 12.11: правки по скриншотам --- */
+/* 1. Смысловой блок простого старта */
+#basalduk-tilda-ambassadors .bas-easy {background:#f4f6fa;padding:92px 0 86px}
+#basalduk-tilda-ambassadors .bas-easy-header {margin-bottom:34px;max-width:980px}
+#basalduk-tilda-ambassadors .bas-easy-header h2 {font-size:clamp(40px,4.35vw,62px);line-height:1.08;margin:15px 0 19px;max-width:810px}
+#basalduk-tilda-ambassadors .bas-easy-header>p {font-size:16px;color:#60718a;line-height:1.7;max-width:780px;margin:0}
+#basalduk-tilda-ambassadors .bas-easy-layout {display:grid;grid-template-columns:.83fr 1.17fr;gap:20px;align-items:stretch}
+#basalduk-tilda-ambassadors .bas-easy-feature {border-radius:28px;background:#52608b;color:#fff;position:relative;overflow:hidden;padding:42px 42px 36px;display:flex;flex-direction:column;align-items:flex-start;min-height:520px}
+#basalduk-tilda-ambassadors .bas-easy-feature:after {content:'✳';position:absolute;right:-39px;top:38px;font-size:245px;line-height:1;color:#ffffff0a;pointer-events:none}
+#basalduk-tilda-ambassadors .bas-easy-label {font-size:11px;letter-spacing:.16em;font-weight:800;color:#d8e6b5}
+#basalduk-tilda-ambassadors .bas-easy-figure {font-size:clamp(68px,8vw,108px);font-weight:800;letter-spacing:-.075em;line-height:1.03;color:#c1dc43;margin:29px 0 13px}
+#basalduk-tilda-ambassadors .bas-easy-feature h3 {font-size:clamp(27px,2.65vw,37px);line-height:1.13;letter-spacing:-.035em;margin:0 0 17px;color:#fff}
+#basalduk-tilda-ambassadors .bas-easy-feature>p {font-size:14px;color:#e2e8f5;line-height:1.75;max-width:380px}
+#basalduk-tilda-ambassadors .bas-easy-feature .button {margin-top:15px;z-index:1}
+#basalduk-tilda-ambassadors .bas-easy-feature-bottom {border-top:1px solid #ffffff3b;padding-top:18px;margin-top:auto;font-size:13px;line-height:1.6;color:#e8edfa;max-width:420px}
+#basalduk-tilda-ambassadors .bas-easy-steps {display:grid;gap:12px;align-content:stretch}
+#basalduk-tilda-ambassadors .bas-easy-step {display:flex;align-items:flex-start;gap:19px;padding:25px 28px;background:#fff;border:1px solid #e1e6ef;border-radius:22px;min-height:0}
+#basalduk-tilda-ambassadors .bas-easy-count {flex:0 0 44px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#e7f1c4;color:#52608b;font-size:15px;font-weight:800}
+#basalduk-tilda-ambassadors .bas-easy-step-content {min-width:0}
+#basalduk-tilda-ambassadors .bas-easy-step-content span {display:block;color:#8490a4;font-size:10px;font-weight:800;letter-spacing:.13em;margin:2px 0 6px}
+#basalduk-tilda-ambassadors .bas-easy-step h3 {font-size:21px;line-height:1.2;margin:0 0 9px;color:#303f68}
+#basalduk-tilda-ambassadors .bas-easy-step p {color:#62718a;font-size:13px;line-height:1.63;margin:0}
+#basalduk-tilda-ambassadors .bas-easy-footer {max-width:1100px;color:#66748c;font-size:13px;line-height:1.75;margin:25px 0 0}
 
-/* Живой, тёплый текст и сохранённая эмоциональная фотография с исходной страницы */
-.hero .hero-message{font-size:clamp(20px,2vw,25px);line-height:1.45}
-.hero .hero-explain{font-size:16px;line-height:1.74;max-width:610px}
-.hero-image img{object-position:center center}
-.original-quote{font-size:clamp(20px,2vw,27px);line-height:1.53;font-weight:800;color:#52608b;border-left:5px solid #c1dc43;padding:4px 0 4px 22px;margin-top:30px}
-.original-quote span{color:#667da2}
-.intro-photo{border-radius:25px 125px 25px 25px;min-height:430px}
-.intro-photo img{object-position:center}
-.easy-banner{margin:32px 0 22px;padding:32px 40px;background:#e7efbf;border-radius:24px;display:flex;align-items:center;justify-content:space-between;gap:28px}
-.easy-banner>div{max-width:730px}
-.easy-banner .easy-zero{font-size:44px;font-weight:800;line-height:1;display:inline-block;vertical-align:middle;color:#52608b;margin-right:18px}
-.easy-banner strong{font-size:20px;color:#303f68;display:inline-block}
-.easy-banner p{font-size:15px;line-height:1.65;color:#4c5d78;margin:12px 0 0}
-.easy-banner .button{flex-shrink:0}
-.responsibility-grid article:nth-child(2){background:#fff;border-color:#dfe4ed}
-.responsibility-grid article:nth-child(2) p{color:#68758e}
-.easy-footnote{font-size:14px;line-height:1.7;color:#5e6a83;margin:23px 0 0;max-width:1050px}
-.metricbar{background:#fff}
-.next-stage{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin:36px 0 24px}
-.next-stage>div{padding:29px;background:#f5f6f9;border-radius:22px}
-.next-stage>div:first-child{background:#e8f0c8}
-.next-stage b{display:block;color:#52608b;font-size:20px;margin-bottom:12px}
-.next-stage p{font-size:15px;color:#58657f;line-height:1.7;margin:0}
-.business-details{border-top:1px solid #d8deea;border-bottom:1px solid #d8deea;margin:32px 0}
-.business-details summary{padding:22px 0;cursor:pointer;font-size:17px;font-weight:800;color:#52608b}
-.business-details summary span{font-size:21px;margin-left:12px}
-.business-details .workflow-list{margin-top:12px;padding-bottom:18px}
-@media(max-width:760px){
-.hero h1{font-size:clamp(53px,12vw,74px)}
-.hero .hero-message{font-size:19px}
-.hero .hero-explain{font-size:15px}
-.intro-photo{min-height:300px;height:330px}
-.original-quote{font-size:20px}
-.easy-banner{display:block;padding:25px}
-.easy-banner strong{font-size:19px;vertical-align:middle}
-.easy-banner .easy-zero{font-size:38px;margin-right:12px}
-.easy-banner .button{margin-top:18px;width:100%}
-.next-stage{grid-template-columns:1fr;gap:12px}
-.next-stage>div{padding:24px}
-.business-details summary{font-size:15px}
+/* 2. Открытая пошаговая инструкция по ИП */
+#basalduk-tilda-ambassadors .bas-business-open {margin:39px 0 0;border:0;border-top:1px solid #dbe2ef;padding:26px 0 0}
+#basalduk-tilda-ambassadors .bas-business-head h3 {font-size:clamp(24px,2.6vw,32px);letter-spacing:-.03em;margin:10px 0 0;max-width:690px}
+#basalduk-tilda-ambassadors .bas-business-open .workflow-list {margin-top:26px;gap:0 40px}
+#basalduk-tilda-ambassadors .bas-business-open .workstep {border-color:#d9e0eb}
+#basalduk-tilda-ambassadors .bas-business-open .workstep:last-child {background:#eef3dc}
+#basalduk-tilda-ambassadors .bas-workflow-support {display:flex;align-items:center;gap:18px;border-top:1px solid #dfe4ee;padding:23px 0 0;margin-top:18px}
+#basalduk-tilda-ambassadors .bas-workflow-mark {flex:0 0 37px;display:grid;place-items:center;width:37px;height:37px;border-radius:50%;background:#e7f1c4;color:#52608b;font-size:26px}
+#basalduk-tilda-ambassadors .bas-workflow-support strong {font-size:17px;color:#52608b}
+#basalduk-tilda-ambassadors .bas-workflow-support p {font-size:13px;color:#62718a;line-height:1.6;margin:5px 0 0}
+
+/* 3. Цельная галерея трёх фотографий аппаратов */
+#basalduk-tilda-ambassadors .bas-product-gallery {display:grid;grid-template-columns:1.23fr .77fr;grid-template-rows:repeat(2,250px);gap:14px;margin-top:32px}
+#basalduk-tilda-ambassadors .bas-product-gallery img {display:block;width:100%;height:100%;min-width:0;object-fit:contain;object-position:center;background:#f5f6f9;border-radius:20px;padding:12px}
+#basalduk-tilda-ambassadors .bas-product-gallery img:first-child {grid-column:1;grid-row:1 / span 2}
+#basalduk-tilda-ambassadors .bas-product-gallery img:nth-child(2) {grid-column:2;grid-row:1}
+#basalduk-tilda-ambassadors .bas-product-gallery img:nth-child(3) {grid-column:2;grid-row:2}
+
+/* 4. Один финальный блок с местом под форму Bitrix24 */
+#basalduk-tilda-ambassadors .bas-final {padding:90px 0 94px;background:#52608b}
+#basalduk-tilda-ambassadors .bas-final:after {font-size:400px;right:auto;left:-150px;bottom:-230px}
+#basalduk-tilda-ambassadors .bas-final-grid {display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:65px}
+#basalduk-tilda-ambassadors .bas-final-copy h2 {font-size:clamp(36px,4.1vw,58px);margin:17px 0 20px;color:#fff}
+#basalduk-tilda-ambassadors .bas-final-copy>p {font-size:16px;line-height:1.75;color:#e8ebf5;max-width:630px}
+#basalduk-tilda-ambassadors .bas-final-promise {margin-top:34px;padding-left:16px;border-left:4px solid #c1dc43;color:#fff;font-weight:750;font-size:16px;line-height:1.5;max-width:470px}
+#basalduk-tilda-ambassadors .bas-final-form {border-radius:24px;background:#fff;padding:38px;box-shadow:0 12px 37px #24335525;color:#303f68}
+#basalduk-tilda-ambassadors .bas-final-form h3 {font-size:27px;color:#303f68;line-height:1.13;letter-spacing:-.028em;margin:0 0 12px}
+#basalduk-tilda-ambassadors .bas-final-form>p {color:#68768f;font-size:14px;line-height:1.65;margin:0 0 24px}
+#basalduk-tilda-ambassadors .bas-final-form .basalduk-b24-placeholder {background:#f3f6fa;border:1px dashed #b6c1d4;border-radius:14px;padding:22px;color:#68758e;font-size:13px;line-height:1.65}
+#basalduk-tilda-ambassadors .bas-final-form .basalduk-b24-placeholder strong {display:block;font-size:14px;color:#52608b;margin:0 0 5px}
+#basalduk-tilda-ambassadors .bas-final-form .basalduk-b24-placeholder p {font-size:13px;margin:0;color:#68758e}
+#basalduk-tilda-ambassadors .bas-final-form .b24-form-wrapper {max-width:100%}
+#basalduk-tilda-ambassadors #basalduk-crm-form {scroll-margin-top:90px}
+
+@media(max-width:900px) {
+ #basalduk-tilda-ambassadors .bas-easy-layout{grid-template-columns:1fr 1fr}
+ #basalduk-tilda-ambassadors .bas-easy-feature{padding:30px;min-height:545px}
+ #basalduk-tilda-ambassadors .bas-easy-step{padding:20px;gap:13px}
+ #basalduk-tilda-ambassadors .bas-easy-step h3{font-size:18px}
+ #basalduk-tilda-ambassadors .bas-final-grid{gap:24px}
+ #basalduk-tilda-ambassadors .bas-final-form{padding:25px}
 }
-/* Пользовательские оригинальные видео, рядом с роликами из фотосессий Wfolio */
-.bas-native-clips{padding:80px 0;background:#f2f4f8;color:#303f68}
-.bas-native-clips h2{font-size:clamp(31px,4vw,55px);margin:13px 0 15px;line-height:1.15;letter-spacing:-.045em}
-.bas-native-clips p{font-size:16px;color:#626f86;line-height:1.65;max-width:780px}
-.bas-native-clip-grid{display:grid;grid-template-columns:repeat(2,minmax(0,290px));gap:22px;align-items:start;margin-top:30px}
-.bas-native-clip{margin:0;min-width:0}
-.bas-native-clip video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#26344d;border-radius:20px}
-.bas-native-clip figcaption{display:grid;gap:5px;margin-top:12px;font-size:13px;line-height:1.45}
-.bas-native-clip figcaption strong{color:#303f68;font-size:15px}
-.bas-native-clip figcaption span{color:#64718b}
-@media(max-width:760px){.bas-native-clips{padding:54px 0}.bas-native-clip-grid{gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}.bas-native-clip video{border-radius:12px}.bas-native-clip figcaption strong{font-size:12px}.bas-native-clip figcaption span{font-size:11px}.bas-native-clips h2{font-size:34px}}
-</style></head><body>
+@media(max-width:760px) {
+ #basalduk-tilda-ambassadors .bas-easy {padding:60px 0}
+ #basalduk-tilda-ambassadors .bas-easy-header h2{font-size:clamp(36px,9vw,46px)}
+ #basalduk-tilda-ambassadors .bas-easy-header>p{font-size:14px}
+ #basalduk-tilda-ambassadors .bas-easy-layout{grid-template-columns:1fr;gap:14px}
+ #basalduk-tilda-ambassadors .bas-easy-feature{min-height:0;padding:30px 26px 25px}
+ #basalduk-tilda-ambassadors .bas-easy-figure{font-size:74px;margin:22px 0 13px}
+ #basalduk-tilda-ambassadors .bas-easy-feature h3{font-size:28px}
+ #basalduk-tilda-ambassadors .bas-easy-feature .button{width:100%}
+ #basalduk-tilda-ambassadors .bas-easy-feature-bottom{padding-top:15px;margin-top:27px}
+ #basalduk-tilda-ambassadors .bas-easy-step{padding:21px 19px;gap:15px}
+ #basalduk-tilda-ambassadors .bas-easy-step h3{font-size:19px}
+ #basalduk-tilda-ambassadors .bas-easy-step p{font-size:13px}
+ #basalduk-tilda-ambassadors .bas-business-head h3{font-size:24px}
+ #basalduk-tilda-ambassadors .bas-business-open .workflow-list{grid-template-columns:1fr}
+ #basalduk-tilda-ambassadors .bas-workflow-support{align-items:flex-start}
+ #basalduk-tilda-ambassadors .bas-product-gallery{grid-template-columns:1fr 1fr;grid-template-rows:290px 160px;gap:9px}
+ #basalduk-tilda-ambassadors .bas-product-gallery img{border-radius:12px;padding:6px}
+ #basalduk-tilda-ambassadors .bas-product-gallery img:first-child{grid-column:1 / 3;grid-row:1}
+ #basalduk-tilda-ambassadors .bas-product-gallery img:nth-child(2){grid-column:1;grid-row:2}
+ #basalduk-tilda-ambassadors .bas-product-gallery img:nth-child(3){grid-column:2;grid-row:2}
+ #basalduk-tilda-ambassadors .bas-final{padding:64px 0}
+ #basalduk-tilda-ambassadors .bas-final-grid{grid-template-columns:1fr;gap:30px}
+ #basalduk-tilda-ambassadors .bas-final-copy h2{font-size:clamp(35px,9vw,44px)}
+ #basalduk-tilda-ambassadors .bas-final-form{padding:25px 21px}
+ #basalduk-tilda-ambassadors .bas-final-form h3{font-size:24px}
+}
+</style>
+<div id="basalduk-tilda-ambassadors">
 <div class="draft">ПРОТОТИП ДЛЯ СОГЛАСОВАНИЯ · не опубликован на основном сайте</div>
-<header class="sitehead"><div class="container"><a href="#top" class="brand" aria-label="Басалдук, начало"><i>✳</i> БАСАЛДУК</a><nav class="topnav"><a href="#business">Ваше дело</a><a href="#real">Наши аппараты</a><a href="#start">Как начать</a><a href="#help">Поддержка</a></nav><a class="button" href="https://ipratsr.ru/#rec3388672501" target="_blank" rel="noopener">В сообщество ↗</a></div></header>
+<header class="sitehead"><div class="container"><a aria-label="Басалдук, начало" class="brand" href="#top"><i>✳</i> БАСАЛДУК</a><nav class="topnav"><a href="#business">Ваше дело</a><a href="#real">Наши аппараты</a><a href="#start">Как начать</a><a href="#help">Поддержка</a></nav><a class="button" href="#basalduk-crm-form" rel="noopener">В сообщество ↗</a></div></header>
 <main id="top">
 <section class="hero" id="top"><div class="container hero-body">
- <div class="hero-copy">
-  <div class="eyebrow">Свои помогают своим</div>
-  <h1>Свои<br><em>помогают</em><br>своим.</h1>
-  <p class="hero-message">Партнёрская программа для тех, кто хочет работать и помогать.</p>
-  <p class="hero-explain">Мы ищем людей, которые понимают, как важна своевременная ортопедическая помощь для детей с ДЦП и другими нейромышечными заболеваниями. Мам, пап, сотрудников фондов, реабилитологов — любого, кто готов стать нашим партнёром в своём городе.</p>
-  <div class="hero-actions"><a class="button" href="https://ipratsr.ru/#rec3388672501" target="_blank" rel="noopener">Стать частью сообщества ↗</a><a class="button ghost" href="#easy-start">Как начать бесплатно ↓</a></div>
-  <div class="hero-chips"><span>0 ₽ на старте</span><span>Можно начать без ИП</span><span>Бесплатный приём специалистов</span></div>
- </div>
- <div class="hero-image"><img src="https://optim.tildacdn.com/tild3364-6666-4564-b136-666538623162/-/cover/793x793/center/center/-/format/webp/_.jpg.webp" alt="Тёплая фотография со старой страницы движения «Свои помогают своим»" loading="lazy" decoding="async"><div class="image-marker">Мы знаем, через что вы проходите</div></div>
+<div class="hero-copy">
+<div class="eyebrow">Свои помогают своим</div>
+<h1>Свои<br/><em>помогают</em><br/>своим.</h1>
+<p class="hero-message">Партнёрская программа для тех, кто хочет работать и помогать.</p>
+<p class="hero-explain">Мы ищем людей, которые понимают, как важна своевременная ортопедическая помощь для детей с ДЦП и другими нейромышечными заболеваниями. Мам, пап, сотрудников фондов, реабилитологов — любого, кто готов стать нашим партнёром в своём городе.</p>
+<div class="hero-actions"><a class="button" href="#basalduk-crm-form" rel="noopener">Стать частью сообщества ↗</a><a class="button ghost" href="#easy-start">Как начать бесплатно ↓</a></div>
+<div class="hero-chips"><span>0 ₽ на старте</span><span>Можно начать без ИП</span><span>Бесплатный приём специалистов</span></div>
+</div>
+<div class="hero-image"><img alt="Тёплая фотография со старой страницы движения «Свои помогают своим»" decoding="async" loading="lazy" src="https://optim.tildacdn.com/tild3364-6666-4564-b136-666538623162/-/cover/793x793/center/center/-/format/webp/_.jpg.webp"/><div class="image-marker">Мы знаем, через что вы проходите</div></div>
 </div></section>
 <section class="intro" id="business"><div class="container intro-grid">
- <div class="intro-copy"><div class="eyebrow dark">Мы знаем, через что вы проходите</div>
-  <h2>Вы можете помочь <span style="color:#819b28">другой семье.</span></h2>
-  <p><strong>Вы как никто понимаете, как сложно найти качественную ортопедическую помощь в своём городе.</strong> Вы можете помочь своим знакомым и другим семьям получить необходимые технические средства реабилитации через наше партнёрство.</p>
-  <p>Семьи, которым положены ТСР по ИПРА, могут получить их с использованием электронного сертификата. Но не все знают, как пройти этот путь, где принимают сертификат и где можно изготовить качественные ортезы и туторы.</p>
-  <div class="original-quote"><span>«Вы не просто родитель.</span><br>Вы — навигатор, защитник, организатор, психолог и менеджер лечения своего ребёнка.<br><span>И вы делаете это каждый день».</span></div>
- </div>
- <div class="intro-photo"><img src="https://static.tildacdn.com/tild3364-3332-4534-a530-326362356132/coremind-image-17878.jpg" alt="Эмоциональная фотография из исходного лендинга «Свои помогают своим»" loading="lazy" decoding="async"><span>Свои помогают своим</span></div>
+<div class="intro-copy"><div class="eyebrow dark">Мы знаем, через что вы проходите</div>
+<h2>Вы можете помочь <span style="color:#819b28">другой семье.</span></h2>
+<p><strong>Вы как никто понимаете, как сложно найти качественную ортопедическую помощь в своём городе.</strong> Вы можете помочь своим знакомым и другим семьям получить необходимые технические средства реабилитации через наше партнёрство.</p>
+<p>Семьи, которым положены ТСР по ИПРА, могут получить их с использованием электронного сертификата. Но не все знают, как пройти этот путь, где принимают сертификат и где можно изготовить качественные ортезы и туторы.</p>
+<div class="original-quote"><span>«Вы не просто родитель.</span><br/>Вы — навигатор, защитник, организатор, психолог и менеджер лечения своего ребёнка.<br/><span>И вы делаете это каждый день».</span></div>
+</div>
+<div class="intro-photo"><img alt="Эмоциональная фотография из исходного лендинга «Свои помогают своим»" decoding="async" loading="lazy" src="https://static.tildacdn.com/tild3364-3332-4534-a530-326362356132/coremind-image-17878.jpg"/><span>Свои помогают своим</span></div>
 </div></section>
-<section class="responsibility" id="easy-start"><div class="container">
-  <div class="upper"><div><div class="eyebrow dark">Начать можно уже сейчас</div><h2>Соберите семьи.<br>Всё остальное — мы.</h2></div><p>На старте не требуется ни открывать ИП, ни вкладывать деньги, ни покупать оборудование.</p></div>
-  <div class="easy-banner"><div><span class="easy-zero">0 ₽</span><strong>Для старта ИП не нужен.</strong><p>Вы можете просто начать рассказывать о нашей помощи, собрать группу родителей и организовать бесплатный приём.</p></div><a class="button blue" href="https://ipratsr.ru/#rec3388672501" target="_blank" rel="noopener">Организовать приём ↗</a></div>
-  <div class="responsibility-grid">
-   <article><div class="count">01 / ВЫ СОБИРАЕТЕ ГРУППУ</div><h3>Знакомите семьи с возможностью</h3><p>Рассказываете родителям об аппаратах и туторах, использовании электронных сертификатов и приглашаете на совместный приём в вашем городе.</p></article>
-   <article><div class="count">02 / МЫ ПРИЕЗЖАЕМ БЕСПЛАТНО</div><h3>Консультируем и снимаем замеры</h3><p>Приезжают ортезист и врач травматолог-ортопед, специалист по МСЭ. Проводят бесплатные консультации, подбор ТСР и необходимые замеры.</p></article>
-   <article><div class="count">03 / СЕМЬЯ ПОЛУЧАЕТ ИЗДЕЛИЕ</div><h3>Изготавливаем и выдаём аппараты</h3><p>Наша мастерская делает индивидуальные ортезы и туторы. Мы сопровождаем оформление заказа, организуем выдачу готовых изделий и отвечаем за профессиональную часть.</p></article>
-  </div>
-  <p class="easy-footnote">Вам не нужно самостоятельно консультировать по медицинским вопросам или проводить замеры. ИП и самостоятельный приём оплаты — следующий этап, если вы решите развивать своё дело.</p>
+<section class="responsibility bas-easy" id="easy-start">
+<div class="container">
+<div class="bas-easy-header"><div class="eyebrow dark">Начать можно уже сейчас</div>
+<h2>Соберите семьи.<br/>Всё остальное — мы.</h2>
+<p>Вы знаете, как сложно бывает найти помощь. Расскажите другим семьям о возможности получить качественные ортезы и туторы — мы поможем организовать приём.</p>
+</div>
+<div class="bas-easy-layout">
+<div class="bas-easy-feature">
+<div class="bas-easy-label">ПРОСТОЙ СТАРТ</div>
+<div class="bas-easy-figure">0 ₽</div>
+<h3>Без затрат.<br/>Без оформления ИП.</h3>
+<p>Чтобы начать, не нужно регистрировать бизнес, покупать оборудование или разбираться в медицинских вопросах.</p>
+<a class="button" href="#basalduk-crm-form">Организовать первый приём ↗</a>
+<div class="bas-easy-feature-bottom">Специалисты приедут и проведут консультации и замеры бесплатно.</div>
+</div>
+<div class="bas-easy-steps">
+<article class="bas-easy-step">
+<div class="bas-easy-count">01</div>
+<div class="bas-easy-step-content"><span>ВЫ СОБИРАЕТЕ ГРУППУ</span><h3>Знакомите семьи с возможностью</h3><p>Рассказываете родителям об аппаратах и туторах, использовании электронных сертификатов и приглашаете на совместный приём в вашем городе.</p></div>
+</article>
+<article class="bas-easy-step">
+<div class="bas-easy-count">02</div>
+<div class="bas-easy-step-content"><span>МЫ ПРИЕЗЖАЕМ БЕСПЛАТНО</span><h3>Консультируем и снимаем замеры</h3><p>Приезжают ортезист и врач травматолог-ортопед, специалист по МСЭ. Проводят бесплатные консультации, подбор ТСР и необходимые замеры.</p></div>
+</article>
+<article class="bas-easy-step">
+<div class="bas-easy-count">03</div>
+<div class="bas-easy-step-content"><span>СЕМЬЯ ПОЛУЧАЕТ ИЗДЕЛИЕ</span><h3>Изготавливаем и выдаём аппараты</h3><p>Наша мастерская делает индивидуальные ортезы и туторы. Мы сопровождаем оформление заказа, организуем выдачу готовых изделий и отвечаем за профессиональную часть.</p></div>
+</article>
+</div>
+</div>
+<p class="bas-easy-footer">Врачи и ортезисты БАСАЛДУК отвечают за медицинскую и производственную часть. Вы можете заниматься только организацией приёмов — ИП и собственный приём платежей понадобятся лишь при дальнейшем развитии дела.</p>
+</div>
+</section>
+<section class="bas-video-extras"><div class="bas-video-inner"><h2>Видео из материалов БАСАЛДУК</h2><p>Реальные приёмы, изготовление и аппараты. Оригинальные ролики Wfolio, встроенные ранее, остаются на странице.</p><div class="bas-video-extra-grid"><article class="bas-video-item"><div class="bas-video-frame"><iframe allow="autoplay; fullscreen" allowfullscreen="" loading="lazy" src="https://drive.google.com/file/d/16yK3Sx9GSuu_BBvBTuKU51EA0DXk3MUO/preview" title="Бесплатный приём и замеры"></iframe></div><h3>Бесплатный приём и замеры</h3><a href="https://drive.google.com/file/d/16yK3Sx9GSuu_BBvBTuKU51EA0DXk3MUO/view" rel="noopener" target="_blank">Открыть оригинал</a></article><article class="bas-video-item"><div class="bas-video-frame"><iframe allow="autoplay; fullscreen" allowfullscreen="" loading="lazy" src="https://drive.google.com/file/d/1Hu8jxhxVO0Mu0Dpt3uFguSXxugsHx9ac/preview" title="Как изготавливают аппарат"></iframe></div><h3>Как изготавливают аппарат</h3><a href="https://drive.google.com/file/d/1Hu8jxhxVO0Mu0Dpt3uFguSXxugsHx9ac/view" rel="noopener" target="_blank">Открыть оригинал</a></article></div></div></section><section class="metricbar" id="terms"><div class="container">
+<div class="metric-intro"><div class="eyebrow dark">Наше предложение</div><h2>Вы помогаете другим семьям — и можете получать за это реальный доход.</h2>
+<p>Мы обучим вас всему процессу. Вам останется находить людей, которым действительно нужна наша продукция, а мы предоставим знания, поддержку и инструменты для работы.</p></div>
+<div class="metricgrid"><div class="metric"><strong>0 ₽</strong><p>начало без затрат и оформления ИП</p></div><div class="metric"><strong>до 20%</strong><p>от наших цен при реализации изделий</p></div><div class="metric"><strong>до 4 млн ₽</strong><p>возможный доход в год</p></div></div>
 </div></section>
-<section class="bas-native-clips" id="real-work"><div class="container"><div class="eyebrow dark">Семьи, специалисты, аппараты</div><h2>Как выглядит помощь на практике</h2><p>Это реальные видеозаписи команды Басалдука: консультация ребёнка и объяснение конструкции индивидуального аппарата.</p><div class="bas-native-clip-grid"><figure class="bas-native-clip"><video controls playsinline preload="metadata" poster="../assets/video/posters/02-consultation-3d-scan.jpg" aria-label="Приём ребёнка и работа специалистов"><source src="../assets/video/02-consultation-3d-scan.mp4" type="video/mp4">Ваш браузер не поддерживает воспроизведение MP4.</video><figcaption><strong>Приём ребёнка и работа специалистов</strong><span>Врач и ортезист проводят осмотр и замеры</span></figcaption></figure><figure class="bas-native-clip"><video controls playsinline preload="metadata" poster="../assets/video/posters/05-demonstration.jpg" aria-label="Как устроен индивидуальный аппарат"><source src="../assets/video/05-demonstration.mp4" type="video/mp4">Ваш браузер не поддерживает воспроизведение MP4.</video><figcaption><strong>Как устроен индивидуальный аппарат</strong><span>Знакомство с конструкцией и особенностями изделия</span></figcaption></figure></div></div></section><section class="metricbar" id="terms"><div class="container">
- <div class="metric-intro"><div class="eyebrow dark">Наше предложение</div><h2>Вы помогаете другим семьям — и можете получать за это реальный доход.</h2>
- <p>Мы обучим вас всему процессу. Вам останется находить людей, которым действительно нужна наша продукция, а мы предоставим знания, поддержку и инструменты для работы.</p></div>
- <div class="metricgrid"><div class="metric"><strong>0 ₽</strong><p>начало без затрат и оформления ИП</p></div><div class="metric"><strong>до 20%</strong><p>от наших цен при реализации изделий</p></div><div class="metric"><strong>до 4 млн ₽</strong><p>возможный доход в год</p></div></div>
- </div></section>
-<section class="showcase" id="real"><div class="container"><div class="showcase-top"><div><div class="eyebrow">Аппараты и туторы · оригинальные видео</div><h2>Сделано для тех,<br>кому нужна помощь.</h2></div><p>Посмотрите на наши индивидуальные аппараты, туторы и изделия, которые мы создаём для детей и взрослых.</p></div><div class="films"><article class="film"><video controls preload="none" playsinline poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X2JOfX1yJc_B/UmVj_FaDyVI79sQGzOn1lDFQKSwEc1qa/nnTyY4Cm-kuAB0I13jFqtdNQh5pqikuy/z0ocrQPqR_BhhDMAkevgs4Hpg5_7Hyp3/DldsODYLSqfLLFRcXsxncDi67LWafSFD/FMGOI12g-WXOBDS1qo5maqrTfqOJMHY8/JR14z6zuVgfVTi8mnqO6Nt-rqyi5iaO0/HhSEE_1xhPwDDdnAamY6xIJT-5zyXuET/E_k32svIU27wbD7DB8DljjibMXXs32yB/CkrxwnYeZjxDclUwerDJQelRalKSgyEE/NcPxhDI9W1CApDDkYKZUaTKunL2YkKen/8tVxZNo-M1M.jpg" aria-label="Видео об аппаратах Басалдука 1"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDtu2WQlJz4nQ/7NqeJ2U5ulFb87bjhAA_rNJG4csFVxwj/thkRCHCHLDSzmptqgOkRbXYKq0SFIoht/PUxR-6yPOOSaBSnGGUQ2z3r7R7oO_CeD/vzBYX6ZcsJBdCVWMo6daewbJsGMKCSB9/olphg8XB3Tlqa_JSmKHfDiaiGQj2m3hA.mp4" type="video/mp4"></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 01</span><a href="https://marinasharanova.wfolio.pro/disk/share/70gnD9T9O0dvV" target="_blank" rel="noopener">Открыть оригинал ↗</a></div></article><article class="film"><video controls preload="none" playsinline poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X-UJbvPZLcAN/tIRgIxGtErJRX-C8ygFBuExDh7EX5e0s/hoH5ePQuICO6zWqfDAJwRExmu92sLDnB/dZ9x__dPTSfldVjIN5D-cku4B-EslNZ4/n1E8U9f7GQXHIrvEX3MrSdLlMpn7nU9G/ORcj1Se1V41JZgR7xqtRRKXPvopLhpgQ/JtmsthXTeBL5CxXshHenp0u_y4UXoo_Y/LA3ky8vehXySHIAP7SBSPrMpcbolHlaA/pqJp_GczNsAWgBdgApugnk-O8aJ1AmDO/UGTcEuIlIArD4z0ZpAfdcSVf4rvEUwqq/vRcDSIS-YnBTwHO6_V1GFGfKExetsgbn/J6iCHjr00SU.jpg" aria-label="Видео об аппаратах Басалдука 2"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDj0cPe1HcNjp/C3dEwi6MMteJeE7dUl48Uyozf1EWym8-/o_hidR7gGRJH5NRhcXAZYAJD0GA3txNu/_FKUvzOi9s61UzYmCSqaWY59CO8U4pXY/K0faJDgSrdRE0hX-KYym5FjhXcZojLyc/6IR7APo8rys9QQrxvxYwBuYQ2n-SqU3v.mp4" type="video/mp4"></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 02</span><a href="https://marinasharanova.wfolio.pro/disk/share/yPgWVataK1PEM" target="_blank" rel="noopener">Открыть оригинал ↗</a></div></article><div class="film-photobox"><img src="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/xstRKgtuKfAuaesT0g7GCj5r5jVhYYJO/czeCPV64a88WPNVdvAGyHihjk55jsR3q/fDWeOlbRKvFPIbN5Tc6YUkAu_F5wfkfE/0y7t_AGz77dVUH9x6jx9YL9DhziqnXOh/51bw9NVSOp2wxmRpUNnLyXmStMTFDr0A/R4XvB5y3QyxL4K8vaJR2VwAG8YmUthuj/nbwHK6GqY38YqX3WnzXuvyjqaM8W5rNV/PaYiqrC4glOFBuAS7kCa33nGSfy4WxHO/jIXCHRp9RmDUdlFAdn6DG5cCoDa9XBab/hhE_vWim4t9rEWQJW0Jf9Dv_vR6bIx4E/tcr7Oa_ZhAddYk9OXyKoVShp2UJ_TscW/KQ6ytrwsz69SWPhXsuJQjru0gxf8ywZI/voCnyRxoDIWwiSPBMVsq0ZFSLJZXl1yz/pDm6sY9vhthJxh0N0uSzgF1IsKozeqjB/tSId7d9o4f94b-tKNJ71Ho_c8FzRm3pq/tt5-R3h-O3lMwRM1qBxFu9XmVWjXllx5/yFLdlRifScwDzSW7Jxi-MLncgRy_6W_d/KC8eeZ3H_-c.jpg" alt="Готовый яркий ортопедический аппарат" loading="lazy" ><strong>Каждый аппарат — индивидуальная работа.</strong></div></div><details class="showcase-more"><summary>Посмотреть ещё 4 видеоролика ↗</summary><div class="extra"><article class="film"><video controls preload="none" playsinline poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X-UJbvPZLcAN/tIRgIxGtErJwMG-Y8nBKJSR3bwNvzOkV/u-3W3SdQr4uZOzm5IdlQjt5ONenXzvKU/_bUDh5AXIpfpxWnP-uzXHbUvWEiC5_UV/5BoX7on9t9OxPB3stiaV5YFQPI8Vn9xK/wt1_EApGQHsh5apREvv3YkF7RYoZM4On/u7w1zYuh7kWGulz4QE7BatC8v-OleQYd/Q1at8S3NiEkMbc-LNb6IRRB3HV5Z_fju/nuMIgq2GGam6VFz2wHeku0wTS-CDw0P8/sa8jx2tiiTzh2boLw4RUC48SqAzXOksC/FY883N4sk4ByAXYC7cc1l0iFDEbB_UPn/QYLbuj64Q7w.jpg" aria-label="Видео об аппаратах Басалдука 3"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDlODtjki26fk/KkMHzxMLyaB_RKVoHBRCLsmpLSS4T-N7/SrEZD6111FiTVUogglU3Z5pnlFce6JS0/1_6BDGhQrL00eK7MxKTc8LnUtAwRrM0K/Gawh74zuH4pwV6I6xLUQ7r9kvmvYwYAG/U0NC2l4Tvjc2WFMUOmccu6mrfGq-sjcv.mp4" type="video/mp4"></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 03</span><a href="https://marinasharanova.wfolio.pro/disk/share/pByv4KHBXAynG" target="_blank" rel="noopener">Открыть оригинал ↗</a></div></article><article class="film"><video controls preload="none" playsinline poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X-UJbvPZLcAN/tIRgIxGtErJRiK3n4xBNDeEA-5tD6PvR/6KV1xnAt6JYNt7W_hIyHGCt9Lpy5yxID/Pceb_aNDnLo-nCZjYDzXqyHWkQGHf1Er/HUzdfX68YccSGmcrCoDPiddSV9A-tx-P/A76otTC_B04aBMoPYGH_Xp00gTzl37tM/-GMrQNq6gnYQXcHgBzVQXF-zu6tiTkfX/_QjJHO19lnCjAKQElciyUjdBtjNTOL4H/Tfmgo-86MkQ-diyHk-9WKT1BYgD3mFY9/jvYUIA1depgGtMHAF0wvzoiwVIQ8CDHN/hxPiXt1o5CEVLxIZXnpyfjqFjcwulv8k/J0VGSUhYfQQ.jpg" aria-label="Видео об аппаратах Басалдука 4"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDhyOYZa6NTxb/JIzHWJwWcS7qfC4mVwTklDWPqezOAr8U/_cH8IBI019AkKrk0bWPB2Xd762dr2WDx/WouiQF3KsXBZdPtoE8a9F4zpy7a8g8Xz/8lG449dZNydtZSOWQiYRbOU1KHqF0_um/peep_OVHXwiB_QHRc3Knxwd9Dk1LBzbR.mp4" type="video/mp4"></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 04</span><a href="https://marinasharanova.wfolio.pro/disk/share/0AWDR6sngWBXl" target="_blank" rel="noopener">Открыть оригинал ↗</a></div></article><article class="film"><video controls preload="none" playsinline poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X-UJbvPZLcAN/tIRgIxGtErIOLIe6X2x9foH84NniAgKO/68tEbKCLOMjoSAaqtbibW1EvTHUtUrSn/5HiltvZuNA3U2uISvf8zEiZDZ6ZBHFpe/bzzrHmyBabtQHhTunkB2Wqf4PG20xh6y/ThZZXKhEIzS9Y_JT1daFssz9Ibogt8oQ/W2zS5nsBowXrHBGLQi_bhq-pQvcsIi3h/Wl4CDgeJO4WU_S-3Xw_0yZj6ilQtxUHw/yPFUJ1TX9fUE-XyXcNZ0ideR_6Ndzw7I/ABtfTx-m6SWP0TwggSDzaxDtfU_5e9ZE/poAwnsDBQqdB254uknmbNimQQZU5khvd/0qDtuVoOke0.jpg" aria-label="Видео об аппаратах Басалдука 5"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDmtSKXPUjhk_/d3WjZMP7WQXPRvy337D2LazX_Q8OOYQ5/NAu5fOpmQW_D2uvhboBA6Ebh2PnXOiPL/uucrjr32ImjzxnDKQd1CclVp7neffkUo/xssJZufw738R4PPjB6ticbVmsctQzkYf/xNCRfMnWdqm4COm6PBSKDatzWT0nE2SL.mp4" type="video/mp4"></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 05</span><a href="https://marinasharanova.wfolio.pro/disk/share/6W9KG5hq9yOGB" target="_blank" rel="noopener">Открыть оригинал ↗</a></div></article><article class="film"><video controls preload="none" playsinline poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X-UJbvPZLcAN/tIRgIxGtErIhiijV34wsEcnjoKnM5mdR/skSMyE-qqfnj25awiwbeG_iAISAfglez/7WWdyUN_UMNiz9erdotC_reIf8FyDA3p/KeC9civd7vN9BYsVq7uEBxdaqdiS9e4e/QW4cs0InB9swyAXMehjb6qWOs0vb3kwp/S6ZQRdReWnI27VVJogTtQGP6edEx3_bt/WTJNiHjcFF4O1TrkiTAWZ9Prv4RBXvlo/u4DNXIjmPjD1S4cLgyB7XpfOx1s3Zg-0/N98ZNCP8mfRVDGvfLa8XIFmI8t4sBXbQ/uK2g6LXG4YWPHRRq2IowQAt6IYWYIKEC/wugYG3HKjZE.jpg" aria-label="Видео об аппаратах Басалдука 6"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDkId8ENmZaJ7/b2K_mUGsXBwl2C0SoRy1bA1JASCJ-MjP/sQhEMI639XjSbEI0woH4qQD41uszu5f9/hy0WmBuFsUAq920LhZXfGP2ZbuKwEXS1/OP43tTZ1z1-aVBhYqhI0DRb4Dxp6ISnF/kwO_4jcFDrv87mHx0i-b3Daui8h5fq03.mp4" type="video/mp4"></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 06</span><a href="https://marinasharanova.wfolio.pro/disk/share/kGK9WpTyqYOBY" target="_blank" rel="noopener">Открыть оригинал ↗</a></div></article></div></details></div></section>
+<section class="showcase" id="real"><div class="container"><div class="showcase-top"><div><div class="eyebrow">Аппараты и туторы · оригинальные видео</div><h2>Сделано для тех,<br/>кому нужна помощь.</h2></div><p>Посмотрите на наши индивидуальные аппараты, туторы и изделия, которые мы создаём для детей и взрослых.</p></div><div class="films"><article class="film"><video aria-label="Видео об аппаратах Басалдука 1" controls="" playsinline="" poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X2JOfX1yJc_B/UmVj_FaDyVI79sQGzOn1lDFQKSwEc1qa/nnTyY4Cm-kuAB0I13jFqtdNQh5pqikuy/z0ocrQPqR_BhhDMAkevgs4Hpg5_7Hyp3/DldsODYLSqfLLFRcXsxncDi67LWafSFD/FMGOI12g-WXOBDS1qo5maqrTfqOJMHY8/JR14z6zuVgfVTi8mnqO6Nt-rqyi5iaO0/HhSEE_1xhPwDDdnAamY6xIJT-5zyXuET/E_k32svIU27wbD7DB8DljjibMXXs32yB/CkrxwnYeZjxDclUwerDJQelRalKSgyEE/NcPxhDI9W1CApDDkYKZUaTKunL2YkKen/8tVxZNo-M1M.jpg" preload="none"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDtu2WQlJz4nQ/7NqeJ2U5ulFb87bjhAA_rNJG4csFVxwj/thkRCHCHLDSzmptqgOkRbXYKq0SFIoht/PUxR-6yPOOSaBSnGGUQ2z3r7R7oO_CeD/vzBYX6ZcsJBdCVWMo6daewbJsGMKCSB9/olphg8XB3Tlqa_JSmKHfDiaiGQj2m3hA.mp4" type="video/mp4"/></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 01</span><a href="https://marinasharanova.wfolio.pro/disk/share/70gnD9T9O0dvV" rel="noopener" target="_blank">Открыть оригинал ↗</a></div></article><article class="film"><video aria-label="Видео об аппаратах Басалдука 2" controls="" playsinline="" poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X-UJbvPZLcAN/tIRgIxGtErJRX-C8ygFBuExDh7EX5e0s/hoH5ePQuICO6zWqfDAJwRExmu92sLDnB/dZ9x__dPTSfldVjIN5D-cku4B-EslNZ4/n1E8U9f7GQXHIrvEX3MrSdLlMpn7nU9G/ORcj1Se1V41JZgR7xqtRRKXPvopLhpgQ/JtmsthXTeBL5CxXshHenp0u_y4UXoo_Y/LA3ky8vehXySHIAP7SBSPrMpcbolHlaA/pqJp_GczNsAWgBdgApugnk-O8aJ1AmDO/UGTcEuIlIArD4z0ZpAfdcSVf4rvEUwqq/vRcDSIS-YnBTwHO6_V1GFGfKExetsgbn/J6iCHjr00SU.jpg" preload="none"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDj0cPe1HcNjp/C3dEwi6MMteJeE7dUl48Uyozf1EWym8-/o_hidR7gGRJH5NRhcXAZYAJD0GA3txNu/_FKUvzOi9s61UzYmCSqaWY59CO8U4pXY/K0faJDgSrdRE0hX-KYym5FjhXcZojLyc/6IR7APo8rys9QQrxvxYwBuYQ2n-SqU3v.mp4" type="video/mp4"/></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 02</span><a href="https://marinasharanova.wfolio.pro/disk/share/yPgWVataK1PEM" rel="noopener" target="_blank">Открыть оригинал ↗</a></div></article><div class="film-photobox"><img alt="Готовый яркий ортопедический аппарат" loading="lazy" src="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/xstRKgtuKfAuaesT0g7GCj5r5jVhYYJO/czeCPV64a88WPNVdvAGyHihjk55jsR3q/fDWeOlbRKvFPIbN5Tc6YUkAu_F5wfkfE/0y7t_AGz77dVUH9x6jx9YL9DhziqnXOh/51bw9NVSOp2wxmRpUNnLyXmStMTFDr0A/R4XvB5y3QyxL4K8vaJR2VwAG8YmUthuj/nbwHK6GqY38YqX3WnzXuvyjqaM8W5rNV/PaYiqrC4glOFBuAS7kCa33nGSfy4WxHO/jIXCHRp9RmDUdlFAdn6DG5cCoDa9XBab/hhE_vWim4t9rEWQJW0Jf9Dv_vR6bIx4E/tcr7Oa_ZhAddYk9OXyKoVShp2UJ_TscW/KQ6ytrwsz69SWPhXsuJQjru0gxf8ywZI/voCnyRxoDIWwiSPBMVsq0ZFSLJZXl1yz/pDm6sY9vhthJxh0N0uSzgF1IsKozeqjB/tSId7d9o4f94b-tKNJ71Ho_c8FzRm3pq/tt5-R3h-O3lMwRM1qBxFu9XmVWjXllx5/yFLdlRifScwDzSW7Jxi-MLncgRy_6W_d/KC8eeZ3H_-c.jpg"/><strong>Каждый аппарат — индивидуальная работа.</strong></div></div><details class="showcase-more"><summary>Посмотреть ещё 4 видеоролика ↗</summary><div class="extra"><article class="film"><video aria-label="Видео об аппаратах Басалдука 3" controls="" playsinline="" poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X-UJbvPZLcAN/tIRgIxGtErJwMG-Y8nBKJSR3bwNvzOkV/u-3W3SdQr4uZOzm5IdlQjt5ONenXzvKU/_bUDh5AXIpfpxWnP-uzXHbUvWEiC5_UV/5BoX7on9t9OxPB3stiaV5YFQPI8Vn9xK/wt1_EApGQHsh5apREvv3YkF7RYoZM4On/u7w1zYuh7kWGulz4QE7BatC8v-OleQYd/Q1at8S3NiEkMbc-LNb6IRRB3HV5Z_fju/nuMIgq2GGam6VFz2wHeku0wTS-CDw0P8/sa8jx2tiiTzh2boLw4RUC48SqAzXOksC/FY883N4sk4ByAXYC7cc1l0iFDEbB_UPn/QYLbuj64Q7w.jpg" preload="none"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDlODtjki26fk/KkMHzxMLyaB_RKVoHBRCLsmpLSS4T-N7/SrEZD6111FiTVUogglU3Z5pnlFce6JS0/1_6BDGhQrL00eK7MxKTc8LnUtAwRrM0K/Gawh74zuH4pwV6I6xLUQ7r9kvmvYwYAG/U0NC2l4Tvjc2WFMUOmccu6mrfGq-sjcv.mp4" type="video/mp4"/></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 03</span><a href="https://marinasharanova.wfolio.pro/disk/share/pByv4KHBXAynG" rel="noopener" target="_blank">Открыть оригинал ↗</a></div></article><article class="film"><video aria-label="Видео об аппаратах Басалдука 4" controls="" playsinline="" poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X-UJbvPZLcAN/tIRgIxGtErJRiK3n4xBNDeEA-5tD6PvR/6KV1xnAt6JYNt7W_hIyHGCt9Lpy5yxID/Pceb_aNDnLo-nCZjYDzXqyHWkQGHf1Er/HUzdfX68YccSGmcrCoDPiddSV9A-tx-P/A76otTC_B04aBMoPYGH_Xp00gTzl37tM/-GMrQNq6gnYQXcHgBzVQXF-zu6tiTkfX/_QjJHO19lnCjAKQElciyUjdBtjNTOL4H/Tfmgo-86MkQ-diyHk-9WKT1BYgD3mFY9/jvYUIA1depgGtMHAF0wvzoiwVIQ8CDHN/hxPiXt1o5CEVLxIZXnpyfjqFjcwulv8k/J0VGSUhYfQQ.jpg" preload="none"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDhyOYZa6NTxb/JIzHWJwWcS7qfC4mVwTklDWPqezOAr8U/_cH8IBI019AkKrk0bWPB2Xd762dr2WDx/WouiQF3KsXBZdPtoE8a9F4zpy7a8g8Xz/8lG449dZNydtZSOWQiYRbOU1KHqF0_um/peep_OVHXwiB_QHRc3Knxwd9Dk1LBzbR.mp4" type="video/mp4"/></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 04</span><a href="https://marinasharanova.wfolio.pro/disk/share/0AWDR6sngWBXl" rel="noopener" target="_blank">Открыть оригинал ↗</a></div></article><article class="film"><video aria-label="Видео об аппаратах Басалдука 5" controls="" playsinline="" poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X-UJbvPZLcAN/tIRgIxGtErIOLIe6X2x9foH84NniAgKO/68tEbKCLOMjoSAaqtbibW1EvTHUtUrSn/5HiltvZuNA3U2uISvf8zEiZDZ6ZBHFpe/bzzrHmyBabtQHhTunkB2Wqf4PG20xh6y/ThZZXKhEIzS9Y_JT1daFssz9Ibogt8oQ/W2zS5nsBowXrHBGLQi_bhq-pQvcsIi3h/Wl4CDgeJO4WU_S-3Xw_0yZj6ilQtxUHw/yPFUJ1TX9fUE-XyXcNZ0ideR_6Ndzw7I/ABtfTx-m6SWP0TwggSDzaxDtfU_5e9ZE/poAwnsDBQqdB254uknmbNimQQZU5khvd/0qDtuVoOke0.jpg" preload="none"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDmtSKXPUjhk_/d3WjZMP7WQXPRvy337D2LazX_Q8OOYQ5/NAu5fOpmQW_D2uvhboBA6Ebh2PnXOiPL/uucrjr32ImjzxnDKQd1CclVp7neffkUo/xssJZufw738R4PPjB6ticbVmsctQzkYf/xNCRfMnWdqm4COm6PBSKDatzWT0nE2SL.mp4" type="video/mp4"/></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 05</span><a href="https://marinasharanova.wfolio.pro/disk/share/6W9KG5hq9yOGB" rel="noopener" target="_blank">Открыть оригинал ↗</a></div></article><article class="film"><video aria-label="Видео об аппаратах Басалдука 6" controls="" playsinline="" poster="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/sKWLdkPGTgdMywQcC8RBXFQ07zknB_Ae/l7LPAPWNrV_uIkozpm1KbgtSW4xatF6M/3txEWXr2ndhCQs232uT3FFm9Hb9ZES9e/g2HUyKAmgN_D6yHL8v73yFoeajWnd0aL/l48gyX0MByq5D2UzxPZwATlF8T2BGsuJ/pB5XA-wJNi2hKqmWEa4Vf6azoOfun3tu/p_uW5nZyh49k52EqgOk8X-UJbvPZLcAN/tIRgIxGtErIhiijV34wsEcnjoKnM5mdR/skSMyE-qqfnj25awiwbeG_iAISAfglez/7WWdyUN_UMNiz9erdotC_reIf8FyDA3p/KeC9civd7vN9BYsVq7uEBxdaqdiS9e4e/QW4cs0InB9swyAXMehjb6qWOs0vb3kwp/S6ZQRdReWnI27VVJogTtQGP6edEx3_bt/WTJNiHjcFF4O1TrkiTAWZ9Prv4RBXvlo/u4DNXIjmPjD1S4cLgyB7XpfOx1s3Zg-0/N98ZNCP8mfRVDGvfLa8XIFmI8t4sBXbQ/uK2g6LXG4YWPHRRq2IowQAt6IYWYIKEC/wugYG3HKjZE.jpg" preload="none"><source src="https://vp.wfolio.ru/video_proxies/of4j5aS4cVwPTxC_axvSqs3o0pPsr6gH/9tO59S13S9SG2zCqyXULUPQF5zSXl_YA/diZpcJQun7HjuU6Tu0QUDkId8ENmZaJ7/b2K_mUGsXBwl2C0SoRy1bA1JASCJ-MjP/sQhEMI639XjSbEI0woH4qQD41uszu5f9/hy0WmBuFsUAq920LhZXfGP2ZbuKwEXS1/OP43tTZ1z1-aVBhYqhI0DRb4Dxp6ISnF/kwO_4jcFDrv87mHx0i-b3Daui8h5fq03.mp4" type="video/mp4"/></video><div class="film-label"><span>РЕАЛЬНОЕ ВИДЕО · 06</span><a href="https://marinasharanova.wfolio.pro/disk/share/kGK9WpTyqYOBY" rel="noopener" target="_blank">Открыть оригинал ↗</a></div></article></div></details></div></section>
 <section class="workflow" id="start"><div class="container">
- <div class="workflow-head"><div><div class="eyebrow dark">Когда захотите развивать своё дело</div><h2>Следующий шаг —<br>собственное ИП.</h2></div>
- <p>Для первых организованных приёмов ИП не нужно. Когда работа станет регулярной и вы захотите самостоятельно принимать платежи, мы поможем оформить всё необходимое.</p></div>
- <div class="next-stage"><div><b>На первом этапе</b><p>Собираете семьи на приём, передаёте заказы команде Басалдука. Наши специалисты консультируют, снимают замеры, изготавливают и выдают аппараты.</p></div><div><b>При дальнейшем развитии</b><p>Регистрируете ИП, заключаете договор дистрибуции и подключаете собственный приём платежей. Все этапы организуем вместе.</p></div></div>
- <details class="business-details"><summary>Пошаговая инструкция по открытию ИП — если решите развивать продажи <span>+</span></summary>
- <div class="workflow-list">
- <article class="workstep"><b>01</b><div><h3>Открытие собственного ИП</h3><p>Поможем с регистрацией.</p></div></article>
- <article class="workstep"><b>02</b><div><h3>Выбор оптимального налогового режима</h3><p>Разберём организационные вопросы.</p></div></article>
- <article class="workstep"><b>03</b><div><h3>Открытие расчётного счёта</h3><p>Для работы вашего ИП.</p></div></article>
- <article class="workstep"><b>04</b><div><h3>Подключение к системе приёма ЭС</h3><p>Обучим работе с электронными сертификатами.</p></div></article>
- <article class="workstep"><b>05</b><div><h3>Подключение электронной кассы</h3><p>Поможем разобраться с приёмом оплаты.</p></div></article>
- <article class="workstep"><b>06</b><div><h3>Заключение договора дистрибуции</h3><p>Оформляем сотрудничество по реализации нашей продукции.</p></div></article>
- <article class="workstep"><b>07</b><div><h3>Самостоятельная работа с заказами</h3><p>Развиваете собственное направление вместе с БАСАЛДУК.</p></div></article>
- </div></details>
- <div class="workflow-cta"><div><strong>Не хотите начинать с документов?</strong><p>Начните со знакомства с семьями и организации первого бесплатного приёма.</p></div><a class="button blue" href="https://ipratsr.ru/#rec3388672501" target="_blank" rel="noopener">Стать частью сообщества ↗</a></div>
- </div></section>
-<section class="team" id="help"><div class="container team-grid"><div class="team-photo"><img src="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/xstRKgtuKfAuaesT0g7GCj5r5jVhYYJO/czeCPV64a88WPNVdvAGyHihjk55jsR3q/fDWeOlbRKvFPIbN5Tc6YUkAu_F5wfkfE/0y7t_AGz77dVUH9x6jx9YL9DhziqnXOh/51bw9NVSOp2wxmRpUNnLyXmStMTFDr0A/R4XvB5y3QyxL4K8vaJR2VwAG8YmUthuj/nbwHK6GqY38YqX3WnzXuv9UDZ21rVR1L/4gQ_6aU0-nABBSs-VahpdqhbIRn7VefS/b93tivdpyi7QOEpj-FB6IFNir2BsgIIc/VuClRdmw2REvgVda9Li7G3uZp0WQdqHD/w4JaD4OeoZudBdhyz_FwkSVVeamyfrLn/CkUkbhe1VU3t5GRhv2d2ZB039K73IuZB/_hBhEvhZForCpyXChZ4xLGZ7vvlBgxUL/qB0Vc2alYiQv4sqm1LSBeE2uHjl8NLRU/3P70iou2x8sqhNA430Nwg2imaDK2dPMb/nVaqp3v_Ou3PSB89QfPydqof0QLQDmJZ/rj8QcyEMcd2aEkz02RYX39FyTDDPJ_ON/HkPicDqOnuo.jpg" alt="Настоящая команда БАСАЛДУК" loading="lazy" decoding="async"><span>Реальные люди, реальная мастерская</span></div><div><div class="eyebrow dark">Наша поддержка</div><h2>Вы помогаете другой семье — мы берём на себя всё сложное.</h2><p>Сопровождаем вас независимо от того, начали ли вы просто собирать семьи на приёмы или уже открыли своё ИП.</p><ul class="supportlist"><li>Открытие ИП</li><li>Приём средств по электронным сертификатам</li><li>Помощь клиентам с ИПРА</li><li>Консультация нейроортопеда</li><li>Подбор необходимых ТСР</li><li>Снятие замеров</li><li>Логистика и выдача изделий</li><li>Отчётность</li></ul></div></div></section>
-<section class="catalogue" id="products"><div class="container"><div class="catalog-head"><div><div class="eyebrow dark">Индивидуальные средства реабилитации</div><h2>Какие аппараты и туторы можно получить у нас.</h2></div><p>Аппараты для детей и взрослых, корсеты, опоры и другие ТСР — 22 позиции из нашего ассортимента.</p></div><div class="productmosaic"><img src="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/xstRKgtuKfAuaesT0g7GCj5r5jVhYYJO/czeCPV64a88WPNVdvAGyHihjk55jsR3q/fDWeOlbRKvFPIbN5Tc6YUseMFHsib9jo/WYJHR-6G8JEOoGkZzoEQIyxqsCNlxaT8/rZMFa-Kvkvoy5yYeEQysN8HKhWmGF2hV/Shk-WHo-qR0UsiCLOz6kobDEWWFIwr82/4xGvc3YgdF8tfkCpN2izEGnNQAhhocXl/vPSMbtZIieDemRxQZ6JRCMqDcKkFhEum/wuxoCboNeSsChdjuMtfk2CfvxOk0QxRV/8iehNMFTlweKYJostTIoTkYyL2L3ffjY/a7bRy-FZtzrE_mchjb29tXjvVVkBmntG/Pdoedkl8kcCj8JfaEB3u4dVbPlGn1BFJ/cvquEH07h7PE5nkktkORLu9NCdeaz3pE/RSdjeWWq09P52imK77ZX23RN5z8JfWv1/Z3EJqmAJ_4s3tN54sn73CjG7vfGcb9Ki/VN-pRCJJcETn_6g8m9NMmkHFT5W8o0O1/px7AMOpRoU83C_Vnee-NV0hB45aR1Eef/I9Nl2Pktbbo.jpg" alt="Индивидуальный ортез из фотосессии БАСАЛДУК" loading="lazy" ><img src="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/xstRKgtuKfAuaesT0g7GCj5r5jVhYYJO/czeCPV64a88WPNVdvAGyHihjk55jsR3q/fDWeOlbRKvFPIbN5Tc6YUseMFHsib9jo/WYJHR-6G8JEOoGkZzoEQIyxqsCNlxaT8/rZMFa-Kvkvoy5yYeEQysN8HKhWmGF2hV/Shk-WHo-qR0UsiCLOz6kobDEWWFIwr82/4xGvc3YgdF8tfkCpN2izEOb1RsvWxgdm/n9-KdsUnhD669LgwoBJ3Rw2nVSturNXT/M4WVuebFjkV5GUWYPvmVad93W477Udyv/OxFr5OU9qHKo7Fl1Va9wKdl4DEDVWaNO/mhoGcWDNTEH2s40Hq_Wdx7XJoyydf0gJ/wuVbOSAcN-dDtkxQ6p8cwz3hWZoKZj8H/l0GGRt48W5VsapxAr2-DJKXhWdRuMHOI/hPwM-R7kG6tLyqu5uzPjG994QSX-MRi_/rmDDZ3535XtX2ncsdcTYHnuebLwp1ZFi/ov7qBQQSptT7HLEk8Ea567AP76342JZB/5nm_IB8RQ6_2zigwJ3PN2XFRAS9kOigO/HDr2xssCO6o.jpg" alt="Аппарат на ногу из фотосессии" loading="lazy" ><img src="https://i.wfolio.ru/x/ac40rGFEAgQcKDpymwHjFbuDpUfu609f/EKWqWNBY141G5wJIsVebScI7cZal7fCJ/gxnwiRkvDqHJvgjUMONA56J7cJvrKg0R/UhnwGPsib8uWexxm7HJXq_lU2g3wbDKV/YLA0wKVMUy7-HTgCy3dL2m4E_U2P7bm5/dupoQytmbXmkPZzMiv-9K-RONsLsAeQj/3S6GyVKozlU-muVpWqlG7T8nBoxIL8g5/LRY6ZYkWljvBGJvNPIhiNCdeUIdksc8I/zTCqqcsx4dYuAjM8he6otT346ZNXku2r/hCd-VisCaf9Q9mUQSyamX7C5_YFxiDET/bqPrDHuHpAJhLDes76uTYUTLFaCCgqDl/eNQJdB5spibvtgEcVGO920eFY5-T2DPc/2ui96-OCrgUJ8uUtNUOzyzBRuZLaYBc3/rql4WMCzQPoINILBhhF1tMaSovNJ2Pc_/FNYtDuR7IVg48nD_23D-mgS1HvYextBt/-QGF50z49kOI959zN_It9e4UkTT3AxiG/tXYJCCLr-2x6qcN0IcL3TGH-y0LnjQHj/hpKBCSZsgnjxP47k_Hr2NNei97k6F7Wa/WbCEAsas3YfQvRR8OK8BedwDRyWBuk5S/AmX5Xd9CJPo.jpg" alt="Детские индивидуальные ортезы" loading="lazy" ></div><div class="catalog-accordions"><details><summary>Нижние конечности<small>8 позиций</small></summary><ul><li>Аппарат на всю ногу</li><li>Аппарат на голеностоп без шарнира</li><li>Аппарат на голеностопный и коленный суставы</li><li>Аппарат на голеностопный сустав</li><li>Аппарат на коленный сустав</li><li>Аппарат на нижние конечности и туловище (ортез)</li><li>Аппарат на тазобедренный сустав</li><li>Аппарат на голеностопный сустав с шарниром</li></ul></details><details><summary>Верхние конечности<small>7 позиций</small></summary><ul><li>Аппарат на всю руку</li><li>Аппарат на кисть</li><li>Аппарат на кисть и лучезапястный сустав</li><li>Аппарат на кисть, лучезапястный и локтевой суставы</li><li>Аппарат на локтевой сустав</li><li>Аппарат на лучезапястный и локтевой суставы</li><li>Аппарат на лучезапястный сустав</li></ul></details><details><summary>Корсеты<small>3 позиций</small></summary><ul><li>Корсет жёсткой фиксации</li><li>Корсет полужёсткой фиксации</li><li>Корсет функционально-корригирующий</li></ul></details><details><summary>Другие ТСР<small>4 позиций</small></summary><ul><li>Кресло-коляска комнатная с ручным приводом с дополнительной фиксацией (поддержкой)</li><li>Кресло-коляска прогулочная с ручным приводом с дополнительной фиксацией (поддержкой) головы и тела</li><li>Опора для сидения для детей-инвалидов</li><li>Опора для стояния для детей-инвалидов</li></ul></details></div><div style="margin-top:26px"><a class="button outline" href="https://marinasharanova.wfolio.pro/disk/2026-10-19-apparaty-dtsp-c6fz36/30-10" target="_blank" rel="noopener">Смотреть всю фотосессию ↗</a></div></div></section>
+<div class="workflow-head"><div><div class="eyebrow dark">Когда захотите развивать своё дело</div><h2>Следующий шаг —<br/>собственное ИП.</h2></div>
+<p>Для первых организованных приёмов ИП не нужно. Когда работа станет регулярной и вы захотите самостоятельно принимать платежи, мы поможем оформить всё необходимое.</p></div>
+<div class="next-stage"><div><b>На первом этапе</b><p>Собираете семьи на приём, передаёте заказы команде Басалдука. Наши специалисты консультируют, снимают замеры, изготавливают и выдают аппараты.</p></div><div><b>При дальнейшем развитии</b><p>Регистрируете ИП, заключаете договор дистрибуции и подключаете собственный приём платежей. Все этапы организуем вместе.</p></div></div>
+<div class="business-details bas-business-open">
+<div class="bas-business-head">
+<div class="eyebrow dark">Когда будете готовы развиваться</div>
+<h3>Поможем оформить ИП и начать самостоятельную работу</h3>
+</div>
+<div class="workflow-list">
+<article class="workstep"><b>01</b><div><h3>Открытие собственного ИП</h3><p>Поможем с регистрацией.</p></div></article>
+<article class="workstep"><b>02</b><div><h3>Выбор оптимального налогового режима</h3><p>Разберём организационные вопросы.</p></div></article>
+<article class="workstep"><b>03</b><div><h3>Открытие расчётного счёта</h3><p>Для работы вашего ИП.</p></div></article>
+<article class="workstep"><b>04</b><div><h3>Подключение к системе приёма ЭС</h3><p>Обучим работе с электронными сертификатами.</p></div></article>
+<article class="workstep"><b>05</b><div><h3>Подключение электронной кассы</h3><p>Поможем разобраться с приёмом оплаты.</p></div></article>
+<article class="workstep"><b>06</b><div><h3>Заключение договора дистрибуции</h3><p>Оформляем сотрудничество по реализации нашей продукции.</p></div></article>
+<article class="workstep"><b>07</b><div><h3>Самостоятельная работа с заказами</h3><p>Развиваете собственное направление вместе с БАСАЛДУК.</p></div></article>
+</div></div>
+<div class="bas-workflow-support">
+<span class="bas-workflow-mark">✳</span>
+<div><strong>БАСАЛДУК поддерживает вас на всех этапах.</strong>
+<p>От организации первого бесплатного приёма до самостоятельного ведения заказов и оплаты по электронным сертификатам.</p></div>
+</div>
+</div></section>
+<section class="team" id="help"><div class="container team-grid"><div class="team-photo"><img alt="Команда врачей и ортезистов БАСАЛДУК" decoding="async" loading="lazy" src="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/xstRKgtuKfAuaesT0g7GCj5r5jVhYYJO/czeCPV64a88WPNVdvAGyHihjk55jsR3q/fDWeOlbRKvFPIbN5Tc6YUkAu_F5wfkfE/0y7t_AGz77dVUH9x6jx9YL9DhziqnXOh/51bw9NVSOp2wxmRpUNnLyXmStMTFDr0A/R4XvB5y3QyxL4K8vaJR2VwAG8YmUthuj/nbwHK6GqY38YqX3WnzXuv9UDZ21rVR1L/4gQ_6aU0-nABBSs-VahpdqhbIRn7VefS/b93tivdpyi7QOEpj-FB6IFNir2BsgIIc/VuClRdmw2REvgVda9Li7G3uZp0WQdqHD/w4JaD4OeoZudBdhyz_FwkSVVeamyfrLn/CkUkbhe1VU3t5GRhv2d2ZB039K73IuZB/_hBhEvhZForCpyXChZ4xLGZ7vvlBgxUL/qB0Vc2alYiQv4sqm1LSBeE2uHjl8NLRU/3P70iou2x8sqhNA430Nwg2imaDK2dPMb/nVaqp3v_Ou3PSB89QfPydqof0QLQDmJZ/rj8QcyEMcd2aEkz02RYX39FyTDDPJ_ON/HkPicDqOnuo.jpg"/><span>Команда специалистов БАСАЛДУК</span></div><div><div class="eyebrow dark">Наша поддержка</div><h2>Вы помогаете другой семье — мы берём на себя всё сложное.</h2><p>Сопровождаем вас независимо от того, начали ли вы просто собирать семьи на приёмы или уже открыли своё ИП.</p><ul class="supportlist"><li>Открытие ИП</li><li>Приём средств по электронным сертификатам</li><li>Помощь клиентам с ИПРА</li><li>Консультация нейроортопеда</li><li>Подбор необходимых ТСР</li><li>Снятие замеров</li><li>Логистика и выдача изделий</li><li>Отчётность</li></ul></div></div></section>
+<section class="catalogue" id="products"><div class="container"><div class="catalog-head"><div><div class="eyebrow dark">Индивидуальные средства реабилитации</div><h2>Какие аппараты и туторы можно получить у нас.</h2></div><p>Аппараты для детей и взрослых, корсеты, опоры и другие ТСР — 22 позиции из нашего ассортимента.</p></div><div class="productmosaic bas-product-gallery"><img alt="Индивидуальный ортопедический аппарат БАСАЛДУК" decoding="async" loading="lazy" src="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/xstRKgtuKfAuaesT0g7GCj5r5jVhYYJO/czeCPV64a88WPNVdvAGyHihjk55jsR3q/fDWeOlbRKvFPIbN5Tc6YUseMFHsib9jo/WYJHR-6G8JEOoGkZzoEQIyxqsCNlxaT8/rZMFa-Kvkvoy5yYeEQysN8HKhWmGF2hV/Shk-WHo-qR0UsiCLOz6kobDEWWFIwr82/4xGvc3YgdF8tfkCpN2izEGnNQAhhocXl/vPSMbtZIieDemRxQZ6JRCMqDcKkFhEum/wuxoCboNeSsChdjuMtfk2CfvxOk0QxRV/8iehNMFTlweKYJostTIoTkYyL2L3ffjY/a7bRy-FZtzrE_mchjb29tXjvVVkBmntG/Pdoedkl8kcCj8JfaEB3u4dVbPlGn1BFJ/cvquEH07h7PE5nkktkORLu9NCdeaz3pE/RSdjeWWq09P52imK77ZX23RN5z8JfWv1/Z3EJqmAJ_4s3tN54sn73CjG7vfGcb9Ki/VN-pRCJJcETn_6g8m9NMmkHFT5W8o0O1/px7AMOpRoU83C_Vnee-NV0hB45aR1Eef/I9Nl2Pktbbo.jpg"/><img alt="Индивидуальные ортезы для нижних конечностей" decoding="async" loading="lazy" src="https://i.wfolio.ru/x/Erhj60RfGoSDn6LYN1vjjheZsgmFENWg/70nl7vp0vtA5I_3875z-74SYoU4uutGd/xstRKgtuKfAuaesT0g7GCj5r5jVhYYJO/czeCPV64a88WPNVdvAGyHihjk55jsR3q/fDWeOlbRKvFPIbN5Tc6YUseMFHsib9jo/WYJHR-6G8JEOoGkZzoEQIyxqsCNlxaT8/rZMFa-Kvkvoy5yYeEQysN8HKhWmGF2hV/Shk-WHo-qR0UsiCLOz6kobDEWWFIwr82/4xGvc3YgdF8tfkCpN2izEOb1RsvWxgdm/n9-KdsUnhD669LgwoBJ3Rw2nVSturNXT/M4WVuebFjkV5GUWYPvmVad93W477Udyv/OxFr5OU9qHKo7Fl1Va9wKdl4DEDVWaNO/mhoGcWDNTEH2s40Hq_Wdx7XJoyydf0gJ/wuVbOSAcN-dDtkxQ6p8cwz3hWZoKZj8H/l0GGRt48W5VsapxAr2-DJKXhWdRuMHOI/hPwM-R7kG6tLyqu5uzPjG994QSX-MRi_/rmDDZ3535XtX2ncsdcTYHnuebLwp1ZFi/ov7qBQQSptT7HLEk8Ea567AP76342JZB/5nm_IB8RQ6_2zigwJ3PN2XFRAS9kOigO/HDr2xssCO6o.jpg"/><img alt="Детский ортез из ассортимента БАСАЛДУК" decoding="async" loading="lazy" src="https://i.wfolio.ru/x/ac40rGFEAgQcKDpymwHjFbuDpUfu609f/EKWqWNBY141G5wJIsVebScI7cZal7fCJ/gxnwiRkvDqHJvgjUMONA56J7cJvrKg0R/UhnwGPsib8uWexxm7HJXq_lU2g3wbDKV/YLA0wKVMUy7-HTgCy3dL2m4E_U2P7bm5/dupoQytmbXmkPZzMiv-9K-RONsLsAeQj/3S6GyVKozlU-muVpWqlG7T8nBoxIL8g5/LRY6ZYkWljvBGJvNPIhiNCdeUIdksc8I/zTCqqcsx4dYuAjM8he6otT346ZNXku2r/hCd-VisCaf9Q9mUQSyamX7C5_YFxiDET/bqPrDHuHpAJhLDes76uTYUTLFaCCgqDl/eNQJdB5spibvtgEcVGO920eFY5-T2DPc/2ui96-OCrgUJ8uUtNUOzyzBRuZLaYBc3/rql4WMCzQPoINILBhhF1tMaSovNJ2Pc_/FNYtDuR7IVg48nD_23D-mgS1HvYextBt/-QGF50z49kOI959zN_It9e4UkTT3AxiG/tXYJCCLr-2x6qcN0IcL3TGH-y0LnjQHj/hpKBCSZsgnjxP47k_Hr2NNei97k6F7Wa/WbCEAsas3YfQvRR8OK8BedwDRyWBuk5S/AmX5Xd9CJPo.jpg"/></div><div class="catalog-accordions"><details><summary>Нижние конечности<small>8 позиций</small></summary><ul><li>Аппарат на всю ногу</li><li>Аппарат на голеностоп без шарнира</li><li>Аппарат на голеностопный и коленный суставы</li><li>Аппарат на голеностопный сустав</li><li>Аппарат на коленный сустав</li><li>Аппарат на нижние конечности и туловище (ортез)</li><li>Аппарат на тазобедренный сустав</li><li>Аппарат на голеностопный сустав с шарниром</li></ul></details><details><summary>Верхние конечности<small>7 позиций</small></summary><ul><li>Аппарат на всю руку</li><li>Аппарат на кисть</li><li>Аппарат на кисть и лучезапястный сустав</li><li>Аппарат на кисть, лучезапястный и локтевой суставы</li><li>Аппарат на локтевой сустав</li><li>Аппарат на лучезапястный и локтевой суставы</li><li>Аппарат на лучезапястный сустав</li></ul></details><details><summary>Корсеты<small>3 позиций</small></summary><ul><li>Корсет жёсткой фиксации</li><li>Корсет полужёсткой фиксации</li><li>Корсет функционально-корригирующий</li></ul></details><details><summary>Другие ТСР<small>4 позиций</small></summary><ul><li>Кресло-коляска комнатная с ручным приводом с дополнительной фиксацией (поддержкой)</li><li>Кресло-коляска прогулочная с ручным приводом с дополнительной фиксацией (поддержкой) головы и тела</li><li>Опора для сидения для детей-инвалидов</li><li>Опора для стояния для детей-инвалидов</li></ul></details></div><div style="margin-top:26px"><a class="button outline" href="https://marinasharanova.wfolio.pro/disk/2026-10-19-apparaty-dtsp-c6fz36/30-10" rel="noopener" target="_blank">Смотреть всю фотосессию ↗</a></div></div></section>
 <section class="faq"><div class="container faq-inner"><div><div class="eyebrow dark">Частые вопросы</div><h2>Как всё работает?</h2></div><div class="faq-list">
- <details><summary>Мне нужно открыть ИП, чтобы начать?</summary><p>Нет. Вы можете начать с того, что рассказываете семьям о программе, собираете группу на бесплатный выездной приём и передаёте заказы нашей команде. Открытие ИП и самостоятельный приём платежей — следующий этап при развитии своего дела.</p></details>
- <details><summary>Сколько стоит начало?</summary><p>0 рублей. Не нужно арендовать помещение, приобретать аппараты или 3D-сканер. Наши специалисты проводят бесплатные выездные консультации и замеры.</p></details>
- <details><summary>Кто приедет на приём?</summary><p>Ортезист и врач травматолог-ортопед, специалист по МСЭ. Они консультируют семьи, помогают с подбором технических средств реабилитации и выполняют необходимые замеры.</p></details>
- <details><summary>Могу ли я участвовать, если живу не в Москве?</summary><p>Да. Мы работаем с семьями из разных городов. Вы можете собрать группу родителей в своём городе, а организацию выезда и дальнейшие действия мы обсудим с вами.</p></details>
- <details><summary>Если у моего ребёнка нет ДЦП, я могу помочь?</summary><p>Да. Мы ищем мам, пап, реабилитологов, сотрудников фондов и всех, кто понимает, как важна своевременная ортопедическая помощь.</p></details>
- <details><summary>Как приобрести аппарат по электронному сертификату?</summary><p>Наши специалисты помогают разобраться с ИПРА и применением электронного сертификата, подбором подходящего изделия и оформлением приобретения.</p></details>
- <details><summary>Что, если у семьи возникнут вопросы после получения аппарата?</summary><p>Мы работаем с каждой семьёй индивидуально и решаем вопросы напрямую. На фурнитуру наших изделий действует гарантия 1 год.</p></details>
- </div></div></section>
-<section class="final"><div class="container"><div><div class="eyebrow">Свои помогают своим</div><h2>Вы знаете, через что проходят эти семьи. Помогите им найти свой путь.</h2><p>Станьте частью сообщества. Мы расскажем, как организовать бесплатный приём в вашем городе, поможем с заказами и будем рядом на каждом этапе.</p></div><a class="button" href="https://ipratsr.ru/#rec3388672501" target="_blank" rel="noopener">Стать частью сообщества ↗</a></div></section>
+<details><summary>Мне нужно открыть ИП, чтобы начать?</summary><p>Нет. Вы можете начать с того, что рассказываете семьям о программе, собираете группу на бесплатный выездной приём и передаёте заказы нашей команде. Открытие ИП и самостоятельный приём платежей — следующий этап при развитии своего дела.</p></details>
+<details><summary>Сколько стоит начало?</summary><p>0 рублей. Не нужно арендовать помещение, приобретать аппараты или 3D-сканер. Наши специалисты проводят бесплатные выездные консультации и замеры.</p></details>
+<details><summary>Кто приедет на приём?</summary><p>Ортезист и врач травматолог-ортопед, специалист по МСЭ. Они консультируют семьи, помогают с подбором технических средств реабилитации и выполняют необходимые замеры.</p></details>
+<details><summary>Могу ли я участвовать, если живу не в Москве?</summary><p>Да. Мы работаем с семьями из разных городов. Вы можете собрать группу родителей в своём городе, а организацию выезда и дальнейшие действия мы обсудим с вами.</p></details>
+<details><summary>Если у моего ребёнка нет ДЦП, я могу помочь?</summary><p>Да. Мы ищем мам, пап, реабилитологов, сотрудников фондов и всех, кто понимает, как важна своевременная ортопедическая помощь.</p></details>
+<details><summary>Как приобрести аппарат по электронному сертификату?</summary><p>Наши специалисты помогают разобраться с ИПРА и применением электронного сертификата, подбором подходящего изделия и оформлением приобретения.</p></details>
+<details><summary>Что, если у семьи возникнут вопросы после получения аппарата?</summary><p>Мы работаем с каждой семьёй индивидуально и решаем вопросы напрямую. На фурнитуру наших изделий действует гарантия 1 год.</p></details>
+</div></div></section>
+<section class="final bas-final" id="basalduk-crm-form">
+<div class="container bas-final-grid">
+<div class="bas-final-copy">
+<div class="eyebrow">Свои помогают своим</div>
+<h2>Вы знаете, через что проходят эти семьи. Помогите им найти свой путь.</h2>
+<p>Присоединяйтесь к движению. Мы расскажем, как организовать бесплатный приём в вашем городе, поможем с заказами и будем рядом на каждом этапе.</p>
+<div class="bas-final-promise">Вместе мы можем сделать качественную ортопедическую помощь доступнее.</div>
+</div>
+<div class="bas-final-form">
+<h3>Стать частью сообщества</h3>
+<p>Оставьте заявку — обсудим ваш город и первый совместный приём.</p>
+<!-- BITRIX24_EMBED_START -->
+<div class="basalduk-b24-placeholder"><strong>Подключение заявок в Bitrix24 клиники</strong><p>Здесь будет размещена CRM-форма. В коде замените этот блок скриптом из Bitrix24 клиники.</p></div>
+<!-- BITRIX24_EMBED_END -->
+</div>
+</div>
+</section>
+</main><footer class="foot"><div class="container"><span>БАСАЛДУК · прототип для обсуждения</span><span>Форма заявки — <a href="https://ipratsr.ru/#rec3388672501" rel="noopener" target="_blank">ipratsr.ru</a> · <a href="https://ipratsr.ru/politica" rel="noopener" target="_blank">Политика данных</a></span></div></footer>
+</div>
 
-</main><footer class="foot"><div class="container"><span>БАСАЛДУК · прототип для обсуждения</span><span>Форма заявки — <a href="https://ipratsr.ru/#rec3388672501" target="_blank" rel="noopener">ipratsr.ru</a> · <a href="https://ipratsr.ru/politica" target="_blank" rel="noopener">Политика данных</a></span></div></footer>
 </body></html>
