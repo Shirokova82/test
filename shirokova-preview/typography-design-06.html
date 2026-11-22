@@ -16,12 +16,12 @@ html,body{margin:0;min-height:100%;background:var(--bg)}body{color:var(--ink);fo
 .lead{font:400 clamp(48px,5.65vw,98px)/.92 Droid,sans-serif;color:var(--ink);max-width:95%;letter-spacing:.006em}
 .lead .tail{color:var(--sea)}
 .subject{display:flex;align-items:center;justify-content:flex-end;font:400 clamp(56px,7.6vw,139px)/.92 Droid,sans-serif;color:var(--sea);margin-top:clamp(3px,1vh,15px);letter-spacing:.01em;white-space:nowrap;position:relative}
-.subject::before{content:'';width:clamp(38px,12%,165px);height:1px;background:var(--tint);margin-right:clamp(15px,3vw,51px);align-self:center}
+
 .bridge{font:400 clamp(39px,4.5vw,80px)/1 Droid,sans-serif;color:var(--mid);margin-top:clamp(14px,2.5vh,44px);justify-self:start}
 .conclusion{font:400 clamp(60px,7.35vw,136px)/.87 Droid,sans-serif;color:var(--ink);letter-spacing:-.003em;white-space:nowrap;position:relative;margin-top:clamp(1px,1vh,13px);transform-origin:left center}
 .conclusion .sea{color:var(--sea)}
-.conclusion::after{content:'';position:absolute;bottom:-.15em;right:0;width:16%;height:clamp(3px,.32vw,5px);background:var(--sea)}
-.desktop-mark{position:absolute;left:clamp(31px,5vw,90px);bottom:clamp(20px,4vh,58px);width:12px;height:12px;background:var(--sea);border-radius:50%}
+
+
 .menubtn,.mobile-menu{display:none}
 @media(min-width:900px) and (max-width:1250px){.hero{padding-left:3vw;padding-right:3vw}.lead{font-size:5.45vw}.subject{font-size:7vw}.bridge{font-size:4.4vw}.conclusion{font-size:7.1vw}}
 @media(max-width:899px){
@@ -29,10 +29,10 @@ html,body{margin:0;min-height:100%;background:var(--bg)}body{color:var(--ink);fo
 .stage{min-height:calc(100svh - 72px);overflow:hidden}
 .hero{min-height:calc(100svh - 72px);padding:clamp(25px,6.5vh,70px) 22px;display:flex;flex-direction:column;justify-content:center;align-items:stretch;gap:0}
 .lead{font-size:clamp(47px,12.4vw,100px);line-height:.95;max-width:95%}
-.subject{font-size:clamp(61px,15.3vw,120px);margin-top:clamp(35px,7vh,70px);align-self:flex-end;white-space:nowrap;line-height:.96}.subject::before{width:24px;margin-right:12px}
+.subject{font-size:clamp(61px,15.3vw,120px);margin-top:clamp(35px,7vh,70px);align-self:flex-end;white-space:nowrap;line-height:.96}
 .bridge{font-size:clamp(49px,12.8vw,108px);margin-top:clamp(34px,7vh,70px);max-width:93%;line-height:.94}
 .conclusion{font-size:clamp(43px,10.2vw,89px);line-height:.95;white-space:normal;overflow-wrap:anywhere;margin-top:clamp(31px,6vh,68px)}
-.conclusion::after{bottom:-16px}.desktop-mark{bottom:21px;left:22px;width:7px;height:7px}
+
 .menubtn{display:flex;position:absolute;right:22px;top:23px;width:35px;height:29px;background:none;border:0;z-index:10;flex-direction:column;align-items:flex-end;justify-content:center;gap:7px;padding:0}.menubtn i{width:29px;height:2px;background:var(--ink);display:block}.menubtn i:last-child{width:18px}
 .mobile-menu.open{display:flex;position:fixed;inset:72px 0 0;z-index:20;background:var(--bg);flex-direction:column;justify-content:center;gap:clamp(24px,7vh,60px);padding:28px}.mobile-menu a{font:400 clamp(57px,17vw,118px)/.9 Droid,sans-serif}
 }
@@ -45,6 +45,6 @@ html,body{margin:0;min-height:100%;background:var(--bg)}body{color:var(--ink);fo
 <span class="subject">ваш массаж,</span>
 <span class="bridge">он должен быть</span>
 <span class="conclusion"><span class="sea">профессиональным</span></span>
-</h1><span class="desktop-mark" aria-hidden="true"></span></section>
+</h1></section>
 </main></div>
 <script>const b=document.querySelector('#menu-toggle'),m=document.querySelector('#menu-mobile');b.addEventListener('click',()=>{let o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.setAttribute('aria-label',o?'Закрыть меню':'Открыть меню')});m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded','false')}));</script></body></html>
