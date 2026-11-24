@@ -20,7 +20,7 @@ button{font:inherit;color:inherit;cursor:pointer}a:focus-visible,button:focus-vi
 .nav a:hover{color:var(--teal);transform:translateX(5px)}
 .stage{height:100svh;min-height:610px;min-width:0;position:relative;overflow:hidden;background:var(--white);isolation:isolate}
 /* Word crosses a color plane; its ink reverses as it enters the turquoise field */
-.letter-field{position:absolute;z-index:0;inset:0 0 0 auto;width:52%;background:var(--teal);clip-path:polygon(24% 0,100% 0,100% 100%,0 100%)}
+.letter-field{position:absolute;z-index:0;inset:0 0 0 auto;width:43%;background:var(--teal);clip-path:polygon(20% 0,100% 0,100% 100%,0 100%)}
 .letter-mask{display:none}
 .hero{position:relative;width:100%;height:100%;display:flex;align-items:center;padding:0 clamp(34px,5.5vw,100px)}
 .hero-core{position:relative;z-index:3;width:100%;max-width:1280px;display:flex;flex-direction:column;align-items:flex-start;margin:0;transform:translateY(-1vh)}
@@ -28,10 +28,10 @@ button{font:inherit;color:inherit;cursor:pointer}a:focus-visible,button:focus-vi
 .intro span{display:block}
 .statement{display:block;width:100%;margin-top:clamp(45px,8vh,100px);max-width:none}
 .predicate{display:block;font:400 clamp(50px,5.8vw,95px)/.94 'BrandDroid',sans-serif;color:var(--sea);margin:0 0 clamp(9px,2vh,30px);white-space:nowrap}
-.keyword{font:400 clamp(48px,6.0vw,108px)/.97 'BrandMeloriac',sans-serif;letter-spacing:-.022em;white-space:nowrap;color:var(--sea);display:block;width:max-content;max-width:100%;position:relative;z-index:2;margin:0}
+.keyword{font:400 clamp(42px,4.9vw,83px)/.97 'BrandMeloriac',sans-serif;letter-spacing:-.022em;white-space:nowrap;color:var(--sea);display:block;width:max-content;max-width:100%;position:relative;z-index:2;margin:0}
 .keyword::after{content:attr(data-text);position:absolute;inset:0;color:var(--white);clip-path:polygon(var(--cut-top,62%) 0,100% 0,100% 100%,var(--cut-bottom,52%) 100%);pointer-events:none}
 .mobile-menu-button,.mobile-menu{display:none}
-@media(min-width:901px) and (max-width:1250px){.hero{padding-left:4vw;padding-right:4vw}.intro{font-size:4.9vw}.predicate{font-size:5.9vw}.keyword{font-size:5.7vw}}
+@media(min-width:901px) and (max-width:1250px){.hero{padding-left:4vw;padding-right:4vw}.intro{font-size:4.9vw}.predicate{font-size:5.9vw}.keyword{font-size:4.9vw}}
 @media(max-width:900px){
 .shell{display:block}.sidebar{height:77px;position:relative;padding:8px 21px;border-right:0;border-bottom:1px solid var(--pale);flex-direction:row;align-items:center;justify-content:space-between}.brand{width:81px}.nav{display:none}
 .mobile-menu-button{display:flex;flex-direction:column;gap:6px;border:0;background:transparent;padding:9px;z-index:35}.mobile-menu-button span{width:28px;height:2px;background:var(--sea);display:block}.mobile-menu-button span:nth-child(2){width:18px;margin-left:auto}
@@ -85,7 +85,7 @@ button{font:inherit;color:inherit;cursor:pointer}a:focus-visible,button:focus-vi
   word.style.fontSize='';font=parseFloat(getComputedStyle(word).fontSize);
   while(word.getBoundingClientRect().width>maxWidth && font>18){font-=.6;word.style.fontSize=font+'px'}
   const r=word.getBoundingClientRect(),p=pane.getBoundingClientRect();
-  const fracTop=innerWidth<=900?.92:.24;const fracBottom=0;
+  const fracTop=innerWidth<=900?.92:.20;const fracBottom=0;
   const intersection=(y)=>{const progress=Math.max(0,Math.min(1,(y-p.top)/p.height));return p.left+p.width*(fracTop+(fracBottom-fracTop)*progress)};
   const pct=(x)=>((x-r.left)/r.width*100).toFixed(3)+'%';
   word.style.setProperty('--cut-top',pct(intersection(r.top)));
