@@ -82,6 +82,22 @@ a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:in
 }
 @media(max-height:700px) and (max-width:900px){.editorial{top:8%}.photo-scene::before{background-size:auto 56%;background-position:calc(50% + 75vw) bottom}}
 
+
+/* Motion fallback: keep animated expert phrase when GSAP is blocked by the browser. */
+@keyframes photo-reveal-v15{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes type-reveal-v15{from{opacity:0;transform:translateY(21px);clip-path:inset(0 0 110% 0)}to{opacity:1;transform:translateY(0);clip-path:inset(0)}}
+@keyframes type-mark-v15{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.stage.fallback-motion .photo-scene{animation:photo-reveal-v15 1.4s cubic-bezier(.7,0,.2,1) .05s both}
+.stage.fallback-motion .message .line{animation:type-reveal-v15 .82s cubic-bezier(.17,.67,.13,1) both}
+.stage.fallback-motion .l1{animation-delay:.44s}
+.stage.fallback-motion .l2{animation-delay:.56s}
+.stage.fallback-motion .l3{animation-delay:.68s}
+.stage.fallback-motion .l4{animation-delay:.8s}
+.stage.fallback-motion .editorial-marker{animation:type-mark-v15 .74s ease-out .77s both;transform-origin:left}
+.stage.fallback-motion .ink-stroke{animation:type-mark-v15 .66s ease-out 1.47s both;transform-origin:left}
+.stage.fallback-static .photo-scene,.stage.fallback-static .message .line,.stage.fallback-static .editorial-marker,.stage.fallback-static .ink-stroke{animation:none!important;opacity:1!important;transform:none!important;clip-path:none!important}
+@media(prefers-reduced-motion:reduce){.stage.fallback-motion .photo-scene,.stage.fallback-motion .message .line,.stage.fallback-motion .editorial-marker,.stage.fallback-motion .ink-stroke{animation:none!important;opacity:1!important;transform:none!important;clip-path:none!important}}
+
 </style></head>
 <body><div class="layout"><aside class="sidebar"><a href="./" aria-label="На главную"><img class="logo" src="https://static.tildacdn.com/tild3432-3161-4736-a434-393962376635/______.png" alt="Массаж и маркетинг — Анна Широкова"></a><nav class="nav" aria-label="Разделы сайта"><a href="./#page-products">Продукты</a><a href="./#page-articles">Статьи</a><a href="./#page-trigger">Триггер</a><a href="./#page-about">Обо мне</a></nav><button type="button" id="menu-trigger" class="mobile-menu-button" aria-expanded="false" aria-label="Открыть меню"><i></i><i></i></button></aside>
 <main class="stage"><nav class="mobile-nav" id="mobile-nav" aria-label="Разделы сайта"><a href="./#page-products">Продукты</a><a href="./#page-articles">Статьи</a><a href="./#page-trigger">Триггер</a><a href="./#page-about">Обо мне</a></nav><div class="photo-scene" aria-hidden="true"></div>
@@ -102,7 +118,7 @@ a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:in
 (()=>{const trigger=document.getElementById('menu-trigger'),nav=document.getElementById('mobile-nav');trigger.addEventListener('click',()=>{const on=nav.classList.toggle('open');trigger.setAttribute('aria-expanded',String(on));trigger.setAttribute('aria-label',on?'Закрыть меню':'Открыть меню')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');trigger.setAttribute('aria-expanded','false')}));
 const stage=document.querySelector('.stage'),editorial=document.querySelector('.editorial'),scene=document.querySelector('.photo-scene');let timeline;
 function fit(){for(const line of document.querySelectorAll('.message .line')){line.style.fontSize='';const r=document.createRange();r.selectNodeContents(line);const max=innerWidth<=900?stage.clientWidth-44:(line.classList.contains('l4')?Math.min(editorial.clientWidth-6,stage.clientWidth*.415):editorial.clientWidth-6);let font=parseFloat(getComputedStyle(line).fontSize);let guard=0;while(r.getBoundingClientRect().width>max && font>22 && guard++<130){font-=.75;line.style.fontSize=font+'px'}}}
-function start(){fit();if(timeline){timeline.kill();gsap.set(['.photo-scene','.photo-scene::before','.message .line','.editorial-marker'],{clearProps:'all'})}
+function start(){fit();if(typeof window.gsap==='undefined'){stage.classList.remove('fallback-motion','fallback-static');if(!matchMedia('(prefers-reduced-motion:reduce)').matches){if(new URLSearchParams(location.search).has('t'))stage.classList.add('fallback-static');else stage.classList.add('fallback-motion')}return}stage.classList.remove('fallback-motion','fallback-static');if(timeline){timeline.kill();gsap.set(['.photo-scene','.photo-scene::before','.message .line','.editorial-marker'],{clearProps:'all'})}
 if(matchMedia('(prefers-reduced-motion:reduce)').matches){return}
 const photo=scene;timeline=gsap.timeline({paused:true,defaults:{ease:'power3.out'}});
 timeline.fromTo(photo,{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:1.45,ease:'power3.inOut'},.05);
