@@ -14,19 +14,19 @@
 .visual{position:absolute;right:-2%;top:0;width:67%;height:100%;overflow:hidden;z-index:1;clip-path:inset(0 0 0 0);-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 24%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 24%,#000 100%)}
 .visual img{width:100%;height:100%;object-fit:cover;object-position:76% center;display:block;filter:saturate(.92);mix-blend-mode:multiply}
 .visual::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6%;background:linear-gradient(0deg,var(--white),transparent);pointer-events:none}
-.wordmark{position:absolute;z-index:3;left:6.3%;top:17%;width:53%;pointer-events:none}
+.wordmark{position:absolute;z-index:3;left:6.3%;top:28%;width:53%;pointer-events:none}
 .mask{overflow:hidden;padding-bottom:.07em}
 .mask>span{display:block;will-change:transform}
 .prelude{font:400 clamp(55px,5.5vw,96px)/.94 Droid;letter-spacing:0;max-width:100%}
 .prelude span{display:block}
 .prelude .accent{color:var(--teal)}
-.bridge{position:absolute;z-index:5;left:6.3%;top:53%;font:400 clamp(44px,4.65vw,83px)/.94 Droid;color:var(--sea);white-space:nowrap;pointer-events:none}
+.bridge{position:absolute;z-index:5;left:6.3%;top:49%;font:400 clamp(44px,4.65vw,83px)/.94 Droid;color:var(--sea);white-space:nowrap;pointer-events:none}
 .focus{position:absolute;left:6.3%;bottom:12%;right:4.5%;z-index:6}
 .focus .focus-box{display:block;width:max-content;max-width:100%;position:relative;padding-right:10px}
 .focus strong{display:block;font:400 clamp(65px,6.8vw,114px)/.91 Bebas;color:var(--sea);letter-spacing:.002em;white-space:nowrap;font-weight:400;transform-origin:left center}
 .focus .underline{display:block;position:absolute;left:0;bottom:-.19em;width:38%;height:clamp(4px,.72vw,9px);background:var(--teal);transform-origin:left center}
 .mobile-button,.mobile-nav{display:none}
-@media(min-width:901px) and (max-width:1280px){.hero{min-height:630px}.visual{right:-4%;width:68%}.wordmark{top:22%}.prelude{font-size:5.5vw}.bridge{font-size:4.8vw}.focus strong{font-size:6.4vw}}
+@media(min-width:901px) and (max-width:1280px){.hero{min-height:630px}.visual{right:-4%;width:68%}.wordmark{top:28%}.prelude{font-size:5.5vw}.bridge{font-size:4.8vw}.focus strong{font-size:6.4vw}}
 @media(max-width:900px){
 .page{display:block}.sidebar{position:relative;height:72px;flex-direction:row;align-items:center;justify-content:space-between;border-right:0;border-bottom:1px solid var(--pale);padding:7px 18px}.brand{width:80px}.nav{display:none}
 .mobile-button{display:flex;align-items:flex-end;flex-direction:column;gap:6px;border:0;background:none;padding:8px}.mobile-button i{display:block;width:29px;height:2px;background:var(--sea)}.mobile-button i:last-child{width:18px}
@@ -37,13 +37,13 @@
 .visual img{object-fit:cover;object-position:72% center;mix-blend-mode:multiply}
 .visual::after{height:12%}
 .wordmark{top:9%;left:6%;width:93%;z-index:5}.prelude{font-size:clamp(49px,13vw,79px);line-height:.89}
-.bridge{left:6%;top:59%;font-size:clamp(47px,12vw,69px);z-index:7}
+.bridge{left:6%;top:27%;font-size:clamp(47px,12vw,69px);z-index:7}
 .focus{left:6%;right:4%;bottom:9%;z-index:8}
 .focus strong{font-size:clamp(44px,11vw,73px);line-height:.93}
 .focus .underline{width:46%;height:5px;bottom:-.22em}
 }
 @media(max-width:390px){.prelude{font-size:12.4vw}.bridge{font-size:11.2vw}.focus strong{font-size:11.2vw}}
-@media(max-height:710px) and (max-width:900px){.hero{min-height:500px}.visual{top:23%;height:57%}.bridge{top:58%}.focus{bottom:7%}}
+@media(max-height:710px) and (max-width:900px){.hero{min-height:500px}.visual{top:23%;height:57%}.bridge{top:27%}.focus{bottom:7%}}
 @media(prefers-reduced-motion:reduce){.mask>span,.visual,.underline,.bridge,.focus{transition:none!important;animation:none!important}}
 </style></head><body><div class="page"><aside class="sidebar"><img class="brand" src="https://static.tildacdn.com/tild3432-3161-4736-a434-393962376635/______.png" alt="Массаж и маркетинг Анна Широкова"><nav class="nav" aria-label="Разделы проекта"><a href="./#page-products">Продукты</a><a href="./#page-articles">Статьи</a><a href="./#page-trigger">Триггер</a><a href="./#page-about">Обо мне</a></nav><button class="mobile-button" id="hamb" aria-expanded="false" aria-label="Открыть меню"><i></i><i></i></button></aside><main class="main"><nav class="mobile-nav" id="mobile-nav"><a href="./#page-products">Продукты</a><a href="./#page-articles">Статьи</a><a href="./#page-trigger">Триггер</a><a href="./#page-about">Обо мне</a></nav><section class="hero" aria-label="Каким бы ни был ваш массаж, он должен быть профессиональным"><div class="visual"><img src="https://static.tildacdn.com/tild6538-6665-4136-b262-376230643162/___.png" alt="Анна Широкова" /></div><h1 class="wordmark"><span class="mask prelude"><span>Каким бы ни был</span></span><span class="mask prelude"><span class="accent">ваш массаж,</span></span></h1><div class="bridge mask"><span>он должен быть</span></div><div class="focus"><div class="focus-box"><strong id="focus-word">ПРОФЕССИОНАЛЬНЫМ</strong><span class="underline"></span></div></div></section></main></div>
 <script>/*!
