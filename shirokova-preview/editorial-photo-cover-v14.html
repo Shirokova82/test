@@ -19,9 +19,9 @@ a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:in
 .l1{font:400 clamp(54px,5.6vw,89px)/.97 'Droid 1997',sans-serif;color:var(--ink)}
 .l2{font:400 clamp(63px,6.7vw,106px)/.93 'Droid 1997',sans-serif;color:var(--aqua);margin-top:3px}
 .l3{font:400 clamp(55px,5.5vw,91px)/.99 'Droid 1997',sans-serif;color:var(--ink);margin-top:9px}
-.l4{font:400 clamp(62px,6.25vw,103px)/.94 'Bebas Neue',sans-serif;color:var(--ink);margin-top:6px;letter-spacing:0;position:relative}
+.l4{font:400 clamp(59px,5.7vw,92px)/.94 'Bebas Neue',sans-serif;color:var(--ink);margin-top:6px;letter-spacing:0;position:relative}
 .l4::after{content:'';height:clamp(4px,.52vw,7px);width:34%;background:var(--aqua);position:absolute;bottom:-.19em;left:0;transform-origin:left center}
-.editorial-marker{display:block;position:absolute;left:0;top:-29px;width:56px;height:2px;background:var(--aqua)}
+.ink-stroke{display:block;width:150px;height:5px;background:var(--aqua);margin-top:12px;transform-origin:left center}.editorial-marker{display:block;position:absolute;left:0;top:-29px;width:56px;height:2px;background:var(--aqua)}
 .mobile-menu-button,.mobile-nav{display:none}
 @media (min-width:901px) and (max-width:1240px){.editorial{width:56%;left:4.5vw}.l1{font-size:5.5vw}.l2{font-size:6.5vw}.l3{font-size:5.5vw}.l4{font-size:6.2vw}.photo-scene::before{background-position:54% center}}
 @media (max-width:900px){
@@ -30,7 +30,7 @@ a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:in
 .mobile-nav.open{display:flex;position:fixed;inset:72px 0 0;z-index:30;background:var(--paper);flex-direction:column;justify-content:center;gap:22px;padding:27px}.mobile-nav a{font:400 clamp(55px,14vw,84px)/1 'Droid 1997',sans-serif}
 .stage{height:calc(100svh - 72px);min-height:550px}
 .photo-scene{inset:0;clip-path:inset(0 0 0 0)}
-.photo-scene::before{background-image:url('https://static.tildacdn.com/tild3561-3665-4439-a363-393035633463/_____.png');background-size:auto 112%;background-position:calc(50% - 172px) bottom;transform-origin:35% 70%}
+.photo-scene::before{background-image:url('https://static.tildacdn.com/tild3561-3665-4439-a363-393035633463/_____.png');background-size:auto 72%;background-position:calc(50% + 89vw) bottom;transform-origin:35% 70%}
 .photo-scene::after{background:none}
 .editorial{left:22px;right:22px;width:auto;top:14%;transform:none}
 .message .line{white-space:nowrap}
@@ -38,15 +38,15 @@ a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:in
 .l2{font-size:clamp(53px,14vw,80px);line-height:.94;margin-top:0}
 .l3{font-size:clamp(42px,11.4vw,65px);margin-top:4px;line-height:.95}
 .l4{font-size:clamp(37px,9.7vw,57px);margin-top:8px;line-height:.96}
-.editorial-marker{top:-20px;width:40px}
+.editorial-marker{top:-20px;width:40px}.ink-stroke{width:112px;height:4px;margin-top:10px}
 }
-@media(max-width:390px){.editorial{left:19px;right:19px;top:12%}.l1{font-size:11.1vw}.l2{font-size:13.5vw}.l3{font-size:11vw}.l4{font-size:9.35vw}.photo-scene::before{background-size:auto 107%;background-position:calc(50% - 164px) bottom}}
-@media(max-height:700px) and (max-width:900px){.editorial{top:10%}.photo-scene::before{background-size:auto 108%;background-position:calc(50% - 155px) bottom}}
+@media(max-width:390px){.editorial{left:19px;right:19px;top:12%}.l1{font-size:11.1vw}.l2{font-size:13.5vw}.l3{font-size:11vw}.l4{font-size:9.35vw}.photo-scene::before{background-size:auto 72%;background-position:calc(50% + 89vw) bottom}}
+@media(max-height:700px) and (max-width:900px){.editorial{top:10%}.photo-scene::before{background-size:auto 69%;background-position:calc(50% + 89vw) bottom}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;transform:none!important}.editorial{transform:translateY(-50%)!important}.editorial .line{transform:none!important}}
 </style></head>
 <body><div class="layout"><aside class="sidebar"><a href="./" aria-label="На главную"><img class="logo" src="https://static.tildacdn.com/tild3432-3161-4736-a434-393962376635/______.png" alt="Массаж и маркетинг — Анна Широкова"></a><nav class="nav" aria-label="Разделы сайта"><a href="./#page-products">Продукты</a><a href="./#page-articles">Статьи</a><a href="./#page-trigger">Триггер</a><a href="./#page-about">Обо мне</a></nav><button type="button" id="menu-trigger" class="mobile-menu-button" aria-expanded="false" aria-label="Открыть меню"><i></i><i></i></button></aside>
 <main class="stage"><nav class="mobile-nav" id="mobile-nav" aria-label="Разделы сайта"><a href="./#page-products">Продукты</a><a href="./#page-articles">Статьи</a><a href="./#page-trigger">Триггер</a><a href="./#page-about">Обо мне</a></nav><div class="photo-scene" aria-hidden="true"></div>
-<section class="editorial"><div class="editorial-marker" aria-hidden="true"></div><h1 class="message" aria-label="Каким бы ни был ваш массаж, он должен быть профессиональным"><span class="line l1">Каким бы ни был</span><span class="line l2">ваш массаж,</span><span class="line l3">он должен быть</span><span class="line l4">ПРОФЕССИОНАЛЬНЫМ</span></h1></section>
+<section class="editorial"><div class="editorial-marker" aria-hidden="true"></div><h1 class="message" aria-label="Каким бы ни был ваш массаж, он должен быть профессиональным"><span class="line l1">Каким бы ни был</span><span class="line l2">ваш массаж,</span><span class="line l3">он должен быть</span><span class="line l4">ПРОФЕССИОНАЛЬНЫМ</span><span class="ink-stroke" aria-hidden="true"></span></h1></section>
 </main></div>
 <script>/*!
  * GSAP 3.14.2
@@ -68,7 +68,7 @@ if(matchMedia('(prefers-reduced-motion:reduce)').matches){return}
 const photo=scene;timeline=gsap.timeline({paused:true,defaults:{ease:'power3.out'}});
 timeline.fromTo(photo,{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:1.45,ease:'power3.inOut'},.05);
 timeline.fromTo('.message .line',{opacity:0,y:26,clipPath:'inset(0 0 110% 0)'},{opacity:1,y:0,clipPath:'inset(0 0 0% 0)',duration:.82,stagger:.12,ease:'power3.out'},.48);
-timeline.fromTo('.editorial-marker',{scaleX:0},{scaleX:1,duration:.75,ease:'power2.out'},.78);
+timeline.fromTo('.editorial-marker',{scaleX:0},{scaleX:1,duration:.75,ease:'power2.out'},.78);timeline.fromTo('.ink-stroke',{scaleX:0},{scaleX:1,duration:.65,ease:'power2.out'},1.5);
 timeline.fromTo('.l4',{color:'#07516A'},{color:'#07516A',duration:.01},2.2);
 timeline.to({}, {duration:.12},2.65);
 window.__seek=x=>timeline.seek(Math.max(0,Math.min(timeline.duration(),x)));
