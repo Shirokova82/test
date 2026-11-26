@@ -16,12 +16,12 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:po
 .rail-nav a:hover{transform:translateX(5px);color:var(--teal)}
 .hero{position:relative;height:100svh;min-height:660px;isolation:isolate;overflow:hidden}
 .art-scene{position:absolute;inset:0;isolation:isolate}
-.primary-photo{position:absolute;left:1.5%;top:2%;height:96%;width:76%;overflow:hidden;background:var(--paper);z-index:1}
-.shard{position:absolute;inset:0;background:var(--paper) url("https://static.tildacdn.com/tild6538-6665-4136-b262-376230643162/___.png") center center/cover no-repeat;will-change:transform;animation:slide-in 1.5s cubic-bezier(.16,1,.3,1) both;animation-delay:calc(.09s + var(--i)*.105s)}
+.primary-photo{position:absolute;left:1%;top:2%;height:96%;width:64%;overflow:hidden;background:var(--paper);z-index:1}
+.shard{position:absolute;inset:0;background:var(--paper) url("https://static.tildacdn.com/tild6538-6665-4136-b262-376230643162/___.png") 72% center/cover no-repeat;will-change:transform;animation:slide-in 1.5s cubic-bezier(.16,1,.3,1) both;animation-delay:calc(.09s + var(--i)*.105s)}
 .shard:nth-child(1){clip-path:inset(0 75% 0 0)}.shard:nth-child(2){clip-path:inset(0 50% 0 25%)}.shard:nth-child(3){clip-path:inset(0 25% 0 50%)}.shard:nth-child(4){clip-path:inset(0 0 0 75%)}
 @keyframes slide-in{from{transform:translate3d(0,32%,0);opacity:0}to{transform:translate3d(0,0,0);opacity:1}}
 .standing-frame{position:absolute;z-index:3;left:3%;top:18%;width:27%;height:70%;overflow:hidden;clip-path:inset(0 0 0 0);transform:translate3d(0,0,0);animation:standing-in 1.45s cubic-bezier(.16,1,.3,1) .28s both}
-.standing-frame img{width:100%;height:100%;object-fit:cover;object-position:51% 50%;display:block}
+.standing-frame img{width:100%;height:100%;object-fit:cover;object-position:78% 50%;display:block}
 @keyframes standing-in{from{opacity:0;clip-path:inset(0 100% 0 0);transform:translateY(5%)}to{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(0)}}
 .statement{position:absolute;z-index:7;top:24%;right:2.8%;width:31%;height:58%;display:flex;flex-direction:column;justify-content:space-between;gap:2em}
 .group{display:flex;flex-direction:column;align-items:flex-start;gap:1em;min-width:0}
@@ -37,7 +37,7 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:po
 .hero:hover .primary-photo{translate:0 .35%}
 .menu-button,.mobile-nav{display:none}
 @media(min-width:901px) and (max-width:1190px){
- .primary-photo{width:75%;left:0}.standing-frame{width:28%;left:2%;top:20%;height:65%}
+ .primary-photo{width:65%;left:0}.standing-frame{width:29%;left:2%;top:20%;height:65%}
  .statement{width:35%;right:2%;top:26%;height:54%}
  .part{font-size:clamp(30px,4.1vw,48px)}.conclusion{font-size:clamp(36px,5.0vw,57px)}
 }
@@ -53,7 +53,7 @@ a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:po
  .primary-photo{left:0;top:1%;width:100%;height:59%}
  .shard{background-image:url("https://static.tildacdn.com/tild6538-6665-4136-b262-376230643162/___.png");background-size:cover;background-position:70% center}
  .standing-frame{left:2.5%;top:6%;width:37%;height:51%}
- .standing-frame img{object-fit:cover;object-position:51% 50%}
+ .standing-frame img{object-fit:cover;object-position:78% 50%}
  .statement{top:auto;left:6%;right:6%;width:88%;height:auto;bottom:7%;gap:clamp(15px,2.7vh,28px)}
  .group{gap:5px}.mask{padding:.03em 0}
  .part{font-size:clamp(39px,11vw,58px);line-height:.98}
