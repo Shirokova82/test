@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Массаж и маркетинг — первый экран / рабочий просмотр</title>
+<style>
+@font-face{font-family:'Droid 1997';src:url('https://cdn.jsdelivr.net/gh/StudioENIGMA/ProjectENIGMA@520d517dbc408184c49caa633b5b23ae6defb103/assets/fonts/Droid%201997.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+:root{--paper:#F8FAFA;--ink:#07516A;--deep:#06376B;--sea:#107080;--cyan:#21A9AC;--pale:#DDEFF0;--head:'Droid 1997',sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--paper);font-family:Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+.site{min-height:100svh;display:grid;grid-template-columns:clamp(275px,22.5vw,330px) minmax(0,1fr)}
+.aside{height:100svh;min-height:680px;position:sticky;top:0;border-right:1px solid var(--pale);padding:28px 31px 24px;display:flex;flex-direction:column;background:var(--paper);z-index:7}
+.brand-logo{display:block;max-width:100%;width:206px;height:auto;mix-blend-mode:multiply}
+.aside-kicker{font:400 14px/1 var(--head);letter-spacing:.13em;color:var(--sea);margin-top:40px;padding-bottom:16px;border-bottom:1px solid var(--pale)}
+.section-nav{margin-top:13px}
+.section-link{display:grid;grid-template-columns:23px 1fr 13px;gap:9px;align-items:baseline;padding:19px 0 17px;border-bottom:1px solid var(--pale);transition:color .2s,transform .2s}
+.section-link:hover{color:var(--cyan);transform:translateX(3px)}
+.section-link .n{font:400 14px var(--head);color:var(--cyan)}
+.section-link .name{font:400 clamp(34px,3.1vw,43px)/.95 var(--head);text-transform:uppercase;letter-spacing:.004em}
+.section-link .arrow{font-size:19px;color:var(--cyan)}
+.aside-footer{margin-top:auto;font:400 13px/1.7 var(--head);letter-spacing:.13em;text-transform:uppercase;color:var(--sea)}
+.stage{min-width:0;position:relative}
+.scene{min-height:780px;height:100svh;max-height:1150px;position:relative;overflow:hidden;isolation:isolate}
+.scene::before{content:"";position:absolute;left:4.4%;right:4.4%;top:78px;height:1px;background:var(--pale)}
+.eyeline{position:absolute;z-index:6;left:4.4%;right:4.4%;top:38px;display:flex;justify-content:space-between;align-items:baseline;font:400 16px/1 var(--head);letter-spacing:.11em;text-transform:uppercase}
+.eyeline span:last-child{color:var(--sea)}
+.headline-area{position:absolute;top:15%;left:4.4%;right:1.5%;z-index:1}
+.preline{font:400 clamp(25px,2.3vw,37px)/1.15 var(--head);margin:0 0 25px;letter-spacing:.025em}
+.hero-word{font:400 clamp(140px,16vw,270px)/.76 var(--head);letter-spacing:-.025em;margin:0;background:linear-gradient(98deg,#07516A 7%,#107080 53%,#21A9AC 95%);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+.portrait{position:absolute;z-index:2;right:-6.7%;top:25%;width:70%;height:54%;margin:0;display:flex;justify-content:center;align-items:flex-end;pointer-events:none}
+.portrait img{max-width:none;width:100%;height:100%;object-fit:contain;object-position:center bottom;mix-blend-mode:multiply}
+.sentence{position:absolute;z-index:4;left:4.4%;right:4.4%;bottom:13.5%;padding:20px 0 0;border-top:1px solid var(--cyan)}
+.sentence-first{font:400 clamp(26px,3.6vw,58px)/.93 var(--head);letter-spacing:.025em;margin:0 0 10px;color:var(--sea)}
+.sentence-final{font:400 clamp(49px,6.6vw,108px)/.84 var(--head);letter-spacing:0;margin:0;text-transform:uppercase;color:var(--ink);white-space:nowrap}
+.sentence-final span{color:var(--cyan)}
+.scene-footer{position:absolute;left:4.4%;right:4.4%;bottom:32px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--pale);padding-top:15px;font:400 14px/1.2 var(--head);letter-spacing:.11em;color:var(--sea);text-transform:uppercase}
+.scene-footer a{display:inline-flex;gap:8px;align-items:center;transition:color .2s}.scene-footer a:hover{color:var(--cyan)}
+.scene-footer svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.5}
+.mobile-top,.mobile-nav{display:none}
+@media(min-width:900px) and (max-height:780px){
+ .scene{min-height:650px}.headline-area{top:13%}.portrait{top:24%;height:54%}.sentence{bottom:13.5%}
+}
+@media(max-width:899px){
+ .site{display:block;padding-top:72px}
+ .aside{display:none}
+ .mobile-top{height:72px;position:absolute;top:0;left:0;right:0;z-index:12;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:var(--paper);border-bottom:1px solid var(--pale)}
+ .mobile-brand{font:400 clamp(24px,6vw,33px)/1 var(--head);letter-spacing:.018em;white-space:nowrap}
+ .mobile-icons{display:flex;gap:4px}
+ .mobile-icons a,.mobile-icons button{width:39px;height:42px;border:0;background:none;display:grid;place-items:center;color:var(--sea)}
+ .mobile-icons svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
+ .scene{min-height:730px;height:calc(100svh - 72px);max-height:none}
+ .scene::before,.eyeline{display:none}
+ .headline-area{top:6%;left:5%;right:5%}
+ .preline{font-size:clamp(25px,6vw,36px);margin-bottom:14px;max-width:90%}
+ .hero-word{font-size:clamp(115px,31vw,195px);line-height:.77;letter-spacing:-.015em}
+ .portrait{right:-13%;top:24%;width:122%;height:49%}
+ .sentence{bottom:14%;left:5%;right:5%;padding-top:14px}
+ .sentence-first{font-size:clamp(27px,7.2vw,40px);margin-bottom:7px}
+ .sentence-final{font-size:clamp(30px,8.2vw,51px);line-height:.86;white-space:normal;overflow-wrap:anywhere}
+ .scene-footer{left:5%;right:5%;bottom:23px}
+ .mobile-nav{display:none;position:fixed;inset:0;background:var(--paper);z-index:20;padding:28px 24px;flex-direction:column}
+ .mobile-nav.is-open{display:flex}
+ .mobile-nav-head{display:flex;justify-content:space-between;align-items:center;font:400 24px var(--head)}
+ .mobile-nav-head button{background:none;border:0;font-size:35px;color:var(--ink);padding:4px}
+ .mobile-nav-list{margin-top:60px}
+ .mobile-nav-list a{display:grid;grid-template-columns:40px 1fr 24px;align-items:baseline;gap:8px;padding:14px 0;border-bottom:1px solid var(--pale);font:400 clamp(45px,14vw,68px)/1 var(--head)}
+ .mobile-nav-list span:first-child{font-size:20px;color:var(--cyan)}
+ .mobile-nav-list span:last-child{font-size:25px;color:var(--cyan)}
+ .mobile-nav-note{margin-top:auto;font:400 15px/1.4 var(--head);letter-spacing:.06em;color:var(--sea)}
+}
+@media(max-width:400px){
+ .mobile-brand{font-size:24px}
+ .mobile-top{padding:0 16px}
+ .preline{font-size:25px}
+ .hero-word{font-size:30.5vw}
+ .portrait{top:24%;height:48%}
+ .sentence{bottom:14%}
+ .sentence-final{font-size:8.3vw}
+}
+@media(max-height:680px) and (max-width:899px){.scene{height:700px;min-height:700px}}
+@media(prefers-reduced-motion:no-preference){
+ .preline,.hero-word,.sentence{animation:rise .85s both}
+ .hero-word{animation-delay:.12s}.sentence{animation-delay:.25s}
+ @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+}
+</style></head>
+<body>
+<div class="site">
+ <aside class="aside">
+  <a href="./hero-2026-11-26.html" aria-label="На главный экран"><img class="brand-logo" src="https://static.tildacdn.com/tild3432-3161-4736-a434-393962376635/______.png" alt="Массаж и маркетинг — Анна Широкова"></a>
+  <div class="aside-kicker">Разделы проекта</div>
+  <nav class="section-nav" aria-label="Разделы сайта">
+   <a class="section-link" href="./index.html#page-products"><span class="n">01</span><span class="name">Продукты</span><span class="arrow">↗</span></a>
+   <a class="section-link" href="./index.html#page-articles"><span class="n">02</span><span class="name">Статьи</span><span class="arrow">↗</span></a>
+   <a class="section-link" href="./index.html#page-club"><span class="n">03</span><span class="name">Триггер</span><span class="arrow">↗</span></a>
+   <a class="section-link" href="./index.html#page-about"><span class="n">04</span><span class="name">Обо мне</span><span class="arrow">↗</span></a>
+  </nav>
+  <div class="aside-footer">Анна Широкова<br>Массаж и маркетинг<br>Москва</div>
+ </aside>
+ <div class="stage">
+  <header class="mobile-top"><a class="mobile-brand" href="./hero-2026-11-26.html">МАССАЖ И МАРКЕТИНГ</a><div class="mobile-icons">
+   <a href="./index.html#search-modal" aria-label="Поиск"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="m15.5 15.5 6 6"/></svg></a>
+   <button type="button" id="menuOpen" aria-controls="mobileMenu" aria-expanded="false" aria-label="Разделы"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div></header>
+  <main class="scene" aria-label="Первый экран — Массаж и маркетинг">
+   <div class="eyeline"><span>Массаж и маркетинг</span><span>Анна Широкова</span></div>
+   <div class="headline-area"><p class="preline">Каким бы ни был ваш</p><h1 class="hero-word">МАССАЖ</h1></div>
+   <figure class="portrait"><img src="https://static.tildacdn.com/tild6538-6665-4136-b262-376230643162/___.png" alt="Анна Широкова" width="1080" height="1080" loading="eager" decoding="async"></figure>
+   <div class="sentence"><p class="sentence-first">ОН ДОЛЖЕН БЫТЬ</p><p class="sentence-final">ПРОФЕССИОНАЛЬНЫМ<span>.</span></p></div>
+   <div class="scene-footer"><span>01 / Позиция</span><a href="./index.html#page-products" aria-label="Перейти к разделу Продукты">К разделам <svg viewBox="0 0 24 24"><path d="M12 3v18m-7-7 7 7 7-7"/></svg></a></div>
+  </main>
+ </div>
+</div>
+<div class="mobile-nav" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Навигация" aria-hidden="true">
+ <div class="mobile-nav-head"><span>МАССАЖ И МАРКЕТИНГ</span><button id="menuClose" type="button" aria-label="Закрыть меню">×</button></div>
+ <nav class="mobile-nav-list">
+  <a href="./index.html#page-products"><span>01</span>ПРОДУКТЫ<span>↗</span></a>
+  <a href="./index.html#page-articles"><span>02</span>СТАТЬИ<span>↗</span></a>
+  <a href="./index.html#page-club"><span>03</span>ТРИГГЕР<span>↗</span></a>
+  <a href="./index.html#page-about"><span>04</span>ОБО МНЕ<span>↗</span></a>
+ </nav>
+ <div class="mobile-nav-note">АННА ШИРОКОВА / МОСКВА</div>
+</div>
+<script>
+const openBtn=document.querySelector('#menuOpen'),closeBtn=document.querySelector('#menuClose'),menu=document.querySelector('#mobileMenu');
+function toggleMenu(open){menu.classList.toggle('is-open',open);menu.setAttribute('aria-hidden',String(!open));openBtn.setAttribute('aria-expanded',String(open));document.body.style.overflow=open?'hidden':'';if(open)closeBtn.focus();else openBtn.focus()}
+openBtn.addEventListener('click',()=>toggleMenu(true));closeBtn.addEventListener('click',()=>toggleMenu(false));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.classList.contains('is-open'))toggleMenu(false)});
+</script>
+</body></html>
