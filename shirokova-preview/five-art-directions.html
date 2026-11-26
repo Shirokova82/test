@@ -38,11 +38,11 @@ body:has(.preview-nav) .stage{height:calc(100svh - 56px)}
 .v1 .column-left{position:absolute;left:8%;top:17%;width:44%;z-index:2}
 .v1 .left-small{font:400 clamp(32px,4.4vw,66px)/.99 Droid;white-space:nowrap;display:block}
 .v1 .left-giant{font:400 clamp(85px,10vw,154px)/1.02 Droid;color:var(--t);margin-top:12vh;white-space:nowrap;display:block}
-.v1 .ribbon{position:absolute;left:48%;top:55%;width:45%;height:25%;background:var(--t);transform-origin:left center;display:flex;flex-direction:column;justify-content:center;padding:clamp(14px,2.6vw,38px);gap:6px;z-index:3}
+.v1 .ribbon{position:absolute;left:48%;top:61%;width:45%;height:24%;background:var(--t);transform-origin:left center;display:flex;flex-direction:column;justify-content:center;padding:clamp(14px,2.6vw,38px);gap:6px;z-index:3}
 .v1 .ribbon-top{font:400 clamp(28px,3.5vw,58px)/.96 Droid;color:var(--p);white-space:nowrap}
 .v1 .ribbon-end{font:400 clamp(25px,3.15vw,54px)/1 Bebas;color:var(--p);white-space:nowrap}
 .v1 .ribbon::before{content:"";position:absolute;width:7px;top:0;bottom:0;left:-9px;background:var(--d)}
-@media(max-width:900px){.v1 .fine-line{top:10%}.v1 .column-left{left:6%;top:16%;width:90%}.v1 .left-small{font-size:clamp(32px,10.5vw,59px)}.v1 .left-giant{font-size:clamp(90px,28vw,150px);margin-top:6vh}.v1 .ribbon{left:7%;width:86%;height:30%;top:57%;padding:17px 13px;gap:9px}.v1 .ribbon-top{font-size:clamp(34px,11vw,58px)}.v1 .ribbon-end{font-size:clamp(30px,8.5vw,50px)}}
+@media(max-width:900px){.v1 .fine-line{top:10%}.v1 .column-left{left:6%;top:16%;width:90%}.v1 .left-small{font-size:clamp(32px,10.5vw,59px)}.v1 .left-giant{font-size:clamp(90px,28vw,150px);margin-top:6vh}.v1 .ribbon{left:7%;width:86%;height:24%;top:62%;padding:17px 13px;gap:9px}.v1 .ribbon-top{font-size:clamp(34px,11vw,58px)}.v1 .ribbon-end{font-size:clamp(30px,8.5vw,50px)}}
 
 /* B — THE CIRCULAR TYPOGRAPHIC CLOCK */
 .v2{display:none;place-items:center;padding:0!important}.v2.active{display:grid}
@@ -54,7 +54,7 @@ body:has(.preview-nav) .stage{height:calc(100svh - 56px)}
 .v2 .disc span{font:400 clamp(24px,3.0vw,48px)/.96 Droid;color:var(--d)}
 .v2 .disc strong{font:400 clamp(26px,2.75vw,45px)/.94 Bebas;color:var(--t);max-width:95%;margin-top:10px}
 .v2 .tick{position:absolute;width:1px;height:75px;background:var(--t);top:0;left:50%;transform:translateX(-50%)}
-@media(max-width:900px){.v2 .orbit{width:min(97vw,420px);height:min(97vw,420px)}.v2 .arc{font-size:43px}.v2 .disc{width:60%;height:60%}.v2 .disc span{font-size:clamp(23px,6vw,32px)}.v2 .disc strong{font-size:clamp(15px,4.25vw,21px);white-space:nowrap}.v2 .tick{height:31px}}
+@media(max-width:900px){.v2 .orbit{width:min(97vw,420px);height:min(97vw,420px)}.v2 .arc{font-size:43px}.v2 .disc{width:60%;height:60%}.v2 .disc span{font-size:clamp(23px,6vw,32px)}.v2 .disc strong{font-size:clamp(20px,6vw,27px);white-space:nowrap}.v2 .tick{height:31px}}
 
 /* C — BOOK COVER / strict asymmetry and typographic spine */
 .v3{padding:0!important;display:none}.v3.active{display:grid;grid-template-columns:28% 72%}
@@ -97,8 +97,8 @@ body:has(.preview-nav) .stage{height:calc(100svh - 56px)}
 </section>
 <section class="concept v2" id="v2" aria-label="Второй вариант — круговая композиция">
 <div class="orbit"><div class="tick"></div><svg viewBox="0 0 600 600" aria-hidden="true">
-<defs><path id="roundTop" d="M 74,300 A 226,226 0 0,1 526,300"/><path id="roundBottom" d="M 74,300 A 226,226 0 0,0 526,300"/></defs>
-<circle cx="300" cy="300" r="226" stroke="#21A9AC" stroke-width="1" fill="none" />
+<defs><path id="roundTop" d="M 40,300 A 260,260 0 0,1 560,300"/><path id="roundBottom" d="M 40,300 A 260,260 0 0,0 560,300"/></defs>
+<circle cx="300" cy="300" r="260" stroke="#21A9AC" stroke-width="1" fill="none" />
 <text class="arc"><textPath href="#roundTop" startOffset="50%" text-anchor="middle">Каким бы ни был ваш массаж,</textPath></text>
 <text class="arc bottom"><textPath href="#roundBottom" startOffset="50%" text-anchor="middle">он должен быть</textPath></text>
 </svg><div class="disc"><strong>ПРОФЕССИОНАЛЬНЫМ</strong></div></div></section>
@@ -128,6 +128,7 @@ const m=document.getElementById('mobnav'),hamb=document.getElementById('hamb');h
 const params=new URLSearchParams(location.search),given=Number(params.get('v')||1);let active=Math.min(5,Math.max(1,given)),tl=null;let t=params.has('t')?Number(params.get('t')):null;
 function fit(el,max,min){if(!el)return;el.style.fontSize='';let f=parseFloat(getComputedStyle(el).fontSize);let width=el.getBoundingClientRect().width;const r=document.createRange();r.selectNodeContents(el);let count=0;while(r.getBoundingClientRect().width>max&&f>min&&count++<150){f-=1;el.style.fontSize=f+'px'}}
 function handleFit(n){const stage=document.querySelector('.stage'),w=stage.clientWidth;if(n===1){fit(document.querySelector('#v1 .ribbon-end'),w*(innerWidth<=900?.80:.47),22);fit(document.querySelector('#v1 .ribbon-top'),w*(innerWidth<=900?.80:.48),22)}
+if(n===2){fit(document.querySelector('#v2 .disc strong'),w*(innerWidth<=900?.53:.4),17)}
 if(n===3){fit(document.querySelector('#v3 .last'),w*(innerWidth<=900?.70:.63),24)}
 if(n===4){fit(document.querySelector('#v4 .cellD span'),w*(innerWidth<=900?.84:.78),25)}
 if(n===5){fit(document.querySelector('#v5 .caption strong'),w*(innerWidth<=900?.84:.68),28)}
