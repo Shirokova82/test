@@ -1,7 +1,7 @@
 /* Original approved Meloriac Rus file, hosted in user's existing massage-motion repository. */
 @font-face{
   font-family:'Meloriac Rus';
-  src:url('https://cdn.jsdelivr.net/gh/Shirokova82/massage-motion@main/public/fonts/meloriacrusbyme.otf') format('truetype'),url('https://raw.githubusercontent.com/Shirokova82/massage-motion/main/public/fonts/meloriacrusbyme.otf') format('truetype');
+  src:url('./assets/meloriacrusbyme.otf') format('truetype');
   font-style:normal;font-weight:400;font-display:swap;
 }
 
