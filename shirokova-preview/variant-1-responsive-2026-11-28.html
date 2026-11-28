@@ -269,54 +269,52 @@ body:has(.page:target) .home{display:none}
 <div id="search" class="overlay" role="dialog" aria-label="Поиск"><div class="overlay-top"><span>РАЗДЕЛЫ</span><a class="close-link" href="#home">Закрыть ×</a></div><nav class="overlay-nav"><a href="#page-products"><span>ПРОДУКТЫ</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 20 4M7 4h13v13"/></svg></a><a href="#page-articles"><span>СТАТЬИ</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 20 4M7 4h13v13"/></svg></a><a href="#page-club-membership"><span>ТРИГГЕР</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 20 4M7 4h13v13"/></svg></a><a href="#page-about"><span>ОБО МНЕ</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 20 4M7 4h13v13"/></svg></a></nav></div>
 
 <script>
-/* Non-generative background matting of the published standing photograph.
-   Every retained subject RGB pixel comes from the actual source; no face or body reconstruction. */
+/* Remove ONLY the original photo's pale studio background by pixel classification.
+   No changes to real face, anatomy, pose, clothing or body scale. */
 (function(){
- const display=document.querySelector('.portrait img');
- if(!display || !window.HTMLCanvasElement) return;
- const source=new Image();source.crossOrigin='anonymous';
- source.onload=function(){
-  try {
-   const w=source.naturalWidth,h=source.naturalHeight;
-   const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;
-   const cx=canvas.getContext('2d',{willReadFrequently:true});
-   cx.drawImage(source,0,0);
-   const pix=cx.getImageData(0,0,w,h),data=pix.data;
-   let previousLeft=Math.round(w*.185),previousRight=Math.round(w*.335);
-   const bounds=new Array(h);
+ const visible=document.querySelector('.portrait img');if(!visible)return;
+ const real=new Image();real.crossOrigin="anonymous";
+ real.onload=()=>{
+  try{
+   const w=real.naturalWidth,h=real.naturalHeight,cv=document.createElement("canvas");
+   cv.width=w;cv.height=h;
+   const cx=cv.getContext("2d",{willReadFrequently:true});cx.drawImage(real,0,0);
+   const picture=cx.getImageData(0,0,w,h),p=picture.data,bounds=[];
+   const xlo=Math.round(w*.11),xhi=Math.round(w*.39);
+   let lastL=Math.round(w*.20),lastR=Math.round(w*.30);
    for(let y=0;y<h;y++){
-      let lo=w,hi=-1,count=0;
-      const yoffset=y*w*4;
-      for(let x=Math.floor(w*.115);x<Math.floor(w*.37);x++){
-        const k=yoffset+x*4;
-        const light=(data[k]+data[k+1]+data[k+2])/3;
-        if(light<175){lo=Math.min(lo,x);hi=Math.max(hi,x);count++}
-      }
-      if(count>6 && hi-lo>27){previousLeft=lo;previousRight=hi}
-      const extra=(y>.79*h?55: (y<.20*h?41:34));
-      bounds[y]=[Math.max(0,previousLeft-extra),Math.min(w,previousRight+extra)];
+    let L=w,R=0,n=0;
+    for(let x=xlo;x<xhi;x++){
+     const k=(y*w+x)*4,rr=p[k],gg=p[k+1],bb=p[k+2],light=(rr+gg+bb)/3;
+     const skin=rr-gg>9 && gg-bb>7 && rr>122 && gg>98 && bb>68;
+     const dark=light<178;
+     if(dark||skin){if(x<L)L=x;if(x>R)R=x;n++}
+    }
+    if(n>5 && R-L>20){lastL=L;lastR=R}
+    const margin=(y>h*.79?32:(y<h*.22?13:17));
+    bounds[y]=[lastL-margin,lastR+margin];
    }
    for(let y=0;y<h;y++){
-      const [L,R]=bounds[y],k0=y*w*4;
-      for(let x=0;x<w;x++){
-        const k=k0+x*4;
-        if(x<L||x>R){data[k+3]=0;continue}
-        const br=(data[k]+data[k+1]+data[k+2])/3;
-        const whiteness=Math.max(0,Math.min(1,(255-br-(y>.85*h?7:15))/20));
-        const feather=Math.max(0,Math.min(1,(x-L)/13,(R-x)/13));
-        data[k+3]=Math.round(255*whiteness*feather);
-      }
+    const [L,R]=bounds[y],row=y*w*4;
+    for(let x=0;x<w;x++){
+      const k=row+x*4;
+      if(x<L||x>R){p[k+3]=0;continue}
+      const rr=p[k],gg=p[k+1],bb=p[k+2],light=(rr+gg+bb)/3;
+      const skin=rr-gg>9&&gg-bb>7&&rr>122&&gg>98&&bb>68;
+      const pxAlpha=skin||light<185?255:light<213?Math.round((213-light)*9):0;
+      const shoe=y>h*.81?Math.min(255,Math.max(0,(248-light)*15)):0;
+      const edge=Math.min(1,Math.max(0,(x-L)/9),Math.max(0,(R-x)/9));
+      p[k+3]=Math.round(Math.max(pxAlpha,shoe)*edge);
+    }
    }
-   cx.putImageData(pix,0,0);
-   display.src=canvas.toDataURL('image/png');
-   display.dataset.matted='true';
-   display.parentElement.style.mixBlendMode='normal';
-   display.style.mixBlendMode='normal';
-   display.style.maskImage='none';
-   display.style.webkitMaskImage='none';
-  }catch(err){display.dataset.matted='fallback'}
+   cx.putImageData(picture,0,0);
+   visible.src=cv.toDataURL('image/png');visible.dataset.matted='true';
+   visible.parentElement.style.mixBlendMode='normal';
+   visible.style.mixBlendMode='normal';
+   visible.style.maskImage='none';visible.style.webkitMaskImage='none';
+  }catch(e){visible.dataset.matted='fallback'}
  };
- source.src='https://static.tildacdn.com/tild3561-3665-4439-a363-393035633463/_____.png';
+ real.src='https://static.tildacdn.com/tild3561-3665-4439-a363-393035633463/_____.png';
 })();
 </script>
 </body></html>
