@@ -646,6 +646,86 @@ body:has(.page:target) #home-page.exact-hero{display:none!important}
 .e-model{left:10%!important;right:-28%!important;top:24%!important}
 .e-cta p{font-size:11px}
 }
+
+/* 2026-11-28 MOBILE CORRECTION: actual layout, not absolute-position collage.
+   Existing photo/logo/navigation and desktop rules are unchanged. */
+@media (max-width:899px) {
+  #home-page.exact-hero {display:block!important;min-height:0!important;overflow:hidden!important;}
+  #home-page .e-stage {
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    grid-template-rows:auto minmax(325px,1fr) auto!important;
+    min-height:max(610px,calc(100svh - 76px))!important;
+    height:auto!important;overflow:hidden!important;
+    padding:0!important;box-sizing:border-box!important;
+  }
+  #home-page .e-type {
+    position:relative!important;inset:auto!important;
+    top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;
+    grid-column:1!important;grid-row:1!important;z-index:6!important;
+    width:100%!important;max-width:100%!important;
+    padding:clamp(16px,3.4svh,28px) 4.5% 8px!important;
+    margin:0!important;align-self:start!important;box-sizing:border-box!important;
+    white-space:nowrap!important;overflow:visible!important;
+  }
+  #home-page .e-first{font-size:clamp(27px,7.5vw,52px)!important;line-height:1.05!important}
+  #home-page .e-massage{font-size:clamp(55px,15.6vw,103px)!important;line-height:.96!important;margin:6px 0 2px!important}
+  #home-page .e-second{font-size:clamp(28px,7.05vw,49px)!important;line-height:1.04!important}
+  #home-page .e-third{font-size:clamp(29px,7.7vw,55px)!important;line-height:1.08!important;margin:8px 0 0!important}
+  #home-page .e-second i{width:clamp(20px,5.8vw,37px)!important;height:3px!important;margin-right:9px!important}
+  #home-page .e-model{
+    position:relative!important;inset:auto!important;
+    top:auto!important;bottom:auto!important;left:auto!important;right:auto!important;
+    grid-column:1!important;grid-row:2!important;
+    width:100%!important;max-width:100%!important;height:100%!important;min-height:325px!important;
+    margin:0!important;overflow:hidden!important;z-index:4!important;
+    mix-blend-mode:multiply!important;
+  }
+  #home-page .e-model span {
+    inset:0!important;background-size:auto 100%!important;
+    background-position:calc(50% - 128px) bottom!important;
+  }
+  #home-page .e-geometry{
+    inset:26% -8% 12% 24%!important;opacity:.42!important;
+    clip-path:polygon(63% 0,100% 0,65% 59%,45% 100%,0 100%,30% 54%)!important;
+  }
+  #home-page .e-geometry-secondary{
+    inset:39% 0 20% 68%!important;opacity:.26!important;
+  }
+  #home-page .e-cta{
+    position:relative!important;inset:auto!important;top:auto!important;bottom:auto!important;
+    left:auto!important;right:auto!important;z-index:8!important;
+    grid-column:1!important;grid-row:3!important;
+    display:flex!important;align-items:center!important;justify-content:space-between!important;
+    width:100%!important;box-sizing:border-box!important;
+    min-height:72px!important;margin:0!important;padding:10px 4.5% 12px!important;
+    gap:10px!important;border:0!important;border-top:1px solid #DDEFF0!important;
+    background:#F8FAFA!important;
+  }
+  #home-page .e-cta p{
+    flex:1 1 0!important;min-width:0!important;font:400 clamp(12px,3.2vw,16px)/1.4 Arial,sans-serif!important;
+    margin:0!important;color:#07516A!important;
+  }
+  #home-page .e-cta a{
+    flex:0 0 auto!important;min-height:45px!important;
+    padding:8px 13px!important;font-size:clamp(17px,4.7vw,24px)!important;
+    letter-spacing:.02em!important;white-space:nowrap!important;
+  }
+}
+@media(max-width:380px) {
+  #home-page .e-stage{grid-template-rows:auto minmax(310px,1fr) auto!important;min-height:max(580px,calc(100svh - 76px))!important}
+  #home-page .e-first{font-size:7.3vw!important}
+  #home-page .e-massage{font-size:15.5vw!important}
+  #home-page .e-second{font-size:6.9vw!important}
+  #home-page .e-third{font-size:7.5vw!important}
+  #home-page .e-model{min-height:310px!important}
+  #home-page .e-model span{background-position:calc(50% - 120px) bottom!important}
+}
+@media(max-width:899px) and (max-height:690px){
+  #home-page .e-stage{grid-template-rows:auto minmax(300px,1fr) auto!important;min-height:max(570px,calc(100svh - 76px))!important}
+  #home-page .e-type{padding-top:14px!important}
+  #home-page .e-model{min-height:300px!important}
+}
 </style>
 <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/droid-1997">
 </head>
