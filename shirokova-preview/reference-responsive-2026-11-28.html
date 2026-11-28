@@ -750,6 +750,24 @@ body:has(.page:target) #home-page.exact-hero{display:none!important}
   #home-page .e-third{font-size:9vw!important}
   #home-page .e-model span{background-position:calc(50vw - 140px) bottom!important}
 }
+
+/* Portrait grid fix: absolute inside reference stage to preserve full-height original photo */
+@media(max-width:899px){
+  #home-page .e-model{
+    position:absolute!important;grid-row:auto!important;grid-column:auto!important;
+    top:35%!important;bottom:10%!important;left:18%!important;right:-24%!important;
+    width:auto!important;height:auto!important;min-height:0!important;
+  }
+  #home-page .e-model span{
+    position:absolute!important;inset:0!important;
+    background-size:auto 100%!important;
+    background-position:-7svh bottom!important;
+  }
+}
+@media(max-width:380px){
+  #home-page .e-model{top:35%!important;bottom:10%!important;left:13%!important;right:-27%!important}
+  #home-page .e-model span{background-position:-7svh bottom!important}
+}
 </style>
 <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/droid-1997">
 </head>
